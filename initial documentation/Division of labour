@@ -1,0 +1,16 @@
+Work for case:
+- Diffuser - research options for materials, prototype PCB, test diffusion, attach, test thermals
+- Protective cover - options, dust cover 
+
+Work for code:
+- Light power levels
+- RGB LED program
+- Configure voltage levels to give good power increments in light
+- Turn off if solar detected
+
+
+Task Allocation W1:
+Jim	- Background information and materials research
+Leo	- Research PCBs and presentation
+Lucy	- Compiling and writing code
+Samuel	- Writing code and presentation
