@@ -2,7 +2,13 @@
 
 
 ## The people
+### Lucy  
 
+### Samuel  
+
+### Jim  
+
+### Leo
 
 
 ## The resources needed
