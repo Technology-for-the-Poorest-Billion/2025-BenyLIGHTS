@@ -12,7 +12,7 @@
 
 ### Jim  
 - Information gatherer
-- Never been on a rollercoaster
+- Rollercoaster procrastinator
 
 ### Leo
 - Case proprietor
