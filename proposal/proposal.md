@@ -11,7 +11,18 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 # Presentation of the proposal
 
 Technical aspects may be described here.
-
+## Case Design:  
+### Key:  
+(): Possible but not necessary implementations  
+**design constraints in bold**
+- **Loop for hanging** (clips for clipping)
+- Diffusing transparent plastic cover
+- **Slots for the USBs**
+- Kick stand to angle the panel perpendicular to sun rays
+- Dust resistant (dust covers for the ports)
+- **Cheap**
+- **3D printable**
+- Acyrlic/ PMMA likely material to be used
 # Assessment of the quality of the proposal
 
 Evaluate its value in the context of the project. What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
