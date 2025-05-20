@@ -1,8 +1,8 @@
 # Problem description
 
 Brief overview of the problem, context and engineering approach to tackle the problem.
--fksdfgbsduk
-  -sdjvhsdjv
+- fksdfgbsduk
+  - sdjvhsdjv
 
 # Presentation of the proposal
 
