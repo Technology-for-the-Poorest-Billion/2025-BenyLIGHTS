@@ -15,7 +15,7 @@
 - Rollercoaster procrastinator
 
 ### Leo
-- Case proprietor
+- Case fanatic
 - Cyborg brain
 
 ## The resources needed
