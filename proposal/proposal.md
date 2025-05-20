@@ -3,7 +3,7 @@
 Brief overview of the problem, context and engineering approach to tackle the problem.
 - fksdfgbsduk
   - sdjvhsdjv
-
+![](2025-BenyLIGHTS/proposal/rural electricity in ethiopia)
 # Presentation of the proposal
 
 Technical aspects may be described here.
