@@ -3,13 +3,20 @@
 
 ## The people
 ### Lucy  
+- Programming Whizz
+- Temporarily detachable finger
 
-### Samuel  
+### Samuel 
+- Resident SCAD expert
+- Betrothed
 
 ### Jim  
+- Research
+- Never been on a rollercoaster
 
 ### Leo
-
+- Case proprietor
+- Cyborg brain
 
 ## The resources needed
 
