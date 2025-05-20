@@ -6,7 +6,7 @@ Brief overview of the problem, context and engineering approach to tackle the pr
   - **Education** is the most significantly improved factor of the HDI.
  - Current devices are kerosene lamps, which cause indoor pollution and health risks.
 
-![image](assets/Gaslight.jpg {width=40px height=400px})
+![image](assets/Gaslight.jpg)
 
 # Presentation of the proposal
 
