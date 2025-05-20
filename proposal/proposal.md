@@ -4,7 +4,7 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 - fksdfgbsduk
   - sdjvhsdjv
 
-![image](/proposal/assets/ruralelec.png)
+![image](assets/ruralelec.png)
 
 # Presentation of the proposal
 
