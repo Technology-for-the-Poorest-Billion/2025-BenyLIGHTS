@@ -3,7 +3,7 @@
 
 ## The people
 ### Lucy  
-- Programming Whizz
+- Programming whizz
 - Temporarily detachable finger
 
 ### Samuel 
@@ -11,7 +11,7 @@
 - Betrothed
 
 ### Jim  
-- Research
+- Information gatherer
 - Never been on a rollercoaster
 
 ### Leo
