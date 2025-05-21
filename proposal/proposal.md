@@ -7,7 +7,9 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 - 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks.
     - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily
     - Respiratory diseases caused by kerosene lamps decrease life expectancy
-    - Kerosene lamps emit 'black carbon', which contributes to global warming. 
+    - Kerosene lamps emit 'black carbon', which contributes to global warming.
+ 
+<img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300"> 
   
 - **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index**.
   - Electrification improves life expectancy and education within a country.
@@ -15,8 +17,6 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
 
 There have been previous attempts to electrify rural villages but one of the main issues is that when something breaks, there is nobody to fix it. 
-
-<img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300">
 
 ## Engineering Solution
 
