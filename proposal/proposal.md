@@ -16,10 +16,7 @@ https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-et
 
 There have been previous attempts to electrify rural villages but one of the main issues is that when something breaks, there is nobody to fix it. 
 
-
-![image](assets/Gaslight.jpg)
-
-<img src="assets/Gaslight.jpg" alt="Alt Text" width="300" height="200">
+<img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300">
 
 ## Engineering Solution
 
