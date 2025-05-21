@@ -48,21 +48,27 @@
 - Begin testing diffuser materials/design
 
 #### Electrical
+- Complete training videos on programming the CH32V003F4P6
 - Communicate with RGB LED
 - Begin to test code for discrete boost
 
 ### Week 3
-Dependent on progress made in week 2
+*Dependent on progress made in week 2*
 
 #### Mechanical
 - Further testing on case and diffuser designs
 - Finalise manufacturing choices (soldering vs bolts)
 
+#### Electrical
+- Complete code for RGB LED
+- Fully change from IC to discrete boost
+- Testing the code by connecting oscilloscope to board and measuring voltages
+
 #### Week 4
 #### Mechanical
 - Final changes before project output submission
-- 
-
+- Any further improvements on code
+- Fix any errors in manufacturing and 
 
 
 
