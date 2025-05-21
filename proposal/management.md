@@ -46,6 +46,7 @@
 - Produce CAD files
 - Have first prototype of the case produced
 - Begin testing diffuser materials/design
+- Solder battery connections to breadboards
 
 #### Electrical
 - Complete training videos on programming the CH32V003F4P6
@@ -62,13 +63,18 @@
 #### Electrical
 - Complete code for RGB LED
 - Fully change from IC to discrete boost
-- Testing the code by connecting oscilloscope to board and measuring voltages
+
 
 #### Week 4
+Final changes before project output submission
+
 #### Mechanical
-- Final changes before project output submission
-- Any further improvements on code
-- Fix any errors in manufacturing and 
+- Produce and assemble final product
+
+#### Electrical
+- Explore further improvements on code above and beyond the brief
+- Test the discrete boost on the PCB by measuring output voltage using oscilloscope
+- Test combined system of WS8212 driven by discrete boost power system
 
 
 
