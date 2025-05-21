@@ -82,5 +82,6 @@ Dependent on progress made in week 2
 
 
 ## Contingency plans
-
+- Device already works, so can fall back on this if coding doesn't work
+- Can shift the focus to the case
 
