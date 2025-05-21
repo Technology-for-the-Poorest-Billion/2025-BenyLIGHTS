@@ -85,7 +85,7 @@ What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
   - Noam is planning to donate the boards to local sellers, may have to consider 15% import tax <sup>5</sup>
   - Parts produced in China, assembled in Ethiopia
   - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home
--End of life considerations
+- End of life considerations
   - Printed Circuit Boards are currently not recycled... 
 
 # References
