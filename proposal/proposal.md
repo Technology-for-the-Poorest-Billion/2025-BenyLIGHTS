@@ -4,11 +4,18 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Problem in Context
 
-- 43.6% of rural Ethiopia has no access to electricity.
+- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks.
+    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily
+    - Respiratory diseases caused by kerosene lamps decrease life expectancy
+    - Kerosene lamps emit 'black carbon', which contributes to global warming. 
+  
 - **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index**.
-  - **Education** is the most significantly improved factor of the HDI.
- - Current devices are kerosene lamps, which cause indoor pollution and health risks.
-  - Respiratory diseases caused by kerosene lamps decrease life expectancy
+  - Electrification improves life expectancy and education within a country.
+
+https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
+
+There have been previous attempts to electrify rural villages but one of the main issues is that when something breaks, there is nobody to fix it. 
+
 
 ![image](assets/Gaslight.jpg)
 
@@ -49,11 +56,11 @@ There are two main components to the project, the mechanical and electrical side
 ## Electronics:  
 There are 2 main electrical improvements to be made:
 
-1. Implement RGB LED
+### Implement RGB LED
   - Individual red, orange and green LEDs waste power
   - There is already a WS2812 LED on the PCB, but it is currently not programmed
   
-2. Replace Integrated Circuit with Boost Converter
+### Replace Integrated Circuit with Boost Converter
     - Current driver is UCC2751x, which is a high performance, expensive chip from Texas Instruments
     - Aim to replace with discrete boost system using RY3730 chip, designed for low performance, budget applications
    
@@ -63,7 +70,6 @@ There are 2 main electrical improvements to be made:
 - Cheaper components require more programming skill to successfully integrate, the cheaper chip only has basic features and lacks the protection systems of the more expensive one. 
 
 Reducing the cost doesn't decrease the quality of components, it increases the difficulty of the programming for us!
-
 
 
 # Assessment of the quality of the proposal
