@@ -87,6 +87,6 @@ What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
 
 # References
  1. World Bank Open Data. (n.d.). World Bank Open Data. https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS?end=2023&locations=ET&start=2008
- 2. ih    wkjvb
+ 2. Clair, B. (2022, February 1). Impact of kerosene — PowerWells. PowerWells. https://www.powerwells.org/blog/blog-post-title-three-babra#:~:text=The%20use%20of%20these%20fuels,smoking%2040%20cigarettes%20per%20day.
  3. 2023 Unfccc.int. Available at: https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-solar-lighting-in-rural-ethiopia (Accessed: 21 May 2025).
  4. Da Silveira Bezerra, P. B., Callegari, C. L., Ribas, A., Lucena, A. F. P., Portugal-Pereira, J., Koberle, A., Szklo, A., & Schaeffer, R. (2017). The power of light: socio-economic and environmental implications of a rural electrification program in Brazil. Environmental Research Letters, 12(9), 095004. https://doi.org/10.1088/1748-9326/aa7bdd
