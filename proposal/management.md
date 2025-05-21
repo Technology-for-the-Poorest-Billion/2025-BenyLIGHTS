@@ -83,11 +83,9 @@ Final changes before project output submission
 |------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | **Electrical**   | Overcharging the battery (Li-ion or LiFePO₄)                                     | Use a charge controller                                                            |
 |                  | High voltage from solar panels                                                   | Design for low-voltage systems                                                     |
-| **Thermal**      | Overheating due to intense sunlight or LED heat generated                        | Use heat-tolerant materials, ventilation, and heat sinks where needed              |
+| **Thermal**      | Overheating due to LED heat generated                                            | Use heat-tolerant materials, ventilation, and heat sinks where needed              |
 | **Mechanical**   | Panel or enclosure damage from impact or rough handling                          | Use strong materials to withstand damage                                           |
-|                  | Battery puncture or crush leading to fire or failure                             | Use LiFePO₄ cells and shock-resistant battery compartments                         |
-| **Environmental**| Water damage from rain or humidity                                               | Use IP65-rated enclosures, gaskets, and weatherproof design                        |
-|                  | Dust or insect ingress impacting internal components                             | Use sealed connectors and dust-tight designs                                       |
+|                  | Battery puncture or crush leading to fire or failure                             | Handle the boards with care and store in plastic container                         |
 | **User-related** | Eye damage from bright LEDs                                                      | Use lowest brightness possible for testing, build cover asap                       |
 | **Battery**      | Improper disposal or exposure to open flames                                     | Include safety labels and user education on battery handling and disposal          |
 
@@ -96,4 +94,7 @@ Final changes before project output submission
 ## Contingency plans
 - Device already works, so can fall back on this if coding doesn't work
 - Can shift the focus to the case
+- Electrical mistakes can blow the boards, we have a limited supply
+  - Take care when connecting board and make sure there is a control system in place to prevent the boards from blowing
+  - Run simulations before connecting the board to identify any possible mistakes
 
