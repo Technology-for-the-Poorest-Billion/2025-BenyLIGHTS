@@ -31,9 +31,10 @@ A prototype board has already been designed and built by our supervisor, Noam, a
 # Presentation of the proposal
 
 Technical aspects may be described here.
+There are two main components to the project, the mechanical and electrical sides. 
 
-## Case Design:  
-### Key:  
+## Mechanical:  
+### Case Design:  
 (): Possible but not necessary implementations  
 **design constraints in bold**
 - **Loop for hanging** (clips for clipping)
@@ -56,7 +57,7 @@ There are 2 main electrical improvements to be made:
     - Current driver is UCC2751x, which is a high performance, expensive chip from Texas Instruments
     - Aim to replace with discrete boost system using RY3730 chip, designed for low performance, budget applications
    
-# Cost Reduction Challenges
+### Cost Reduction Challenges
 - The CH32V003F4P6 is cheaper than Arduino, but less popular so less libraries: code from scratch
 - The WS2812 LED is usually programmed as a strip, so programming one individual component is less well documented
 - Cheaper components require more programming skill to successfully integrate, the cheaper chip only has basic features and lacks the protection systems of the more expensive one. 
