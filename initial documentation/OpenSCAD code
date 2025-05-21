@@ -1,0 +1,69 @@
+//BENYlight PCB diagram
+// Approximate Layout: large component dimensions; component code; small chips array
+
+//          Key dimensions
+plate_y = 140;
+plate_x = 80;
+plate_thickness = 1.55;
+USBA_depth = 13.8;
+USBA_height = 5.62;
+USBA_width = 13.1;
+USBC_diam = 3.12;
+USBC_slot_width = 6;
+USBC_depth = 6.9;
+BATT_length = 30;
+BATT_radius = 10;
+
+//           Components
+
+color("red",1.0)
+    linear_extrude(height=plate_thickness)
+        square([plate_x,plate_y], center = true);
+  
+//USB-A  
+color("silver",1.0)
+    translate([18.4,(plate_y*0.5+4.61-0.5*USBA_depth),plate_thickness])
+        linear_extrude(height=USBA_height)
+            square([USBA_width, USBA_depth], center = true);
+                
+
+//USB-C side 1
+color("silver",1.0)
+    translate([29,(0.5*plate_y-USBC_depth*0.5),(plate_thickness+0.5*USBC_diam)])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+//USB-C side 2                
+color("silver",1.0)
+    translate([35.1,(0.5*plate_y-USBC_depth*0.5),(plate_thickness+0.5*USBC_diam)])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+  
+//USB-C centre  
+  color("silver",1.0)
+    translate([29,(0.5*plate_y-USBC_depth*0.5),plate_thickness])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                square([USBC_slot_width,USBC_diam]);
+                
+//Battery                
+color([0,0.6,0.9],1.0)
+    translate([0,(20+BATT_radius),(plate_thickness+BATT_radius)])
+        rotate([0,90,0])
+            linear_extrude(height = BATT_length, center = true, $fn = 100)
+                circle(BATT_radius);   
+             
+             
+ //         PCB CHIP ARRAY: [[X loc, Y loc, length, width, height]]
+ PCB_array = [[10,55,5,8,2],[20,50,5,8,2],[-5,60,5,8,2],[-25,65,5,5,2],[10,20,5,5,2]]; // Feel free to add to this section
+ //CHIPS 
+color([0.3,0.3,0.3],1.0)
+   for (a = [0 : len(PCB_array) - 1])
+    {
+        PCB = PCB_array[a];
+        translate([PCB[0],PCB[1],plate_thickness])
+        linear_extrude(height=PCB[4])
+            square([PCB[2], PCB[3]], center = true);
+    }
+            
