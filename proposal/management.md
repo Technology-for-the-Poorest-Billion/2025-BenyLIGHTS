@@ -27,7 +27,10 @@
 
 
 ## The assessment of the risks and safety
-
+| Type | Risk | Mitigation |
+| ------------- | ------------- | test |
+| Content Cell  | Content Cell  | test |
+| Content Cell  | Content Cell  | test |
 
 
 ## Contengency plans
