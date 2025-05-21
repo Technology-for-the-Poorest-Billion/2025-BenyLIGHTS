@@ -19,6 +19,8 @@ There have been previous attempts to electrify rural villages but one of the mai
 
 ![image](assets/Gaslight.jpg)
 
+<img src="assets/Gaslight.jpg" alt="Alt Text" width="300" height="200">
+
 ## Engineering Solution
 
 We are building an **affordable** and **scalable** solar powered light source for domestic use, to replace Kerosene lamps.
