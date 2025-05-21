@@ -4,15 +4,15 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Problem in Context: Rural Lighting in Ethiopia
 
-- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks.
-    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily
-    - Respiratory diseases caused by kerosene lamps decrease life expectancy
-    - Kerosene lamps emit 'black carbon', which contributes to global warming.
+- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks ^1^
+    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily ^2^
+    - Respiratory diseases caused by kerosene lamps decrease life expectancy ^3^
+    - Kerosene lamps emit 'black carbon', which contributes to global warming ^3^ 
  
 <img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300"> 
   
-- **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index**.
-  - Electrification improves life expectancy and education within a country.
+- **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index** ^4^
+  - Electrification improves life expectancy and education within a country ^4^
 
 https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
 
@@ -85,4 +85,8 @@ What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
   - Parts produced in China, assembled in Ethiopia
   - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home 
 
-
+# References
+ 1. World Bank Open Data. (n.d.). World Bank Open Data. https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS?end=2023&locations=ET&start=2008
+ 2. ih    wkjvb
+ 3. 2023 Unfccc.int. Available at: https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-solar-lighting-in-rural-ethiopia (Accessed: 21 May 2025).
+ 4. Da Silveira Bezerra, P. B., Callegari, C. L., Ribas, A., Lucena, A. F. P., Portugal-Pereira, J., Koberle, A., Szklo, A., & Schaeffer, R. (2017). The power of light: socio-economic and environmental implications of a rural electrification program in Brazil. Environmental Research Letters, 12(9), 095004. https://doi.org/10.1088/1748-9326/aa7bdd
