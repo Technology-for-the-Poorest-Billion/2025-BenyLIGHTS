@@ -4,15 +4,15 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Problem in Context: Rural Lighting in Ethiopia
 
-- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks^1^
-    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily ^2^
-    - Respiratory diseases caused by kerosene lamps decrease life expectancy ^3^
-    - Kerosene lamps emit 'black carbon', which contributes to global warming ^3^ 
+- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks <sup>1</sup>
+    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily <sup>2</sup>
+    - Respiratory diseases caused by kerosene lamps decrease life expectancy <sup>3</sup>
+    - Kerosene lamps emit 'black carbon', which contributes to global warming <sup>3</sup>
  
 <img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300"> 
   
-- **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index** ^4^
-  - Electrification improves life expectancy and education within a country ^4^
+- **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index** <sup>4</sup>
+  - Electrification improves life expectancy and education within a country <sup>4</sup>
 
 https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
 
