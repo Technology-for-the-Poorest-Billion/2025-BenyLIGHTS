@@ -2,6 +2,10 @@
 
 
 ## The people
+
+The project was initially proposed as an electrical project, but the team includes 3 mechanical engineers and 1 electrical engineer.
+Electrical expertise required to bridge the gap between software and hardware, but after this has been achieved, all team members can contribute to the programming. We also chose to extend the project to further develop the mechanical side of the product, by designing and building a case with a light diffuser. 
+
 ### Lucy  
 - Programming whizz
 - Temporarily detachable finger
@@ -29,7 +33,6 @@
 - Circuit boards to practice on
 - Driver Cable
 - Batteries
-- MounRiver software
 
 ## The timeline
 
@@ -66,7 +69,7 @@
 
 
 #### Week 4
-Final changes before project output submission
+*Final changes before project output submission*
 
 #### Mechanical
 - Produce and assemble final product
