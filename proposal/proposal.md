@@ -83,6 +83,6 @@ What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
 - Manufacturing and Distribution
   - Noam is planning to donate the boards to local sellers, may have to consider import tax
   - Parts produced in China, assembled in Ethiopia
-  - Repairability concerns: soldering is easier for in factory but bolts would be easier to repair in home. 
+  - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home 
 
 
