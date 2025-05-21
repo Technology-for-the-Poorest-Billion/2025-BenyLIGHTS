@@ -60,8 +60,8 @@ There are 2 main electrical improvements to be made:
   - There is already a WS2812 LED on the PCB, but it is currently not programmed
   
 ### Replace Integrated Circuit with Boost Converter
-    - Current driver is UCC2751x, which is a high performance, expensive chip from Texas Instruments
-    - Aim to replace with discrete boost system using RY3730 chip, designed for low performance, budget applications
+ - Current driver is UCC2751x, which is a high performance, expensive chip from Texas Instruments
+ - Aim to replace with discrete boost system using RY3730 chip, designed for low performance, budget applications
    
 ### Cost Reduction Challenges
 - The CH32V003F4P6 is cheaper than Arduino, but less popular so less libraries: code from scratch
