@@ -20,9 +20,49 @@
 
 ## The resources needed
 
+### Mechanical Resources
+- Laser cutter
+- 3D printing
+- PCBs/soldering
 
+### Electrical Resources
+- Circuit boards to practice on
+- Driver Cable
+- Batteries
+- MounRiver software
 
 ## The timeline
+
+### Week 1
+- Identify key challenges
+- Matching team members with task that align with their strengths
+- Propose feasible solutions
+- Familiarisation with new software
+  - SCAD
+  - MounRiver Studio
+
+### Week 2
+#### Mechanical
+- Produce CAD files
+- Have first prototype of the case produced
+- Begin testing diffuser materials/design
+
+#### Electrical
+- Communicate with RGB LED
+- Begin to test code for discrete boost
+
+### Week 3
+Dependent on progress made in week 2
+
+#### Mechanical
+- Further testing on case and diffuser designs
+- Finalise manufacturing choices (soldering vs bolts)
+
+#### Week 4
+#### Mechanical
+- Final changes before project output submission
+- 
+
 
 
 
@@ -41,4 +81,6 @@
 
 
 
-## Contengency plans
+## Contingency plans
+
+
