@@ -14,13 +14,19 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Engineering Solution
 
-- Affordable and scalable solar powered light source for domestic use, to replace Kerosene lamps.
+We are building an **affordable** and **scalable** solar powered light source for domestic use, to replace Kerosene lamps.
+
+A prototype board has already been designed and built by our supervisor, Noam, and the aim of our project is to further develop the product.
 
 - Current Issues:
- - Exposed electronics
- - Inefficient LEDs
- - Harsh, undiffused light
- - Needs a discrete boost to replace IC
+    - Exposed electronics
+      - Current exposed electronics are more susceptible to dust and damage, decreasing expected lifespan of the product
+    - Inefficient LEDs
+      - Currently 3 Red, Orange, Green LEDs to display battery level
+    - Harsh, undiffused light
+      - Very bright to look at, risk of damaging the eyes   
+    - Needs a discrete boost to replace IC
+      - ICs can be expensive
 
 # Presentation of the proposal
 
@@ -40,7 +46,22 @@ Technical aspects may be described here.
 - Acyrlic/ PMMA likely material to be used
 
 ## Electronics:  
-### Key:  
+There are 2 main electrical improvements to be made:
+
+1. Implement RGB LED
+  - Individual red, orange and green LEDs waste power
+  - There is already a WS2812 LED on the PCB, but it is currently not programmed
+  
+2. Replace Integrated Circuit with Boost Converter
+    - Current driver is UCC2751x, which is a high performance, expensive chip from Texas Instruments
+    - Aim to replace with discrete boost system using RY3730 chip, designed for low performance, budget applications
+   
+# Cost Reduction Challenges
+- The CH32V003F4P6 is cheaper than Arduino, but less popular so less libraries: code from scratch
+- The WS2812 LED is usually programmed as a strip, so programming one individual component is less well documented
+- Cheaper components require more programming skill to successfully integrate, the cheaper chip only has basic features and lacks the protection systems of the more expensive one. 
+
+Reducing the cost doesn't decrease the quality of components, it increases the difficulty of the programming for us!
 
 
 
