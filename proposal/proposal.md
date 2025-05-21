@@ -2,7 +2,7 @@
 
 Brief overview of the problem, context and engineering approach to tackle the problem.
 
-## Problem in Context
+## Problem in Context: Rural Lighting in Ethiopia
 
 - 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks.
     - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily
