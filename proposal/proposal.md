@@ -77,28 +77,28 @@ Evaluate its value in the context of the project.
 What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
 -
 - Responsible
-    - Printed Circuit Boards are manufactured with different material compositions and are intrinsically complex generating multiple challenges at end of life<sup>6</sup>
-    - Recycling of the lithium ion batteris is difficult as the contents are difficult to separate unlike lead acid batteries 
+    - Printed Circuit Boards are manufactured with different material compositions and are intrinsically complex generating multiple challenges at end of 
+      life<sup>6</sup>
+    - Recycling of the lithium ion batteris brings challenges as the contents are difficult to separate unlike lead acid batteries 
     - Single purchase/donation therefore no committing payment plan for the lighting solution
 - Genuine need
-    -
+    - Light in the home enables more flexible working hours allowing for breaks during hottest parts of the day <sup>3</sup>
+    - facilitates productive work in the evening freeing up daytime hours for other income streams<sup>3</sup>
 - Adds significant value
-    -
+    - existing products are more expensive
+    - solar infrastructure and hubs is desired end goal however time frame for implementation is longer
 - Accessible
     - Self sufficient product, can be rapidly implemented without new infrastructure requirements
     - Noam is planning to donate the boards to local sellers, may have to consider 15% import tax <sup>5</sup>
     - Parts produced in China, assembled in Ethiopia
 - Context appropriate
-    - Ethiopia has a high solar potential of 5.2KWh/m<sup>2</sup>/day
-    - Rechargeable battery: does not require grid connection so suitable for rural Ethiopia
-    - Requirement of 4 hours 40 minutes battery life, to meet local requirements with annually invariant daylight.
-    - Better to make higher quality, but more robust/repairable could increase cost (tradeoffs)
-- Manufacturing and Distribution
-  - Noam is planning to donate the boards to local sellers, may have to consider 15% import tax <sup>5</sup>
-  - Parts produced in China, assembled in Ethiopia
-  - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home
+    - Ethiopia has a high solar potential of 5.2KWh/m<sup>2</sup>/day<sup>6</sup>
+    - Rechargeable battery: does not require grid connection so suitable for rural setting
+    - Requirement of 4 hours 40 minutes battery life, to meet local requirements with annually invariant daylight
+    - Potentially better to make higher quality, but more robust/repairable could increase cost (tradeoffs)
+    - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home
 
- 
+
 
 # References
  1. World Bank Open Data. (n.d.). World Bank Open Data. https://data.worldbank.org/indicator/EG.ELC.ACCS.RU.ZS?end=2023&locations=ET&start=2008
@@ -106,4 +106,5 @@ What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
  3. 2023 Unfccc.int. Available at: https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-solar-lighting-in-rural-ethiopia (Accessed: 21 May 2025).
  4. Da Silveira Bezerra, P. B., Callegari, C. L., Ribas, A., Lucena, A. F. P., Portugal-Pereira, J., Koberle, A., Szklo, A., & Schaeffer, R. (2017). The power of light: socio-economic and environmental implications of a rural electrification program in Brazil. Environmental Research Letters, 12(9), 095004. https://doi.org/10.1088/1748-9326/aa7bdd
  5. Ethiopia - import tariffs. (2024, January 18). International Trade Administration | Trade.gov. https://www.trade.gov/country-commercial-guides/ethiopia-import-tariffs
- 6. Patil, T., Rebaioli, L. and Fassi, I. (2022) ‘Cyber-physical systems for end-of-life management of printed circuit boards and Mechatronics Products in home automation: A Review’, Sustainable Materials and Technologies, 32. doi:10.1016/j.susmat.2022.e00422. 
+ 6. Bekele Mulatu, A., Ayall Negash, W. and Teshome, M. (2023) ‘The status of solar energy utilization and development in Ethiopia’, American Journal of Applied Scientific Research [Preprint]. doi:10.11648/j.ajasr.20230903.13. 
+ 7. Patil, T., Rebaioli, L. and Fassi, I. (2022) ‘Cyber-physical systems for end-of-life management of printed circuit boards and Mechatronics Products in home automation: A Review’, Sustainable Materials and Technologies, 32. doi:10.1016/j.susmat.2022.e00422. 
