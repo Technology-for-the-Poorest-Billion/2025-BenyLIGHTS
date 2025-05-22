@@ -41,6 +41,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 <img src="assets/electricalsupplies.jpg" alt="Alt Text" width="300" height="200"> 
 
 ## The timeline
+Throughout the timeline, we plan to have regular meetings with Noam to ensure we are meeting his expectations and that our changes align with the project objectives. He has communicated with the consumers in Ethiopia so he understands the genuine need for the product. 
 
 ### Week 1
 - Identify key challenges
