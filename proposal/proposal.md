@@ -4,23 +4,23 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Problem in Context: Rural Lighting in Ethiopia
 
-- 43.6% of rural Ethiopia has no access to electricity, so rely on kerosene lamps for lighting, which cause indoor pollution and health risks <sup>1</sup>
-    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packets of cigarettes daily <sup>2</sup>
+- 43.6% of rural Ethiopia has no access to electricity so rely on kerosene lamps for lighting which cause indoor pollution and health risks <sup>1</sup>
+    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day <sup>2</sup>
     - Respiratory diseases caused by kerosene lamps decrease life expectancy <sup>3</sup>
-    - Kerosene lamps emit 'black carbon', which contributes to global warming <sup>3</sup>
+    - Kerosene lamps emit 'black carbon' which contributes to global warming <sup>3</sup>
  
 <img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300"> 
   
-- **Electrification** and the access to light which it brings has a **positive** impact on the **Human Development Index** <sup>4</sup>
-  - Electrification improves life expectancy and education within a country <sup>4</sup>
+- **Electrification** and the access to lighting have a **positive** impact on the **Human Development Index** <sup>4</sup>
+  - Electrification improves life expectancy and QoL within a country <sup>4</sup>
 
 https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
 
-There have been previous attempts to electrify rural villages but one of the main issues is that when something breaks, there is nobody to fix it. 
+There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. 
 
 ## Engineering Solution
 
-We are building an **affordable** and **scalable** solar powered light source for domestic use, to replace Kerosene lamps.
+We are building an **affordable** and **scalable** solar-charged battery powered light source for domestic use to replace Kerosene lamps.
 
 A prototype board has already been designed and built by our supervisor, Noam, and the aim of our project is to further develop the product.
 
