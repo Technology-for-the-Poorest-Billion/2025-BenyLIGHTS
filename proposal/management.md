@@ -57,6 +57,9 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 - Have first prototype of the case produced
 - Begin testing diffuser materials/design
 - Solder battery connections to breadboards
+- Open SCAD
+
+<img src="assets/PCB_model_22:5.png" alt="Alt Text" width="200" height="300"> 
 
 #### Electrical
 - Complete training videos on programming the CH32V003F4P6
