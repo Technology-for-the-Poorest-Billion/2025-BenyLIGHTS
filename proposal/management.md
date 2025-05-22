@@ -7,18 +7,20 @@ The project was initially proposed as an electrical project, but the team includ
 Electrical expertise required to bridge the gap between software and hardware, but after this has been achieved, all team members can contribute to the programming. We also chose to extend the project to further develop the mechanical side of the product, by designing and building a case with a light diffuser. 
 
 ### Lucy  
-- Programming whizz
-- Temporarily detachable finger
+- Experience in coding from degree projects
+- B modules provide electrical knowledge on boost converters
+- Training required in programming CH32V003F4P6 using MounRiver Studio, provided by YouTube videos
 
 ### Samuel 
-- Resident SCAD expert
-- Betrothed
+- Gained Solidworks expertise in first year internship
+- Resident SCAD expert, self taught 
 
 ### Jim  
+- Jim of all trades: knowledge in all engineering areas
 - Information gatherer
-- Rollercoaster procrastinator
 
 ### Leo
+- 15 years of manufacturing experience
 - Case fanatic
 - Cyborg brain
 
