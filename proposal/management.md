@@ -69,7 +69,6 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 - Begin to test code for discrete boost
 
 ### Week 3
-*Dependent on progress made in week 2*
 
 #### Mechanical
 - Further testing on case and diffuser designs
