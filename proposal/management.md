@@ -12,7 +12,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 - Resident self taught SCAD expert
 
 ### Lucy  
-- Experience in coding from degree projects
+- Experience in coding from degree projects eg microprocessor
 - B modules provide electrical knowledge on boost converters
 - Training required in programming CH32V003F4P6 using MounRiver Studio, provided by YouTube videos
 
