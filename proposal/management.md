@@ -17,8 +17,8 @@ Electrical expertise required to bridge the gap between software and hardware, b
 - Training required in programming CH32V003F4P6 using MounRiver Studio, provided by YouTube videos
 
 ### Jim  
-- Jim of all trades: knowledge in all engineering areas
-- Information gatherer
+- Jim of all trades: modules in all engineering areas except G
+- Hands on building/fabrication experience from internship 
 
 ### Leo
 - 15 years of manufacturing experience
