@@ -103,8 +103,8 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 
 ## Contingency plans
 - Device already works, so can fall back on this if coding doesn't work
-- Can shift the focus to the case
-- Electrical mistakes can blow the boards, we have a limited supply
+- Can shift the focus to the case if we struggle to make progress with electrical
+- Electrical mistakes can blow the boards, we have a limited supply of boards
   - Take care when connecting board and make sure there is a control system in place to prevent the boards from blowing
   - Run simulations before connecting the board to identify any possible mistakes
 
