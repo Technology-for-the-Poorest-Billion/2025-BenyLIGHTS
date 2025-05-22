@@ -1,6 +1,6 @@
 # Problem description
 
-Brief overview of the problem, context and engineering approach to tackle the problem.
+Brief overview of the problem, context and engineering approach to tackle the problem:
 
 ## Problem in Context: Rural Lighting in Ethiopia
 
@@ -20,15 +20,15 @@ There have been previous attempts to electrify rural villages, however, when som
 
 ## Engineering Solution
 
-We are building an **affordable** and **scalable** solar-charged battery powered light source for domestic use to replace Kerosene lamps.
+We are building an **affordable** and **scalable** solar charged battery powered light source for domestic use to replace Kerosene lamps.
 
-A prototype board has already been designed and built by our supervisor, Noam, and the aim of our project is to further develop the product.
+A prototype board has already been designed and built by our supervisor, Noam. The aim of our project is to further develop and improve the product.
 
 - Current Issues:
     - Exposed electronics
       - Current exposed electronics are more susceptible to dust and damage, decreasing expected lifespan of the product
-    - Inefficient LEDs
-      - Currently 3 Red, Orange, Green LEDs to display battery level
+    - Inefficient and costly LEDs
+      - Currently 3 Red, Orange, Green LEDs to display battery level. Would be cheaper to have just a single RGB LED.
     - Harsh, undiffused light
       - Very bright to look at, risk of damaging the eyes   
     - Needs a discrete boost to replace IC
@@ -36,7 +36,7 @@ A prototype board has already been designed and built by our supervisor, Noam, a
 
 # Presentation of the proposal
 
-Technical aspects may be described here.
+Technical aspects:
 There are two main components to the project, the mechanical and electrical sides. 
 
 ## Mechanical:  
