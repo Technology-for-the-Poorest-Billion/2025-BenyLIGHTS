@@ -86,7 +86,7 @@ Reducing the cost doesn't decrease the quality of components, it increases the d
     - solar infrastructure and hubs are the desired end goal, however, the time frame for implementation is longer
 - Accessible
     - Self sufficient product, can be rapidly implemented without new infrastructure requirements
-    - Noam is planning to donate the boards to local sellers, a 15% import tax might be applied and need to be considered <sup>6</sup>
+    - Noam is planning to donate the boards to local sellers, a 15% import tax might be applied and needs to be considered <sup>6</sup>
     - Parts produced in China and assembled in Ethiopia (mostly soldering)
 - Context appropriate
     - Ethiopia has a high solar potential of 5.2KWh/m<sup>2</sup>/day<sup>7</sup>
