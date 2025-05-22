@@ -22,7 +22,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 
 ### Leo
 - 15 years of manufacturing experience
-- Case fanatic
+- Case entrepreneur
 - Cyborg brain
 
 ## The resources needed
