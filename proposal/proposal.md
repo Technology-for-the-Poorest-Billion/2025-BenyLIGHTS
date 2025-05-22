@@ -75,18 +75,29 @@ Reducing the cost doesn't decrease the quality of components, it increases the d
 
 Evaluate its value in the context of the project. 
 What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
-- 
-- Self sufficient product, can be rapidly implemented without new infrastructure requirements.
-- Single purchase/donation therefore no committing payment plan for the lighting solution
-- Rechargeable battery: does not require grid connection so suitable for rural Ethiopia
-- Requirement of 4 hours 40 minutes battery life, to meet local requirements with annually invariant daylight.
-- Better to make higher quality, but more robust/repairable could increase cost (tradeoffs)
+-
+- Responsible
+    - Printed Circuit Boards are manufactured with different material compositions and are intrinsically complex generating multiple challenges at end of life<sup>6</sup>
+    - Recycling of the lithium ion batteris is difficult as the contents are difficult to separate unlike lead acid batteries 
+    - Single purchase/donation therefore no committing payment plan for the lighting solution
+- Genuine need
+    -
+- Adds significant value
+    -
+- Accessible
+    - Self sufficient product, can be rapidly implemented without new infrastructure requirements
+    - Noam is planning to donate the boards to local sellers, may have to consider 15% import tax <sup>5</sup>
+    - Parts produced in China, assembled in Ethiopia
+- Context appropriate
+    - Ethiopia has a high solar potential of 5.2KWh/m<sup>2</sup>/day
+    - Rechargeable battery: does not require grid connection so suitable for rural Ethiopia
+    - Requirement of 4 hours 40 minutes battery life, to meet local requirements with annually invariant daylight.
+    - Better to make higher quality, but more robust/repairable could increase cost (tradeoffs)
 - Manufacturing and Distribution
   - Noam is planning to donate the boards to local sellers, may have to consider 15% import tax <sup>5</sup>
   - Parts produced in China, assembled in Ethiopia
   - Repairability concerns: soldering is easier for in factory repair, but bolts would be easier to repair in home
-- End of life considerations
-  - Printed Circuit Boards are manufactured with different material compositions and are intrinsically complex generating multiple challenges at end of life<sup>6</sup>
+
  
 
 # References
