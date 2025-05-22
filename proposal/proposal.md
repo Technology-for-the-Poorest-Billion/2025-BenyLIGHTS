@@ -33,8 +33,6 @@ A prototype board has already been designed and built by our supervisor, Noam. T
       - ICs can be expensive
 
 # Presentation of the proposal
-
-Technical aspects:  
 There are three components to the project: mechanical, electrical and programming. 
 
 ## Mechanical:  
