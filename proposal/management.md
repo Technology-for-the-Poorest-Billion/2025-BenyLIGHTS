@@ -37,7 +37,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 - Driver Cable
 - Batteries
 
-<img src="assets/electricalsupplies.jpg" alt="Alt Text" width="200" height="300"> 
+<img src="assets/electricalsupplies.jpg" alt="Alt Text" width="300" height="200"> 
 
 ## The timeline
 
