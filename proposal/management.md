@@ -9,7 +9,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 
 ### Samuel 
 - Gained Solidworks expertise in first year internship
-- Resident SCAD expert, self taught
+- Resident self taught SCAD expert
 
 ### Lucy  
 - Experience in coding from degree projects
