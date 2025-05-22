@@ -91,7 +91,7 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 ## The assessment of the risks and safety
 | Category         | Risk Description                                                                 | Mitigation Strategy                                                                 |
 |------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| **Electrical**   | Overcharging the battery (Li-ion or LiFePO₄)                                     | Use a charge controller                                                            |
+| **Electrical**   | Overcharging the battery                                                         | Use a charge controller                                                            |
 |                  | High voltage from solar panels                                                   | Design for low-voltage systems                                                     |
 | **Thermal**      | Overheating due to LED heat generated                                            | Use heat-tolerant materials, ventilation, and heat sinks where needed              |
 | **Mechanical**   | Panel or enclosure damage from impact or rough handling                          | Use strong materials to withstand damage                                           |
@@ -102,7 +102,7 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 
 
 ## Contingency plans
-- Device already works, so can fall back on this if coding doesn't work
+- Device already works, project aims to make it more efficient
 - Can shift the focus to the case if we struggle to make progress with electrical
 - Electrical mistakes can blow the boards, we have a limited supply of boards
   - Take care when connecting board and make sure there is a control system in place to prevent the boards from blowing
