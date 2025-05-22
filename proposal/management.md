@@ -34,7 +34,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 - Extra solar panels
 - Open SCAD
 
-<img src="assets/PCB_model_22:5.png" alt="Alt Text" width="200" height="300"> 
+<img src="assets/PCB_model_22:5.png" alt="Alt Text" width="300" height="200"> 
 
 ### Electrical Resources
 - Circuit boards to practice on
