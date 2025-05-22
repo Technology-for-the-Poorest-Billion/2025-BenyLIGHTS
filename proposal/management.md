@@ -31,6 +31,7 @@ Electrical expertise required to bridge the gap between software and hardware, b
 - Laser cutter
 - 3D printing
 - PCBs/soldering
+- Extra solar panels 
 
 ### Electrical Resources
 - Circuit boards to practice on
