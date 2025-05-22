@@ -1,7 +1,5 @@
 # Problem description
 
-Brief overview of the problem, context and engineering approach to tackle the problem:
-
 ## Problem in Context: Rural Lighting in Ethiopia
 
 - 43.6% of rural Ethiopia has no access to electricity so rely on kerosene lamps for lighting which cause indoor pollution and health risks <sup>1</sup>
@@ -77,9 +75,6 @@ Reducing the cost doesn't decrease the quality of components, it increases the d
 
 # Assessment of the quality of the proposal
 
-Evaluate its value in the context of the project. 
-What will it solve, is it safe, etc. Check Lara’s slides for what to cover.
--
 - Responsible
     - Printed Circuit Boards are manufactured with different material compositions and are intrinsically complex generating multiple challenges at the end of 
       life<sup>5</sup>
