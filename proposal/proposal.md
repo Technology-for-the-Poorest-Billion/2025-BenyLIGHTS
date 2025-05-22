@@ -4,7 +4,7 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 ## Problem in Context: Rural Lighting in Ethiopia
 
-- 43.6% of rural Ethiopia has no access to electricity so rely on kerosene lamps for lighting which cause indoor pollution and health risks <sup>1</sup>
+- **43.6%** of rural Ethiopia has no access to electricity so rely on **kerosene lamps** for lighting which cause indoor pollution and health risks <sup>1</sup>
     - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day <sup>2</sup>
     - Respiratory diseases caused by kerosene lamps decrease life expectancy <sup>3</sup>
     - Kerosene lamps emit 'black carbon' which contributes to global warming <sup>3</sup>
@@ -16,7 +16,7 @@ Brief overview of the problem, context and engineering approach to tackle the pr
 
 https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html
 
-There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. 
+There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. In our project it is important to address this challenge.
 
 ## Engineering Solution
 
@@ -25,14 +25,14 @@ We are building an **affordable** and **scalable** solar charged battery powered
 A prototype board has already been designed and built by our supervisor, Noam. The aim of our project is to further develop and improve the product.
 
 - Current Issues:
-    - Exposed electronics
+    - **Exposed electronics**
       - Current exposed electronics are more susceptible to dust and damage, decreasing expected lifespan of the product
-    - Inefficient and costly LEDs
+    - **Inefficient and costly LEDs**
       - Currently 3 Red, Orange, Green LEDs to display battery level. Would be cheaper to have just a single RGB LED.
-    - Harsh, undiffused light
+    - **Harsh, undiffused light**
       - Very bright to look at, risk of damaging the eyes   
-    - Needs a discrete boost to replace IC
-      - ICs can be expensive
+    - **Needs a discrete boost to replace IC**
+      - IC is expensive, and cost can be reduced by using cheaper chip
 
 # Presentation of the proposal
 
