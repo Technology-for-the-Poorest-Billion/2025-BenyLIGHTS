@@ -41,7 +41,7 @@ There are three components to the project: mechanical, electrical and programmin
 
 ## Mechanical:  
 ### Case Design:  
-(): Possible but not necessary implementations  
+Possible but not necessary implementations:
 **design constraints in bold**
 - **Loop for hanging**
 - (clips for clipping)
