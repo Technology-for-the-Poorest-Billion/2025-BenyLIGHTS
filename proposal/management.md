@@ -3,7 +3,7 @@
 
 ## The people
 
-The project was initially proposed as an electrical project, but the team includes 3 mechanical engineers and 1 electrical engineer.
+The project was initially proposed as an entirely electrical project, but the team includes 3 mechanical engineers and 1 electrical engineer.
 Electrical expertise required to bridge the gap between software and hardware, but after this has been achieved, all team members can contribute to the programming. We also chose to extend the project to further develop the mechanical side of the product, by designing and building a case with a light diffuser. 
 
 
