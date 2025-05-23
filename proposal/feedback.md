@@ -8,3 +8,10 @@ Focus on our unique strengths as a team:
 Look at competitors: D-light
 BenyLIGHTs has the advantage of being assembled in Ethiopia, which competitors cannot bring
 Cheaper because avoids import tax etc
+
+Things to clarify with Noam:
+- Where is the manufacturing happening, is it in China or Ethiopia?
+- Ask what is unique compared to D-lights, how this product is different
+- Feedback was to focus more on the documentation than the coding
+- What to do if we can't get the LED to light up?
+- Propose ideas on case and diffuser
