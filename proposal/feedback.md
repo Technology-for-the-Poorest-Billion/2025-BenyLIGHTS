@@ -16,8 +16,9 @@ Things to clarify with Noam:
 - What to do if we can't get the LED to light up?
 - Propose ideas on case and diffuser
 
-Takeaways from meeting with Noam:
-Electrical:
+# Takeaways from meeting with Noam:
+
+## Electrical:
 - LED and dicrete boost are not the priority: these are added extras
 - Priority is getting circuit functional
 - Big board doesn't light up because it needs the battery connection: possibly need to enable 5V 5VEN pin to get it working
@@ -27,7 +28,7 @@ Electrical:
 - Bigger board requires output of 5V, boosted up from the battery which is between 3-4.2V
 - Goal is to get the basic operation working before trying to reduce cost
 
-Manufacturing/setup:
+## Manufacturing/setup:
 - Raw materials are taxed less than complete product
 - Raw materials are shipped into Ethiopia and final product is assembled in Ethiopia, to minimise taxes
 - Around 5 workers in Ethiopia, with 2 trained to solder
@@ -35,8 +36,12 @@ Manufacturing/setup:
   - 95% of failures come from battery: make battery easy to replace using ziptie
   - 4% of failures come from push button getting stuck: replaceable by removing case?
   - Remaining failures with electrical components etc are very unlikely
+2 key unique selling points of BenyLIGHTs over Dlights:
+1. BenyLIGHTS is a not-for-profit so Noam is profivind the boards for free, reducing the cost
+2. Assembling the boards in Ethiopia avoids the tax of importing a complete product, further reducing the cost
+Basically BenyLIGHTs are much more competitive in price
  
-Case:
+## Case:
 - Frosted material should be used, not transparent
 - Setup should ideally be slanted
 - Explore options of screws and soldering to attach case
