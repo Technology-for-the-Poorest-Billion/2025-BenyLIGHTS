@@ -197,9 +197,11 @@ Having successfully transferred the RGB LED code to a small board, we upgraded i
 #### Chip Destruction
 When we connected the battery to one of the bigger boards, it began smoking because one of the chips was overheating. After some confusion, we noticed that the chip had actually been soldered incorrectly onto the board. This highlighted an issue in the PCB manufacturing, so we may need to look into methods of control checking the boards so this doesn't happen again. This is concerning because we only now have 3 remaining functional big boards. 
 
-![image](https://github.com/user-attachments/assets/da978993-de49-47fe-be59-8c181bb56fc5)
 
-![image](https://github.com/user-attachments/assets/412afd88-5d04-401a-b51b-9545bce101cc)
+<img src="https://github.com/user-attachments/assets/da978993-de49-47fe-be59-8c181bb56fc5" width="300"/>
+
+<img src="https://github.com/user-attachments/assets/412afd88-5d04-401a-b51b-9545bce101cc" width="300"/>
+
 
 
 #### Explosive Batteries
