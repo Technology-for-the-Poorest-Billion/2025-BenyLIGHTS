@@ -1,5 +1,6 @@
 ### WCH Link and soldering 
 ### Calibration of battery 
+<img src="asset.jpg" alt="Alt Text" width="200" height="300"> 
 ### 
 
 
