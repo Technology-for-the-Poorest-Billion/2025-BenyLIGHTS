@@ -15,8 +15,7 @@ for the light so need to be strong.
 
 <img src="assets/1000021807.jpg" alt="Alt Text" width = "600" height = "auto" > 
 
-we encountered issues with the link that flashes to the board. The link was provided with connection soldered to crimp connectors rather than using the 
-appropriate stackable header. So a stackable header was sourced from the stores and soldered with heat shrink which has so far provided a more reliable
+We encountered issues with the link that flashes from moun studio to the board. The link was provided with connection soldered to crimp connectors rather than using the appropriate stackable header. So this was sourced from the stores and soldered with heat shrink which has so far provided a more reliable
 link to the board.
 
 
