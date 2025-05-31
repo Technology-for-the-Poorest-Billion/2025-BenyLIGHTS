@@ -87,6 +87,8 @@ To achieve this:
 
 3. The Led status was simple to implement with comparitors to the calibrated voltage such that above certain threshold the red led was on, another threshold for the orange and another for the green.
 
+## Add pics here of status LEDs working
+
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
