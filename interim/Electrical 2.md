@@ -1,3 +1,14 @@
+### Discussion with Noam 
+The meeting we had with Noam highlighted where Beny lights fit into the market of solar lighting in Ethiopia. 
+
+1. Competitors such as D light import entire products and are thus exposed to incredibly high import taxes. Whereas for Beny lights the components are imported as raw materials and assembled in Ethiopia meaning a lower bracket of import tax.
+2. Additionally Beny lights is a not for profit entity
+
+Noam expects these factors to be able to provide this lighing solution at around 50% of competitor prices
+
+
+
+
 ### WCH Link and soldering 
 soldering was required on the boards in order to electrically connect the battery to test the lights. These connections also provide resting position
 for the light so need to be strong.
