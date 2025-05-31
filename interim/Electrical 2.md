@@ -26,7 +26,7 @@ To achieve this:
 
  from the graph we see the trend is linear (this was a relief) with a scaling constant of 10.28 which once implemented to the code gave accurate voltage feedback
 
- 2. To implement the status upon button press, reset a counter variable and add if status into main code to display battery status until counter exceeds certain value which can be tuned depending on the clock speed.
+ 2. To implement the status upon button press, add a counter variable: batcount which increases each loop and resets to zero if the button is pressed
 
          if(!KeyPressed)
         {
@@ -44,6 +44,36 @@ To achieve this:
                 else LEDmode = 0;
             }
         }
+
+ Then add if statument into main code to display battery status until counter exceeds certain value which can be tuned depending on the clock speed.
+
+                if (batcount<statusledtime){
+
+                if(calculateVoltage(ADCBuffer[2])>lowbat)
+                {
+                    GPIO_WriteBit(GPIOC, RED, Bit_SET);
+                    
+                    if (calculateVoltage(ADCBuffer[2])>midbat)
+                    {
+               
+                    GPIO_WriteBit(GPIOC, YLW, Bit_SET);
+                    if (calculateVoltage(ADCBuffer[2])>fullbat)
+                    {
+                        GPIO_WriteBit(GPIOC, GRN, Bit_SET);
+                    }
+                    
+                }
+                    
+
+                }
+                }
+                else {
+                    GPIO_WriteBit(GPIOC, RED, Bit_RESET);
+                    GPIO_WriteBit(GPIOC, YLW, Bit_RESET);
+                    GPIO_WriteBit(GPIOC, GRN, Bit_RESET);
+                
+
+                }
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
