@@ -20,11 +20,11 @@ Following from working out how to recieve data from the multi channel ADC we the
 Noam instructed us to show the battery status for ten seconds once the button is pressed as well as this changing the light level.
 
 To achieve this: 
-1. We first needed to calibrate what we recievd from the Multichanel ADC so taking the 5 bit number divide by 1024 and scale by a value which we need to calculate. we calculate this dy draining the battery and sequentially comparing the actual voltage measured by a voltmeter to the Multichannel ADC value using printf and serial moniter to achieve this.
+1. We first needed to calibrate what we recievd from the Multichanel ADC so taking the 5 bit number divide by 1024 and scale by some value. We calculate this value dy draining the battery and sequentially comparing the actual voltage measured by a voltmeter to the Multichannel ADC value using printf and serial moniter.
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
- from the graph we see the trend is linear (this was a relief) with a scaling constant of 10.28 which once implemented to the code gave accurate voltage feedback
+ from the graph we see the trend is linear (this was a relief) with a scaling constant of 10.28 which once implemented to the code gave accurate voltage values.
 
  2. To implement the status upon button press, add a counter variable: batcount which increases each loop and resets to zero if the button is pressed
 
