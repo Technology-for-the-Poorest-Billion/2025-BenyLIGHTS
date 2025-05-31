@@ -5,7 +5,7 @@
 <img src="assets/1000021691.jpg" alt="Alt Text" > 
 
 
-<img src="assets/newlink.jpg" alt="Alt Text" width="500" height="300"> 
+<img src="assets/1000021693.jpg" alt="Alt Text" width="500" height="300"> 
 
 
 ### Calibration of battery 
