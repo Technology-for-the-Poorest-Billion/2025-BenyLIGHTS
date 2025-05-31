@@ -182,20 +182,24 @@ float printADCVoltage_Multi()
 }
 
 
-### Melting Components :( 
-We have encountered several issues along the way with this circuit, some by accident!
+### Board Breakages
+We have encountered some issues with the boards
 
 ![image](https://github.com/user-attachments/assets/cd3468f7-cbba-4cb9-ae70-af91ca5d3b0d)
 
-![image](https://github.com/user-attachments/assets/412afd88-5d04-401a-b51b-9545bce101cc)
 
 
 #### Inductor Heating
 When touching the board, the inductor was very hot and in danger of melting from an overload of current. Firstly we had to fix the original code to the correct ADc pin because it wasn't working: when we read the PWM values on the serial monitor it did not really make sense (the PWM changing did not seem to affect the ADC voltage). This meant that the PWM was actually effective in changing the voltage measured by the single channel ADC. We then decreased the limiting ADC value from 350 to 300 which prevents the voltage from reaching a value that is too high, so the inductor now doesn't get too hot, minimising heat loss. 
 
+Having successfully transferred the RGB LED code to a small board, we upgraded it to a big board and added a battery and it blew the board: there is no voltage regulation in the LED code so it is important when adding the battery to ensure that it is inside the original code to prevent overheating of the components. 
+
 #### Chip Destruction
-When we connected the battery to one of the bigger boards, it began smoking because one of the chips was overheating. After some confusion, we noticed that the chip had actually been soldered incorrectly onto the board. This highlighted an issue in the PCB manufacturing, so we may need to look into methods of control checking the boards so this doesn't happen again. 
+When we connected the battery to one of the bigger boards, it began smoking because one of the chips was overheating. After some confusion, we noticed that the chip had actually been soldered incorrectly onto the board. This highlighted an issue in the PCB manufacturing, so we may need to look into methods of control checking the boards so this doesn't happen again. This is concerning because we only now have 3 remaining functional big boards. 
+
 ![image](https://github.com/user-attachments/assets/da978993-de49-47fe-be59-8c181bb56fc5)
+
+![image](https://github.com/user-attachments/assets/412afd88-5d04-401a-b51b-9545bce101cc)
 
 
 #### Explosive Batteries
