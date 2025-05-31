@@ -49,31 +49,34 @@ To achieve this:
 
                 if (batcount<statusledtime){
 
-                if(calculateVoltage(ADCBuffer[2])>lowbat)
-                {
-                    GPIO_WriteBit(GPIOC, RED, Bit_SET);
-                    
-                    if (calculateVoltage(ADCBuffer[2])>midbat)
+                    if(calculateVoltage(ADCBuffer[2])>lowbat)
                     {
-               
-                    GPIO_WriteBit(GPIOC, YLW, Bit_SET);
-                    if (calculateVoltage(ADCBuffer[2])>fullbat)
-                    {
-                        GPIO_WriteBit(GPIOC, GRN, Bit_SET);
-                    }
+                        GPIO_WriteBit(GPIOC, RED, Bit_SET);
                     
-                }
                     
+                        if (calculateVoltage(ADCBuffer[2])>midbat)
+                        {
+                
+                    
+                            GPIO_WriteBit(GPIOC, YLW, Bit_SET);
 
-                }
+                            if (calculateVoltage(ADCBuffer[2])>fullbat)
+                            {
+                                GPIO_WriteBit(GPIOC, GRN, Bit_SET);
+                            }
+                    
+                        }
+
+                    }
                 }
                 else {
                     GPIO_WriteBit(GPIOC, RED, Bit_RESET);
                     GPIO_WriteBit(GPIOC, YLW, Bit_RESET);
                     GPIO_WriteBit(GPIOC, GRN, Bit_RESET);
-                
-
                 }
+
+3. The Led status was simple to implement with comparitors to the calibrated voltage such that above certain threshold the red led was on, another threshold for the orange and another for the green.
+
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
