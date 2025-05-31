@@ -9,16 +9,3 @@
 ### Melting Components :( (Lucy)
 #### Inductor Heating
 #### Chip Destruction
-
-
-
-### WCH Link (Jim)
-### Calibration (Jim)
-
-
-## Updated Timeline
-### Sleep Mode
-### Sun Detection
-### RGB if time permits
-
-
