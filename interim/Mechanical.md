@@ -10,7 +10,7 @@ Update project timeline, and explain what is to come (Samuel)
 
 Several iterations, increasingly complex. Settled on a design with a curved diffuser over the lights to optimise the light diffusion at angles up to 180 degrees.
 
-## Diffusion of light
+### Diffusion of Light
 
 Went to supersonic wind tunnel lab, where the blinds could be draw to eliminate light, to test the device.
 
@@ -20,6 +20,12 @@ Diffuser showed good effectiveness, both at reducing the intenisty of light dire
 
 Qualitatively, it was easier to read a book when the diffuser was attached, and shadows has less sharp edges.
 
-<img src/"assets/Benylight_direct_readings.png" alt="Alt Text" >
+<img src="assets/Benylight_direct_readings.png" alt="Alt Text" width="700" height="auto" >
 
-<img src/"assets/Benylight_indirect_readings.png" alt="Alt Text" >
+
+
+<img src="assets/Benylight_indirect_readings.png" alt="Alt Text" width="700" height="auto" >
+
+### 3D Printing
+
+STL export issues caused parts of the print to invert (fill when they shouldn't, not fill when they should)
