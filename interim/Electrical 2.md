@@ -1,5 +1,6 @@
-### WCH Link (Jim)
-### Calibration (Jim)
+### WCH Link and soldering 
+### Calibration of battery 
+### 
 
 
 ## Updated Timeline
