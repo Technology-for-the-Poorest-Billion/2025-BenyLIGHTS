@@ -1,6 +1,7 @@
 ### WCH Link and soldering 
 soldering was required on the boards in order to electrically connect the battery to test the lights. These connections also provide resting position
-for the light so need to be strong. 
+for the light so need to be strong.
+
 <img src="assets/1000021807.jpg" alt="Alt Text" width = "600" height = "auto" > 
 
 we encountered issues with the link that flashes to the board. The link was provided with connection soldered to crimp connectors rather than using the 
@@ -26,6 +27,23 @@ To achieve this:
  from the graph we see the trend is linear (this was a relief) with a scaling constant of 10.28 which once implemented to the code gave accurate voltage feedback
 
  2. To implement the status upon button press, reset a counter variable and add if status into main code to display battery status until counter exceeds certain value which can be tuned depending on the clock speed.
+
+         if(!KeyPressed)
+        {
+            KeyTimePress = KEY_PRESS(KeyTimePress,KeyMinPressCalc);
+            if(KeyTimePress == KeyMinPressCalc )
+            {
+                KeyPressed = 1;
+                batcount = 0;
+
+
+                if(LEDmode<LED_steps)
+                {
+                    LEDmode++;
+                }
+                else LEDmode = 0;
+            }
+        }
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
