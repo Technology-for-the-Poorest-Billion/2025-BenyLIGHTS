@@ -14,5 +14,5 @@ In main loop, code has been added to set the red, orange and green LEDs based on
 ## 3 Calibration
 We used a voltmeter to measure the voltage across the battery for multiple readings, plotted a linear graph to work out the scaling factor and set BATmultiplier to the correct value, so FB_BAT now prints the correct battery voltage.
 
-## Returning all 4 Channels from ADC
+## 4 Returning all 4 Channels from ADC
 In the Calibration code, we relied on returning calibratedBAT from the printMultiChannelADC() function, which was a temporary solution. In C only one value can be returned per function. This new code now introduced 4 separate functions: printFB_BAT, printFB_USB, printFB_SOLAR, printFB_LED which each return the single corresponding value. This means we can now hopefully utilise the solar panel voltage in the next iteration. The averaging was removed, because it was ineffective. 
