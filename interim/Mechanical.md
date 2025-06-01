@@ -10,18 +10,21 @@ Update project timeline, and explain what is to come (Samuel)
 
 Several iterations, increasingly complex. Settled on a design with a curved diffuser over the lights to optimise the light diffusion at angles up to 180 degrees.
 
-First design considerations:
-
+The first step was to measure the board for its size and the locations of the salient components.  
 
 The next step was to model the board in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
 
-The next step was to come up with a simple design to test geometry and to serve as a base![image](https://github.com/user-attachments/assets/9f00e327-418b-44a3-8604-ded1ae01a0a8)
-![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
+Then a simple case design was made to test geometry and to serve as a base for any future designs![image](https://github.com/user-attachments/assets/9f00e327-418b-44a3-8604-ded1ae01a0a8)
+
+This design was then tested with the PCB model ![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
+
+This was then printed and used to determine flaws to fix in newer iterations.
 
 
-Considered what the optimal shape for the diffuser would be, almost all literature says that a sphere would be optimal which is intuitive.  
+A sphere would be the best shape for a diffuser or at least curved.    
 
 With this in mind, a new case was designed from the old one with a curved surface![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
+
 ![image](https://github.com/user-attachments/assets/21c5540e-0c6d-4531-b52f-a627e151c179)
 
 
