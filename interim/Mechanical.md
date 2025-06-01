@@ -8,29 +8,59 @@ Update project timeline, and explain what is to come (Samuel)
 
 ## Case Design
 
-Several iterations, increasingly complex. Settled on a design with a curved diffuser over the lights to optimise the light diffusion at angles up to 180 degrees.
+A case model was needed to be made in CAD which satisfies the design requirements outlined at the start:  
+-Maximum diffusion at 180<sup>o</sup>  
+-Loops for string  
+-Cover the electronics  
+-Geometrically sound  
+-Allow the solar panel to sit at a favourable angle  
+-Allow easy replacement of the battery
+
 
 The first step was to measure the board for its size and the locations of the salient components.  
 
-The next step was to model the board in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
+Next the board was modelled in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
 
-Then a simple case design was made to test geometry and to serve as a base for any future designs![image](https://github.com/user-attachments/assets/9f00e327-418b-44a3-8604-ded1ae01a0a8)
+Then a simple case design was made to test geometry and to serve as a base for any future designs.  
 
-This design was then tested with the PCB model ![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
+The design was then tested with the PCB model.  
 
-This was then printed and used to determine flaws to fix in newer iterations.
+That was then printed and used to determine flaws to fix in newer iterations such as:  
+-Missing window above the lights  
+-Missing slots  
+-Diffusion suboptimal  
+-USB holes too small  
+-Did not allow the panel to sit at the right angle  
 
 
-A sphere would be the best shape for a diffuser or at least curved.    
 
-With this in mind, a new case was designed from the old one with a curved surface![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
+![image](https://github.com/user-attachments/assets/9f00e327-418b-44a3-8604-ded1ae01a0a8)
+![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
+
+
+The best shape for a diffuser is a sphere.  
+
+With this in mind, a new case was designed using the old one.
+![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
 
 ![image](https://github.com/user-attachments/assets/21c5540e-0c6d-4531-b52f-a627e151c179)
+![image](https://github.com/user-attachments/assets/fdb90103-9197-4f09-ae56-5647a8971d8b)
+
+This is the latest version to be printed but is not perfect:  
+-Printing faults  
+-Not enough loops  
+-Shape could still be optimised
+-Clips could be designed and incorporated  
+-Dust resistance can be improved
+
+However, the potential for a kickstand as stated in the proposal is now seen to be unnecessary.  
+
+Currently the material is simply the only one available to us, whether this is the best option still needs to be investigated.  
+The case also needs to be stress tested.  
 
 
 
-
-## Diffusion of Light
+## Light diffusion test
 
 Went to supersonic wind tunnel lab, where the blinds could be draw to eliminate light, to test the device.
 
@@ -38,7 +68,7 @@ Used a light meter built into a phone to test the light levels at varying distan
 
 Diffuser showed good effectiveness, both at reducing the intenisty of light directly ahead of the lights and at increasing the intensity of light at angles perpendicular to the board.
 
-Qualitatively, it was easier to read a book when the diffuser was attached, and shadows has less sharp edges.
+Qualitatively, it was easier to read a book when the diffuser was attached, and shadows had less sharp edges.
 
 <img src="assets/Benylight_direct_readings.png" alt="Alt Text" width="700" height="auto" >
 
