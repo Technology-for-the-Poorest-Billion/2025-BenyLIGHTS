@@ -2,7 +2,7 @@
 
 This section contains the multiple iterations of code that we completed throughout the project.
 
-## 0
+## 0 Initial Code
 Code we received from Noam. Can be found in the initial documentation section. 
 
 ## 1 Multichannel ADC
