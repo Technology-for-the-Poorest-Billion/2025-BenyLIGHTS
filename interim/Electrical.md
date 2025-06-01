@@ -1,19 +1,20 @@
 # Electrical Interim Report
 
-## Redefined Expectations
-- Following feedback from our proposal presentation, we met again with Noam to discuss the expectations.
-- He explained that the RGB LED is an extension exercise, and that we should focus on the basic functionality of the board first.
-- Functionality Requirements
+## Follow Up Meeting with Noam
+- Following feedback from our proposal presentation, we met again with Noam to redefine our expectations for the project.
+- Because the project appears complicated, it was overwhelming at the start and we were unclear on exactly what was required of us from a programming perspective. Having a second meeting after we had done some experimentation with the boards was very useful in helping us prioritise tasks and plan our workload.
+
+- We established the following 4 main functionality requirements: 
     - When user presses the button, 3 LEDs show battery status for 10 seconds and LED brightness should increase in 4 steps
     - When sun detected, LED should be set back to 0%
     - When battery is below 3.2V, enter sleep mode. When battery is over 3.4V, exit sleep mode and wait for user.
     - When user presses RESET, enter sleep mode
-- We also worked out that the big boards don't light up without the battery being connected.
+    
 
 ## Technical Progress
 We have been documenting each code draft in the **code** folder of our GitHub, where the README file clearly explains what progress has been made in each iteration of the code. 
 
-We started by focusing on the first functionality requirement, which is the LEDs showing the battery status when the button is pressed. This required an understanding of the circuit diagram and to measure the voltage of the battery by initialising a multichannel ADC. We had several "technical difficulties" along the way but managed to solve them as we went along. 
+For the past week we focussed on the first functionality requirement, which involves the 3 LEDs showing the battery status when the button is pressed. This required a clear understanding of the circuit diagram and measurement of the battery voltage using a multichannel ADC. 
 
 ### RGB LED
 #### Objectives
@@ -29,7 +30,7 @@ We started by focusing on the first functionality requirement, which is the LEDs
 
 #### Difficulties Faced
  - The precise timing is very difficult to achieve with limited programming experience and time. 
- - The library on Github is difficult to implement for a single LED, becuase it is written for a strip of LEDs so lots of the code can be removed.
+ - The library on Github is difficult to implement for a single LED, because it is written for a strip of LEDs. 
  - Integrating the LED code with the bigger board must be done before testing, otherwise the bigger board will blow when a battery is inserted.
    
 #### Outcome
@@ -37,7 +38,9 @@ We started by focusing on the first functionality requirement, which is the LEDs
  - This can be revisited at the end of the project if time permits.
 
 ### Multichannel ADC 
-In order to read the voltage across the battery, we needed to use the microcontroller to read the value of FB_BAT (battery feedback). The code Noam gave to us utilized a single channel ADC, but this was already being used to control the USB voltage using PWM_USB. To read the battery voltage we required a multichannel ADC, which was more complicated to implement. 
+In order to read the voltage across the battery, we needed to use the microcontroller to read the value of FB_BAT (battery feedback). The code Noam gave to us utilized a single channel ADC, but this was already being used to control the USB voltage using PWM_USB. This control system stops the inductor overheating and melting so we could not overwrite this single channel ADC.
+
+We instead introduced a new 4 channel multichannel ADC which allows us to read all 4 channel voltages at once.
 
 <img src="https://github.com/user-attachments/assets/ae9cc546-1e46-4e4b-9c72-b2959458f47c" width="300"/>
 <img src="https://github.com/user-attachments/assets/4961bb11-972c-4994-9d05-b39819355a00" width="700"/>
@@ -50,28 +53,48 @@ There are 4 sampling channels available from the circuit diagram which we can ac
   - FB_BAT (PD4/A7) Channel 3
   - FB_ILED (PD3/A4) Channel 4
 
-#### Printing the Values
-Printing the values from a multichannel ADC is more complicated because you cannot directly print a float in C, so have to convert each number to an integer and print it so it looks like an integer. We found that the ADC values fluctuated a lot, so implemented an average across 2000 samples for each readign to try and reduce this fluctuation, which worked successfully. Separate scaling factors were required for each value, so far we have only done FB_BAT but are looking to calibrate the others in the remaining project time. 
+#### Printing the Values using *printf()*
+- *Challenge*: You cannot print a float directly using the **printf()** function in C
+- *Solution*: Use the following code to split the float into two **int** types and print them so they appear like a float
+
+            int wholePart = (int)calibratedBAT;
+            int decimalPart = (int)((calibratedBAT - wholePart) * 10000);
+            printf("FB_BAT : %d.%04d ", wholePart, decimalPart);
+
+#### Returning Multiple Values from Single Function
+- *Challenge*: After writing **printMultiChannelADC()** function, realised each function in C can only return a single value
+    -  This meant only 1 out of 4 channels could be returned as a float to be used in the circuit
+    -  Worked when we only needed FB_BAT, but for next step in project we need FB_SOLAR
+- *Solution*: Rewrote the function as 4 separate functions, each returning a single float
+   
 
 ### Board Breakages
 This part of the circuit shows a boost converter, where the duty cycle is controlled by the PWM_USB input signal. The inductor is sensitive to current and will overheat if the maximum current is exceeded, so it is important to limit this current. 
 
 <img src="https://github.com/user-attachments/assets/cd3468f7-cbba-4cb9-ae70-af91ca5d3b0d" width="500"/>
 
-#### Inductor Heating
-When touching the board, the inductor was very hot and in danger of melting from an overload of current. Firstly we had to fix the original code to the correct ADc pin because it wasn't working: when we read the PWM values on the serial monitor it did not really make sense (the PWM changing did not seem to affect the ADC voltage). This meant that the PWM was actually effective in changing the voltage measured by the single channel ADC. We then decreased the limiting ADC value from 350 to 300 which prevents the voltage from reaching a value that is too high, so the inductor now doesn't get too hot, minimising heat loss. 
+#### Inductor Heating  
 
-Having successfully transferred the RGB LED code to a small board, we upgraded it to a big board and added a battery and it blew the board: there is no voltage regulation in the LED code so it is important when adding the battery to ensure that it is inside the original code to prevent overheating of the components. 
+- *Challenge*: If the control code does not successfully regulate the current by controlling the PWM, the inductor current gets too large and the inductor can melt.
+- *Solution*: Change pins and parameters
+    - When inspecting the output of the code on the serial monitor, we worked out that the ADC was originally connected to the rong pin, so the PWM was not successfully controlling the ADC output.
+    - Limiting ADC value (**ADC_OV**) was decreased from 350 to 300.
+    - By changing the pin and reducing the maximum allowable ADC raw value to 300, the current was kept to a low enough level that the inductor no longer overheated. 
 
 #### Chip Destruction
 When we connected the battery to one of the bigger boards, it began smoking because one of the chips was overheating. After some confusion, we noticed that the chip had actually been soldered incorrectly onto the board. This highlighted an issue in the PCB manufacturing, so we may need to look into methods of control checking the boards so this doesn't happen again. This is concerning because we only now have 3 remaining functional big boards. 
-
 
 <img src="https://github.com/user-attachments/assets/da978993-de49-47fe-be59-8c181bb56fc5" width="300"/>
 
 <img src="https://github.com/user-attachments/assets/412afd88-5d04-401a-b51b-9545bce101cc" width="300"/>
 
+#### Explosive Batteries?! (False Alarm)
+- *Challenge*: When measuring the voltage across our "3.7V" rechargeable batteries, the voltmeter read 5.2V for all fully charged batteries.
+    - This is well above the safety limit for these batteries, so we initially panicked and thought we had received faulty batteries that could explode any second. 
+- *Solution*: The multimeter was faulty, so using another multimeter gave the expected value of around 3.6V.
+    -  Lesson learned: don't trust all equipment and think outside the box to solve problems.    
 
-
-#### Explosive Batteries
-We had some confusion when the voltmeter had a reading of 5.2V for our rechargeable 3.7V batteries, which is well above their safety limit. We initially panicked, but after a while of researching what to do if your battery explodes, we tried a different voltmeter and worked out that the original voltmeter was wrong. This taught us a valuable lesson in not always trusting the equipment and thinking outside the box to try and solve the problems.  
+### Personal Development
+- Familiarisation with coding, technical ability improved
+- Less overwhelmed with the whole project: breaking it down into manageable steps improves productivity
+- Problem solving ability improved, faced several challenges but learnt lots form each one
