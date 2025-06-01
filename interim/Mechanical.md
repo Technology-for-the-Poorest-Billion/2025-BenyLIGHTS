@@ -1,4 +1,4 @@
-## Mechanical Interim Report
+# Mechanical Interim Report
 
 To be covered (brackets denote who is speaking):
 Progress so far - case design (Leo), case modified to be curved (Leo), case printed and tested in the Supersonic Wind Tunnel lab (Leo)
@@ -6,11 +6,19 @@ Progress so far - 3D printing issues, supports needing to be removed, weighing u
 Show prototype so far (Leo)
 Update project timeline, and explain what is to come (Samuel)
 
-### Case Design
+## Case Design
 
 Several iterations, increasingly complex. Settled on a design with a curved diffuser over the lights to optimise the light diffusion at angles up to 180 degrees.
 
-### Diffusion of Light
+First step was to model the board in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
+
+Came up with a simple design to test geometry and to serve as a base
+
+
+
+
+
+## Diffusion of Light
 
 Went to supersonic wind tunnel lab, where the blinds could be draw to eliminate light, to test the device.
 
@@ -26,6 +34,6 @@ Qualitatively, it was easier to read a book when the diffuser was attached, and 
 
 <img src="assets/Benylight_indirect_readings.png" alt="Alt Text" width="700" height="auto" >
 
-### 3D Printing
+## 3D Printing
 
 STL export issues caused parts of the print to invert (fill when they shouldn't, not fill when they should)
