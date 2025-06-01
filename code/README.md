@@ -6,7 +6,11 @@ This section contains the multiple iterations of code that we completed througho
 Code we received from Noam. Can be found in the initial documentation section. 
 
 ## 1 Multichannel ADC
-This code initialises a multichannel ADC so we can print values from the 4 channels **FB_USB**, **FB_BAT**, **FB_SOLAR** and **FB_LED**.
+This code initialises a multichannel ADC so we can print values from the 4 channels **FB_USB**, **FB_BAT**, **FB_SOLAR** and **FB_LED**. This requires the following four functions:
+- **calculateVoltage**(uint16_t ADCbits) to convert the raw digital ADC value to a float between 0 and 1 that can then be scaled
+- **ADC_MultiChannel_Init(void)** function to initialise the multi channel ADC and set up the 4 channels and pins
+- **DMA_Tx_Init**(DMA_Channel_TypeDef *DMA_CHx, uint32_t peripheralAddress, uint32_t memoryAddress, uint16_t bufferSize) to initialise direct memory access
+-  **printMultiChannelADC()** function which includes the scaling and printing of the 4 values from each channel
 
 ## 2 Battery Status
 In main loop, code has been added to set the red, orange and green LEDs based on the battery coltage (yet uncalibrated)
