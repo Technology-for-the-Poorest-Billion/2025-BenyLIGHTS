@@ -12,8 +12,14 @@ Several iterations, increasingly complex. Settled on a design with a curved diff
 
 First step was to model the board in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
 
-Came up with a simple design to test geometry and to serve as a base
+The next step was to come up with a simple design to test geometry and to serve as a base![image](https://github.com/user-attachments/assets/9f00e327-418b-44a3-8604-ded1ae01a0a8)
+![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
 
+
+Considered what the optimal shape for the diffuser would be, almost all literature says that a sphere would be optimal which is intuitive.  
+
+With this in mind, a new case was designed from the old one with a curved surface![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
+![image](https://github.com/user-attachments/assets/21c5540e-0c6d-4531-b52f-a627e151c179)
 
 
 
