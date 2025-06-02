@@ -40,7 +40,7 @@ That was then printed and used to determine flaws to fix in newer iterations suc
 ![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
 
 
-The best shape for a diffuser is a sphere.  
+To improve the diffusion the shape would need to be changed, and the best shape for diffusion is a sphere
 
 With this in mind, a new case was designed using the old one.
 ![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
@@ -62,7 +62,7 @@ Currently the material is simply the only one available to us, whether this is t
 The case also needs to be stress tested.  For example:  
 -Use the Instron machine in the materials lab to test the case to failure  
 -1m drop test  
--Use a Newton meter to test the loops  
+-Use a Newtonmeter to test the loops  
 
 
 
