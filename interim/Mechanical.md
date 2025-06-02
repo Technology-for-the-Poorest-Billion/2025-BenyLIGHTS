@@ -29,7 +29,7 @@ The design was then tested with the PCB model.
 
 That was then printed and used to determine flaws to fix in newer iterations such as:  
 -Missing window above the lights  
--Missing slots  
+-Missing slots under the battery  
 -Diffusion suboptimal  
 -USB holes too small  
 -Did not allow the panel to sit at the right angle  
