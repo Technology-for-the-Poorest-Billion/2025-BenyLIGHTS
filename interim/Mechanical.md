@@ -49,12 +49,12 @@ With this in mind, a new case was designed using the old one.
 ![image](https://github.com/user-attachments/assets/fdb90103-9197-4f09-ae56-5647a8971d8b)
 
 This is the latest version to be printed but is not perfect:  
--Printing faults  
--Not enough loops  
--Shape could still be optimised
--Clips could be designed and incorporated  
--Dust resistance can be improved  
--Better battery stability  
+- Printing faults  
+- Not enough loops  
+- Shape could still be optimised
+- Clips could be designed and incorporated  
+- Dust resistance can be improved  
+- Better battery stability  
 
 However, the potential for a kickstand as stated in the proposal is now seen to be unnecessary.  
 
@@ -104,13 +104,13 @@ In addition to creating files, we need to find the best way of cost-effectively 
 
 There are a few key missions to complete before the case is ready to ship.
 
-#### Secure attachment points
+#### - Secure attachment points
 
-#### Reducing amount of support material required
+#### - Reducing amount of support material required
 
-#### Assessing best method for industrial printing
+#### - Assessing best method for industrial printing
 
-#### Prepare for industrial print
+#### - Prepare for industrial print
 
 
 ## Timeline
