@@ -62,7 +62,7 @@ Currently the material is simply the only one available to us, whether this is t
 The case also needs to be stress tested.  For example:  
 -Use the Instron machine in the materials lab to test the case to failure  
 -1m drop test  
--Use a Newton metet to test the loops  
+-Use a Newton meter to test the loops  
 
 
 
