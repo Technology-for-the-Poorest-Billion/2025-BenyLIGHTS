@@ -72,6 +72,12 @@ There are 4 sampling channels available from the circuit diagram which we can ac
 This part of the circuit shows a boost converter, where the duty cycle is controlled by the PWM_USB input signal. The inductor is sensitive to current and will overheat if the maximum current is exceeded, so it is important to limit this current. 
 
 <img src="https://github.com/user-attachments/assets/cd3468f7-cbba-4cb9-ae70-af91ca5d3b0d" width="500"/>
+<img src="https://github.com/user-attachments/assets/284e57c5-68ca-41ed-914c-6565b4d2a449" width="500"/>
+
+
+*Boost converter circuit image from https://www.allaboutcircuits.com/technical-articles/understanding-the-operation-of-a-boost-converter/*
+
+
 
 #### Inductor Heating  
 
