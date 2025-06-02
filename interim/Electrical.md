@@ -129,14 +129,14 @@ Noam expects these factors to be able to provide this lighing solution at around
 Soldering was required on the boards in order to electrically connect the battery to test the lights. These connections also provide resting position
 for the light so need to be strong.
 
-<img src="assets/1000021807.jpg" alt="Alt Text" width = "600" height = "auto" > 
+<img src="assets/1000021807.jpg" alt="Alt Text" width = "500" height = "auto" > 
 
 We encountered issues with the link that flashes from MounRiver Studio to the board. The link was provided with connection soldered to crimp connectors rather than using the appropriate stackable header. So this was sourced from the stores and soldered with heat shrink which has so far provided a more reliable
 link to the board.
 
-<img src="assets/1000021691.jpg" alt="Alt Text" width = "600" height = "auto" > 
+<img src="assets/1000021691.jpg" alt="Alt Text" width = "500" height = "auto" > 
 
-<img src="assets/1000021693.jpg" alt="Alt Text" width = "600" height = "auto" > 
+<img src="assets/1000021693.jpg" alt="Alt Text" width = "500" height = "auto" > 
 
 ### Battery status
 Following from working out how to recieve data from the multi channel ADC we then had to implement this to show the battery status using the three LEDs.
