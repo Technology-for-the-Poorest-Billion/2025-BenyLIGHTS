@@ -23,7 +23,7 @@ Next the board was modelled in CAD![image](https://github.com/user-attachments/a
 
 Then a simple case design was made to test geometry and to serve as a base for any future designs.  
 
-![image](https://github.com/user-attachments/assets/84cd654c-f95d-48e7-82ad-323decb80150)
+![image](https://github.com/user-attachments/assets/f33bd849-cd5a-4603-9545-b65ed5a3cc28)
 
 The design was then tested with the PCB model.  
 
