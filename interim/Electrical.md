@@ -12,6 +12,8 @@
     
 
 ## Technical Progress
+
+### Documentation
 We have been documenting each code draft in the **code** folder of our GitHub, where the README file clearly explains what progress has been made in each iteration of the code. 
 
 Over the past week we mainly focussed on the first functionality requirement, which involves the 3 LEDs showing the battery status when the button is pressed. This required a clear understanding of the circuit diagram and measurement of the battery voltage using a multichannel ADC. We expect the next few tasks to be quicker than this one, because now all of the initialisation work has been done the next few tasks should be simpler to implement. 
@@ -130,12 +132,9 @@ for the light so need to be strong.
 We encountered issues with the link that flashes from MounRiver Studio to the board. The link was provided with connection soldered to crimp connectors rather than using the appropriate stackable header. So this was sourced from the stores and soldered with heat shrink which has so far provided a more reliable
 link to the board.
 
-
 <img src="assets/1000021691.jpg" alt="Alt Text" width = "600" height = "auto" > 
 
-
 <img src="assets/1000021693.jpg" alt="Alt Text" width = "600" height = "auto" > 
-
 
 ### Battery status
 Following from working out how to recieve data from the multi channel ADC we then had to implement this to show the battery status using the three LEDs.
@@ -199,18 +198,8 @@ From the graph we see the trend is linear (this was a relief) with a scaling con
 
 3. The Led status was simple to implement with comparitors to the calibrated voltage such that above certain threshold the red led was on, another threshold for the orange and another for the green.
 
-
-
-
-
 <img src="https://github.com/user-attachments/assets/f3d51575-0d8a-49e8-bda1-1d9e60952bf6" width="200"/> 
 <img src="https://github.com/user-attachments/assets/2671e422-f98e-49dc-a2fd-9948bf2b3911" width="283"/> 
 <img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="268"/>
-
-
-## Updated Timeline
-### Sleep Mode
-### Sun Detection
-### RGB if time permits
 
 
