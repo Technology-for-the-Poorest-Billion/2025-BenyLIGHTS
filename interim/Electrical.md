@@ -108,4 +108,4 @@ When we connected the battery to one of the bigger boards, it began smoking beca
 ### Personal Development
 - Familiarisation with coding, technical ability improved
 - Less overwhelmed with the whole project: breaking it down into manageable steps improves productivity
-- Problem solving ability improved, faced several challenges but learnt lots form each one
+- Problem solving ability improved, faced several challenges but learnt lots from each one
