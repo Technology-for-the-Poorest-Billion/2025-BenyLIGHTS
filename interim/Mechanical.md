@@ -9,7 +9,7 @@ Update project timeline, and explain what is to come (Samuel)
 ## Case Design
 
 A case model was needed to be made in CAD which satisfies the design requirements outlined at the start:  
-- Maximum diffusion at 180<sup>o</sup>  
+- Diffusion spread over 180<sup>o</sup>  
 - Loops for string  
 - Cover the electronics  
 - Geometrically sound  
