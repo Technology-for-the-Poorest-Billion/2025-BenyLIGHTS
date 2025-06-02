@@ -23,6 +23,8 @@ Next the board was modelled in CAD![image](https://github.com/user-attachments/a
 
 Then a simple case design was made to test geometry and to serve as a base for any future designs.  
 
+![image](https://github.com/user-attachments/assets/84cd654c-f95d-48e7-82ad-323decb80150)
+
 The design was then tested with the PCB model.  
 
 That was then printed and used to determine flaws to fix in newer iterations such as:  
@@ -81,3 +83,22 @@ Qualitatively, it was easier to read a book when the diffuser was attached, and 
 ## 3D Printing
 
 STL export issues caused parts of the print to invert (fill when they shouldn't, not fill when they should)
+![image](https://github.com/user-attachments/assets/3730f9b2-43df-4159-bb3a-d9a1e5b9a9f7)
+
+We redesigned the Solidworks parts to remove what we thought might be overlapping lines on the STL. This created a successful render.
+
+![image](https://github.com/user-attachments/assets/aaea8f16-e871-4775-9418-dbd7ab84962d)
+
+Ths created a successful 3D print.
+
+## Next Steps
+
+There are a few key missions to complete before the case is ready to ship.
+
+#### Secure attachment points
+
+#### Reducing amount of support material required
+
+#### Preparing files for industrial printing
+
+
