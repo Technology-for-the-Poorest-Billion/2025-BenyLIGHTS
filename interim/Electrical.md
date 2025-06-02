@@ -13,10 +13,10 @@
 
 ## Technical Progress
 
+Over the past week we mainly focussed on the first functionality requirement, which involves the 3 LEDs showing the battery status when the button is pressed. This required a clear understanding of the circuit diagram and measurement of the battery voltage using a multichannel ADC. We expect the next few tasks to be quicker than this one, because now all of the initialisation work has been done the next few tasks should be simpler to implement. 
+
 ### Documentation
 We have been documenting each code draft in the **code** folder of our GitHub, where the README file clearly explains what progress has been made in each iteration of the code. 
-
-Over the past week we mainly focussed on the first functionality requirement, which involves the 3 LEDs showing the battery status when the button is pressed. This required a clear understanding of the circuit diagram and measurement of the battery voltage using a multichannel ADC. We expect the next few tasks to be quicker than this one, because now all of the initialisation work has been done the next few tasks should be simpler to implement. 
 
 ### RGB LED
 #### Objectives
