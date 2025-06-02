@@ -1,0 +1,74 @@
+//Key Variables
+
+case_height = 20;
+case_width = 80;
+box_length = 70;
+chips_cutout_len=30;
+shell = 1.5;
+pin_cut_depth = case_height-shell;
+pin_cut_width = 40;
+batt_slot_len = 35;
+//Tie holes and slots starting from left (looking along board from USB port)
+tie_hole_1 = 15;
+tie_link_1 = 10;
+tie_hole_2 = 20;
+tie_link_2 = 10;
+tie_hole_3 = 20;
+//USB details
+USBA_depth = 13.8;
+USBA_height = 5.62;
+USBA_width = 13.1;
+USBC_diam = 3.12;
+USBC_slot_width = 6;
+USBC_depth = 6.9;
+
+
+ //Box section of case
+
+difference() {
+
+    linear_extrude(height=case_height)
+        square([case_width,box_length], center = true);
+    // Cut as space for chips
+    translate([0,box_length/2-shell-chips_cutout_len/2,0])
+    linear_extrude(height=case_height-shell)
+    square([case_width-shell*2,chips_cutout_len],center=true);
+    //Cuts as space for data pins - can be removed
+    translate([0,box_length/2-shell-chips_cutout_len-shell/2,0])
+    linear_extrude(height=pin_cut_depth)
+    square([pin_cut_width,shell],center=true);
+    //Battery slot space
+    translate([0,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height-shell)
+    square([case_width-shell*2,batt_slot_len],center=true);
+    // Cuts through top surface leaving room for battery contacts
+    translate([case_width/2-shell-tie_hole_1/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_1,batt_slot_len],center=true);
+     translate([case_width/2-shell-tie_hole_1-tie_link_1-tie_hole_2/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_2,batt_slot_len],center=true);
+    translate([case_width/2-shell-tie_hole_1-tie_link_1-tie_hole_2-tie_link_2-tie_hole_3/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_3,batt_slot_len],center=true);
+    // USB-A and USB-C slots
+    //USB-A  
+    translate([18.4,(box_length*0.5+4.61-0.5*USBA_depth)])
+        linear_extrude(height=USBA_height)
+            square([USBA_width, USBA_depth], center = true);           
+    //USB-C side 1
+    translate([(32.2-USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+     //USB-C side 2                
+    translate([(32.2+USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5); 
+    //USB-C centre  
+    translate([32.2,(0.5*box_length),USBC_diam*0.5])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, $fn = 100)
+                square([USBC_slot_width,USBC_diam], center=true);
+}
