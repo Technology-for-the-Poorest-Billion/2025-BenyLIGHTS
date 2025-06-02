@@ -108,6 +108,11 @@ There are a few key missions to complete before the case is ready to ship.
 
 #### - Prepare for industrial print
 
+#### - Update OpenSCAD
+
+<img width="593" alt="image" src="https://github.com/user-attachments/assets/b5437dc3-21e8-4111-adc1-2373b5fdc8b2" />
+
+
 
 ## Timeline
 <img width="458" alt="image" src="https://github.com/user-attachments/assets/d4fefabc-25e0-4ac4-a931-e0322d12ac93" />
