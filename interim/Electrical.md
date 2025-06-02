@@ -120,6 +120,8 @@ The meeting we had with Noam highlighted where Beny lights fit into the market o
 1. Competitors such as D light import entire products and are thus exposed to incredibly high import taxes. Whereas for Beny lights the components are imported as raw materials and assembled in Ethiopia meaning a lower bracket of import tax.
 2. Additionally Beny lights is a not for profit entity
 
+"To encourage business organizations involved in activities such as producing goods and services, special privileges are granted to them including the exemption of customs duty and other taxes. As a result, raw material, and producers goods are largely zero (0) rated although there is up to a 10 percent customs duty rate applied to some of them"
+
 Noam expects these factors to be able to provide this lighing solution at around 50% of competitor prices
 
 
