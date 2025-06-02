@@ -138,11 +138,11 @@ link to the board.
 
 
 ### Battery status
-Following from working out how to recieve data from the multi channel ADC we then had to implement this so to show the battery status using the three LEDs.
+Following from working out how to recieve data from the multi channel ADC we then had to implement this to show the battery status using the three LEDs.
 Noam instructed us to show the battery status for ten seconds once the button is pressed as well as this changing the light level.
 
 To achieve this: 
-1. We first needed to calibrate what we recievd from the Multichanel ADC so taking the 5 bit number divide by 1024 and scale by some value. We calculate this value dy draining the battery and sequentially comparing the actual voltage measured by a voltmeter to the Multichannel ADC value using printf and serial moniter.
+1. We first needed to calibrate what we received from the Multichanel ADC so taking the 10 bit raw ADC value divide by 1024 and scale by some value. We calculate this value dy draining the battery and sequentially comparing the actual voltage measured by a voltmeter to the Multichannel ADC value using printf and serial monitor.
 
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
