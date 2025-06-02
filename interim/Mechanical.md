@@ -91,6 +91,13 @@ We redesigned the Solidworks parts to remove what we thought might be overlappin
 
 Ths created a successful 3D print.
 
+## Printing Industrially
+
+In addition to creating files, we need to find the best way of cost-effectively printing them. This may involve research into the best way to print files, or possibly even commissioning an in-house printer if there is no more effective method. Some mainstream printing companies can be expensive, so we need to find an effective way to bulk order 3D prints.
+
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/de320ccc-c0c2-4ff1-9f78-3195666c0204" />
+
+
 ## Next Steps
 
 There are a few key missions to complete before the case is ready to ship.
@@ -99,6 +106,12 @@ There are a few key missions to complete before the case is ready to ship.
 
 #### Reducing amount of support material required
 
-#### Preparing files for industrial printing
+#### Assessing best method for industrial printing
 
+#### Prepare for industrial print
+
+
+## Timeline
+
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/3d2f5984-1297-4dac-b3e4-0ae7e4b8b727" />
 
