@@ -60,7 +60,9 @@ However, the potential for a kickstand as stated in the proposal is now seen to 
 
 Currently the material is simply the only one available to us, whether this is the best option still needs to be investigated.  
 The case also needs to be stress tested.  For example:  
-
+-Use the Instron machine in the materials lab to test the case to failure  
+-1m drop test  
+-Use a Newton metet to test the loops  
 
 
 
