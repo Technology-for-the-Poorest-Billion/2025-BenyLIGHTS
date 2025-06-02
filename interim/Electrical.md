@@ -37,6 +37,9 @@ Over the past week we mainly focussed on the first functionality requirement, wh
  - There is one demo code on GitHub containing the header files with functions that allow the light up, so by changing the pins and ports in this code, we managed to get the RGB LED to light up. This can be found in the **RGB LED** folder in our **code** folder.
  - This can be revisited at the end of the project if time permits.
 
+<img src="https://github.com/user-attachments/assets/5cd78b81-af10-4907-a206-4b5d26758486" width="300"/>
+
+
 ### Multichannel ADC 
 In order to read the voltage across the battery, we needed to use the microcontroller to read the value of FB_BAT (battery feedback). The code Noam gave to us utilized a single channel ADC, but this was already being used to control the USB voltage using PWM_USB. This control system stops the inductor overheating and melting so we could not overwrite this single channel ADC. 
 
