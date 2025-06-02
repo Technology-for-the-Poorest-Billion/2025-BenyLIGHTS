@@ -167,7 +167,7 @@ From the graph we see the trend is linear (this was a relief) with a scaling con
             }
         }
 
- Then add if statument into main code to display battery status until counter exceeds certain value which can be tuned depending on the clock speed.
+ Then add if statement into main code to display battery status until counter exceeds certain value which can be tuned depending on the clock speed.
 
                 if (batcount<statusledtime){
 
