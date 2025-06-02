@@ -142,7 +142,7 @@ Noam instructed us to show the battery status for ten seconds once the button is
 
 To achieve this: 
 1. We first needed to calibrate what we received from the Multichanel ADC so taking the 10 bit raw ADC value divide by 1024 and scale by some value. We calculate this value dy draining the battery and sequentially comparing the actual voltage measured by a voltmeter to the Multichannel ADC value using printf and serial monitor.
-
+<img src="https://github.com/user-attachments/assets/ae9cc546-1e46-4e4b-9c72-b2959458f47c" width="300"/>
 <img src="assets/calibgraph.png" alt="Alt Text" width="500" height="300">
 
 From the graph we see the trend is linear (this was a relief) with a scaling constant of 10.28 which once implemented to the code gave accurate voltage values.
