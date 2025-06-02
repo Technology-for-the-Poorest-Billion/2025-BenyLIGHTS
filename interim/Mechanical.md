@@ -52,6 +52,7 @@ This is the latest version to be printed but it is not perfect:
 - Clips could be designed and incorporated  
 - Dust resistance can be improved  
 - Better battery stability  
+
 However, the potential for a kickstand as stated in the proposal is now seen to be unnecessary.  
 
 Currently the material is simply the only one available to us, whether this is the best option still needs to be investigated.  
