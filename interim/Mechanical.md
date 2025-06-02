@@ -9,12 +9,12 @@ Update project timeline, and explain what is to come (Samuel)
 ## Case Design
 
 A case model was needed to be made in CAD which satisfies the design requirements outlined at the start:  
--Maximum diffusion at 180<sup>o</sup>  
--Loops for string  
--Cover the electronics  
--Geometrically sound  
--Allow the solar panel to sit at a favourable angle  
--Allow easy replacement of the battery
+- Maximum diffusion at 180<sup>o</sup>  
+- Loops for string  
+- Cover the electronics  
+- Geometrically sound  
+- Allow the solar panel to sit at a favourable angle  
+- Allow easy replacement of the battery
 
 
 The first step was to measure the board for its size and the locations of the salient components.  
@@ -26,11 +26,11 @@ Then a simple case design was made to test geometry and to serve as a base for a
 
 The design was then tested with the PCB model.  
 That was then printed and used to determine flaws to fix in newer iterations such as:  
--Missing window above the lights  
--Missing slots under the battery  
--Diffusion suboptimal  
--USB holes too small  
--Did not allow the panel to sit at the right angle  
+- Missing window above the lights  
+- Missing slots under the battery  
+- Diffusion suboptimal  
+- USB holes too small  
+- Did not allow the panel to sit at the right angle  
 
 
 
@@ -56,9 +56,9 @@ However, the potential for a kickstand as stated in the proposal is now seen to 
 
 Currently the material is simply the only one available to us, whether this is the best option still needs to be investigated.  
 The case also needs to be stress tested.  For example:  
--Use the Instron machine in the materials lab to test the case to failure  
--1m drop test  
--Use a Newtonmeter to test the loops  
+- Use the Instron machine in the materials lab to test the case to failure  
+- 1m drop test  
+- Use a Newtonmeter to test the loops  
 
 
 
