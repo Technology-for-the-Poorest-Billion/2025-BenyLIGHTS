@@ -38,7 +38,7 @@ difference() {
     linear_extrude(height=pin_cut_depth)
     square([pin_cut_width,shell],center=true);
     //Battery slot space
-    translate([0,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    translate([0,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,shell])
     linear_extrude(height=case_height-shell)
     square([case_width-shell*2,batt_slot_len],center=true);
     // Cuts through top surface leaving room for battery contacts
