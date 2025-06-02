@@ -201,13 +201,8 @@ From the graph we see the trend is linear (this was a relief) with a scaling con
 
 
 
-![image](https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb)
 
-
-
-<img src="https://github.com/user-attachments/assets/f3d51575-0d8a-49e8-bda1-1d9e60952bf6" width="700"/>
-<img src="https://github.com/user-attachments/assets/d3fd973d-d24b-428a-92bb-41a10542529a" width="700"/>
-<img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="700"/>
+<img src="https://github.com/user-attachments/assets/f3d51575-0d8a-49e8-bda1-1d9e60952bf6" width="700"/> <img src="https://github.com/user-attachments/assets/d3fd973d-d24b-428a-92bb-41a10542529a" width="700"/> <img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="700"/>
 
 
 ## Updated Timeline
