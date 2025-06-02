@@ -200,9 +200,10 @@ From the graph we see the trend is linear (this was a relief) with a scaling con
 3. The Led status was simple to implement with comparitors to the calibrated voltage such that above certain threshold the red led was on, another threshold for the orange and another for the green.
 
 
+![image](https://github.com/user-attachments/assets/2671e422-f98e-49dc-a2fd-9948bf2b3911)
 
 
-<img src="https://github.com/user-attachments/assets/f3d51575-0d8a-49e8-bda1-1d9e60952bf6" width="700"/> <img src="https://github.com/user-attachments/assets/d3fd973d-d24b-428a-92bb-41a10542529a" width="700"/> <img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="700"/>
+<img src="https://github.com/user-attachments/assets/f3d51575-0d8a-49e8-bda1-1d9e60952bf6" width="200"/> <img src="https://github.com/user-attachments/assets/2671e422-f98e-49dc-a2fd-9948bf2b3911" width="200"/> <img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="200"/>
 
 
 ## Updated Timeline
