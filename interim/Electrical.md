@@ -47,7 +47,7 @@ In order to read the voltage across the battery, we needed to use the microcontr
 
 We instead introduced a new 4 channel multichannel ADC which allows us to read all 4 channel voltages at once.
 
-#### ADC_MultiChannel_Init
+#### ADC_MultiChannel_Init() Function
 There are 4 sampling channels available from the circuit diagram which we can access with the microcontroller by initialising a multichannel ADC. 
   - **FB_USB** (PC4/A2) Channel 1
   - **FB_SOLAR** (PA2/A0) Channel 2
@@ -87,7 +87,7 @@ This part of the circuit shows a boost converter, where the duty cycle is contro
 #### Inductor Heating  
 
 - *Challenge*: If the control code does not successfully regulate the current by controlling the PWM, the inductor current gets too large and the inductor can melt.
-- When testing the RGB LED with the different code, there is no current control so when the battery was inserted, we blew the board. Provided a valuable learning lesson, so shouldn't make that mistake again!
+    - When testing the RGB LED with the different code, there is no current control so when the battery was inserted, we blew the board. Provided a valuable learning lesson, so shouldn't make that mistake again!
 - *Solution*: Change pins and parameters
     - When inspecting the output of the code on the serial monitor, we worked out that the ADC was originally connected to the rong pin, so the PWM was not successfully controlling the ADC output.
     - Limiting ADC value (**ADC_OV**) was decreased from 350 to 300.
