@@ -112,6 +112,6 @@ There are a few key missions to complete before the case is ready to ship.
 
 
 ## Timeline
+<img width="458" alt="image" src="https://github.com/user-attachments/assets/d4fefabc-25e0-4ac4-a931-e0322d12ac93" />
 
-<img width="458" alt="image" src="https://github.com/user-attachments/assets/3d2f5984-1297-4dac-b3e4-0ae7e4b8b727" />
 
