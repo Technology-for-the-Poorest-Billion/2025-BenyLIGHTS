@@ -17,3 +17,10 @@ So the PCB being imported from asia will incur low import taxes, this keeps over
 
 The case manufacture can be classed as category 1 meaning import taxes will be low also. Further considerations required for comparison between manufacturing in 
 asia and shipping vs manufacture in Addis Ababa 
+
+
+
+## references 
+Sultan, A. (2025) income tax ethiopia, Scribd. Available at: https://ro.scribd.com/document/288080495/income-tax-ethiopia?utm_source=chatgpt.com (Accessed: 2 June 2025).
+
+‌
