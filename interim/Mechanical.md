@@ -18,7 +18,6 @@ A case model was needed to be made in CAD which satisfies the design requirement
 
 
 The first step was to measure the board for its size and the locations of the salient components.  
-
 Next the board was modelled in CAD![image](https://github.com/user-attachments/assets/a8930914-eaa3-44f2-bdb3-0dff3b05e5b3)
 
 Then a simple case design was made to test geometry and to serve as a base for any future designs.  
@@ -26,7 +25,6 @@ Then a simple case design was made to test geometry and to serve as a base for a
 ![image](https://github.com/user-attachments/assets/f33bd849-cd5a-4603-9545-b65ed5a3cc28)
 
 The design was then tested with the PCB model.  
-
 That was then printed and used to determine flaws to fix in newer iterations such as:  
 -Missing window above the lights  
 -Missing slots under the battery  
@@ -40,22 +38,20 @@ That was then printed and used to determine flaws to fix in newer iterations suc
 ![image](https://github.com/user-attachments/assets/d2e609b4-5a2e-4ac9-8618-17e40eaa444a)
 
 
-To improve the diffusion the shape would need to be changed, and the best shape for diffusion is a sphere
-
+To improve the diffusion the shape would need to be changed, and the best shape for diffusion is a sphere.  
 With this in mind, a new case was designed using the old one.
 ![image](https://github.com/user-attachments/assets/c3a63fce-505f-4604-a8f1-b56cf38fe90f)
 
 ![image](https://github.com/user-attachments/assets/21c5540e-0c6d-4531-b52f-a627e151c179)
 ![image](https://github.com/user-attachments/assets/fdb90103-9197-4f09-ae56-5647a8971d8b)
 
-This is the latest version to be printed but is not perfect:  
+This is the latest version to be printed but it is not perfect:  
 - Printing faults  
 - Not enough loops  
 - Shape could still be optimised
 - Clips could be designed and incorporated  
 - Dust resistance can be improved  
 - Better battery stability  
-
 However, the potential for a kickstand as stated in the proposal is now seen to be unnecessary.  
 
 Currently the material is simply the only one available to us, whether this is the best option still needs to be investigated.  
