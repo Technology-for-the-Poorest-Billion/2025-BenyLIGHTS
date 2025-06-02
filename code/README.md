@@ -13,7 +13,7 @@ This code initialises a multichannel ADC so we can print values from the 4 chann
 -  **printMultiChannelADC()** function which includes the scaling and printing of the 4 values from each channel
 
 ## 2 Battery Status
-In main loop, code has been added to set the red, orange and green LEDs based on the battery coltage (yet uncalibrated)
+In main loop, code has been added to set the red, orange and green LEDs based on the battery voltage (yet uncalibrated)
 
 ## 3 Calibration
 We used a voltmeter to measure the voltage across the battery for multiple readings, plotted a linear graph to work out the scaling factor and set BATmultiplier to the correct value, so FB_BAT now prints the correct battery voltage.
