@@ -205,3 +205,10 @@ From the graph we see the trend is linear (this was a relief) with a scaling con
 <img src="https://github.com/user-attachments/assets/32cc2dd0-4f01-4015-a350-accf3d93aedb" width="268"/>
 
 
+#### References 
+
+Sultan, A. (2025) income tax ethiopia, Scribd. Available at: https://ro.scribd.com/document/288080495/income-tax-ethiopia?utm_source=chatgpt.com (Accessed: 2 June 2025).
+
+‌
+
+
