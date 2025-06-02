@@ -49,10 +49,10 @@ We instead introduced a new 4 channel multichannel ADC which allows us to read a
 
 #### ADC_MultiChannel_Init
 There are 4 sampling channels available from the circuit diagram which we can access with the microcontroller by initialising a multichannel ADC. 
-  - FB_USB (PC4/A2) Channel 1
-  - FB_SOLAR (PA2/A0) Channel 2
-  - FB_BAT (PD4/A7) Channel 3
-  - FB_ILED (PD3/A4) Channel 4
+  - **FB_USB** (PC4/A2) Channel 1
+  - **FB_SOLAR** (PA2/A0) Channel 2
+  - **FB_BAT** (PD4/A7) Channel 3
+  - **FB_ILED** (PD3/A4) Channel 4
 
 <img src="https://github.com/user-attachments/assets/ae9cc546-1e46-4e4b-9c72-b2959458f47c" width="300"/>
 <img src="https://github.com/user-attachments/assets/4961bb11-972c-4994-9d05-b39819355a00" width="700"/>
