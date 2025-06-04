@@ -1,0 +1,241 @@
+//BENYlight PCB diagram
+// Approximate Layout: large component dimensions; component code; small chips array
+
+//          Key dimensions
+plate_y = 140;
+plate_x = 80;
+plate_thickness = 1.55;
+USBA_depth = 13.8;
+USBA_height = 5.62;
+USBA_width = 13.1;
+USBC_diam = 3.12;
+USBC_slot_width = 6;
+USBC_depth = 6.9;
+BATT_length = 49.5;
+BATT_radius = 18.4*0.5;
+BUTTON_height = 1;
+BUTTON_width = 5.1;
+PRESS_height = 1.5;
+PRESS_radius = 1.95*0.5;
+PIN_height = 10;
+LED_width = 2.8;
+LED_length = 4.3;
+LED_height = 1.2;
+//Case Variables
+case_height = 20;
+case_width = 80;
+box_length = 51.75;
+shell = 1.5;
+chips_cutout_len=24.6-shell*2;
+pin_cut_depth = case_height-shell;
+pin_cut_width = case_width-25-27;
+batt_slot_len = 25.15;
+LED_y=70;
+
+//Tie holes and slots starting from left (looking along board from USB port)
+tie_link_0 = 8-shell;
+tie_hole_1 = 8;
+tie_link_1 = 9;
+tie_hole_2 = 53-25;
+tie_hole_3 = 16-shell;
+push_pin_dia = 3;
+push_depth = 3;
+
+
+translate([0,box_length*0.5-plate_y*0.5,-plate_thickness]){
+//           Components
+
+//BASEPLATE
+color("red",1.0)
+    linear_extrude(height=plate_thickness)
+        square([plate_x,plate_y], center = true);
+  
+//USB-A  
+color("silver",1.0)
+    translate([18.4,(plate_y*0.5+4.61-0.5*USBA_depth),plate_thickness])
+        linear_extrude(height=USBA_height)
+            square([USBA_width, USBA_depth], center = true);
+                
+
+//USB-C side 1
+color("silver",1.0)
+    translate([(32.2-USBC_slot_width*0.5),(0.5*plate_y-USBC_depth*0.5),(plate_thickness+0.5*USBC_diam)])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+//USB-C side 2                
+color("silver",1.0)
+    translate([(32.2+USBC_slot_width*0.5),(0.5*plate_y-USBC_depth*0.5),(plate_thickness+0.5*USBC_diam)])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+  
+//USB-C centre  
+  color("silver",1.0)
+    translate([32.2,(0.5*plate_y),(plate_thickness+USBC_diam*0.5)])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, $fn = 100)
+                square([USBC_slot_width,USBC_diam], center=true);
+                
+//Battery                
+color([0,0.6,0.9],1.0)
+    translate([0,(plate_y*0.5-BATT_radius-26.5),(plate_thickness+BATT_radius)])
+        rotate([0,90,0])
+            linear_extrude(height = BATT_length, center = true, $fn = 100)
+                circle(BATT_radius);   
+             
+             
+ //         PCB CHIP ARRAY: [[X loc, Y loc, length, width, height]]
+ PCB_array = [[-16.8,plate_y*0.5-16,5,5,2],[26.45,(plate_y*0.5-19.5),5,5,2],[0,(plate_y*0.5-9.5),5,4,2],[-11.45,(plate_y*0.5-10.5),5,4,2],[21.5,(plate_y*0.5-18),5,4,2],[4.45,(plate_y*0.5-19.7),7.41,4.2,1],[-1,(plate_y*0.5-25.5),2.5,14.8,3]];
+ //CHIPS  
+color([0.3,0.3,0.3],1.0)
+   for (a = [0 : len(PCB_array) - 1])
+    {
+        PCB = PCB_array[a];
+        translate([PCB[0],PCB[1],plate_thickness])
+        linear_extrude(height=PCB[4])
+            square([PCB[3], PCB[2]], center = true);
+    }
+            
+//BUTTONS AND PRESSES
+color("silver",1.0)
+    translate([-27.3,(plate_y*0.5-BUTTON_width*0.5 - 5),plate_thickness])
+        linear_extrude(BUTTON_height)
+            square(BUTTON_width, center=true);
+color("gold",1.0)
+    translate([-27.3,(plate_y*0.5-BUTTON_width*0.5 - 5),plate_thickness])
+        linear_extrude(PRESS_height)
+            circle(PRESS_radius, $fn=20);
+color("silver",1.0)
+    translate([11.6,(plate_y*0.5-BUTTON_width*0.5 - 42.3),plate_thickness])
+        linear_extrude(BUTTON_height)
+            square(BUTTON_width, center=true);
+color("gold",1.0)
+    translate([11.6,(plate_y*0.5-BUTTON_width*0.5 - 42.3),plate_thickness])
+        linear_extrude(PRESS_height)
+            circle(PRESS_radius, $fn=20);    
+  
+//INPUT PINS
+    // ARRAY is [[X_loc, Y_loc]]
+ PIN_array = [[0,plate_y*0.5-25.5],[2.1,plate_y*0.5-25.5],[4.2,plate_y*0.5-25.5],[-2.1,plate_y*0.5-25.5],[-4.2,plate_y*0.5-25.5],[-6.3,plate_y*0.5-25.5]];
+ color("silver",1.0)
+    for (a = [0 : len(PIN_array) - 1])
+    {
+        PIN = PIN_array[a];
+        translate([PIN[0],PIN[1],plate_thickness])
+            linear_extrude(PIN_height)
+                circle(0.7*0.5, $fn = 4);
+    }
+    
+ //LEDS
+    //ARRAY is [[X_loc, Y_loc]]
+ LED_array = [[20,0],[0,0],[-20,0]];
+ color("yellow",1.0)
+    for (a=[0:len(LED_array)-1])
+    {
+        LED = LED_array[a];
+        translate([LED[0],LED[1],plate_thickness])
+            linear_extrude(LED_height)
+                square([LED_length,LED_width], center = true);
+    }
+}
+ // Case
+
+ //Box section of case
+ // BOX
+ // BOX
+
+difference() {
+
+    linear_extrude(height=case_height)
+        square([case_width,box_length], center = true);
+    // Cut as space for chips
+    translate([0,box_length/2-shell-chips_cutout_len/2,0])
+    linear_extrude(height=case_height-shell)
+    square([case_width-shell*2,chips_cutout_len],center=true);
+    //Cuts as space for data pins - can be removed
+    translate([1,box_length/2-shell-chips_cutout_len-shell/2,0])
+    linear_extrude(height=pin_cut_depth)
+    square([pin_cut_width,shell],center=true);
+    //Battery slot space
+    translate([0,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,shell])
+    linear_extrude(height=case_height-shell)
+    square([case_width-shell*2,batt_slot_len],center=true);
+    // Cuts through top surface leaving room for battery contacts
+    translate([case_width/2-shell-tie_link_0-tie_hole_1/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_1,batt_slot_len],center=true);
+     translate([case_width/2-shell-tie_link_0-tie_hole_1-tie_link_1-tie_hole_2/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_2,batt_slot_len],center=true);
+    translate([-case_width/2+shell+tie_hole_3/2,box_length/2-shell*2-chips_cutout_len-batt_slot_len/2,0])
+    linear_extrude(height=case_height)
+    square([tie_hole_3,batt_slot_len],center=true);
+    // USB-A and USB-C slots
+    //USB-A  
+    translate([18.4,(box_length*0.5+4.61-0.5*USBA_depth)])
+        linear_extrude(height=USBA_height)
+            square([USBA_width, USBA_depth], center = true);           
+    //USB-C side 1
+    translate([(32.2-USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5);
+     //USB-C side 2                
+    translate([(32.2+USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+                circle(USBC_diam*0.5); 
+    //USB-C centre  
+    translate([32.2,(0.5*box_length),USBC_diam*0.5])
+        rotate([90,0,0])
+            linear_extrude(height = USBC_depth, $fn = 100)
+                square([USBC_slot_width,USBC_diam], center=true);
+    
+    // Push button slot
+    translate([-28.6, 18.18,0])
+    linear_extrude(height=case_height,$fn=20)
+    circle(0.5*push_pin_dia);
+    
+}
+
+// Add push button support
+difference(){   
+   // Outer 
+translate([-28.6, 18.18,push_depth])
+    linear_extrude(height=case_height-push_depth,$fn=20)
+    circle(0.5*push_pin_dia+shell);
+    // Hollow
+    translate([-28.6, 18.18,0])
+    linear_extrude(height=case_height,$fn=20)
+    circle(0.5*push_pin_dia);
+}
+
+
+// Diffuser section of case
+// DIFFUSER
+// DIFFUSER
+
+difference(){
+    hull(){
+    translate([0,box_length*0.5-LED_y,-0.5*case_width+case_height])
+    sphere(0.5*case_width);
+        
+     translate([0,-box_length*0.5-0.5,0])
+    linear_extrude(case_height)
+    square([case_width,1],center=true);
+    }
+    hull(){
+    translate([0,box_length*0.5-LED_y,-0.5*case_width+case_height])
+    sphere(0.5*case_width-shell);
+        
+     translate([0,-box_length*0.5-0.5,0])
+    linear_extrude(case_height-shell)
+    square([case_width-shell*2,1],center=true);
+    }
+    translate([0,0,-case_width+case_height])
+    linear_extrude(case_width-case_height)
+    square([case_width,box_length+case_width+LED_y], center=true);
+    linear_extrude(case_height)
+    square([case_width,box_length],center=true);
+    }
