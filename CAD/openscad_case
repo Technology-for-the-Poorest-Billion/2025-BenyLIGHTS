@@ -8,7 +8,9 @@ chips_cutout_len=24.6-shell*2;
 pin_cut_depth = case_height-shell;
 pin_cut_width = case_width-25-27;
 batt_slot_len = 25.15;
-LED_y=70;
+plate_thickness = 1.55;
+LED_width = 2.8;
+LED_y=74-LED_width/2;
 
 //Tie holes and slots starting from left (looking along board from USB port)
 tie_link_0 = 8-shell;
@@ -18,13 +20,14 @@ tie_hole_2 = 53-25;
 tie_hole_3 = 16-shell;
 //USB details
 USBA_depth = 13.8;
-USBA_height = 5.62;
+USBA_height = 8.72-plate_thickness;
 USBA_width = 13.1;
 USBC_diam = 3.12;
 USBC_slot_width = 6;
 USBC_depth = 6.9;
-push_pin_dia = 3;
-push_depth = 3;
+push_pin_dia = 4;
+push_depth = 3.36-plate_thickness+2;
+hanging_hole_dia = 5;
 
 
  //Box section of case
@@ -83,16 +86,28 @@ difference() {
     linear_extrude(height=case_height,$fn=20)
     circle(0.5*push_pin_dia);
     
+    // Holes for hanging board from
+    // Offset from edge by:
+    hole_offset = 3+hanging_hole_dia/2;
+    translate([case_width/2-hole_offset,box_length/2-hole_offset,USBA_height+hanging_hole_dia/2])
+    rotate([90,0,45])
+    linear_extrude(30, center=true)
+    circle(0.5*hanging_hole_dia);
+    translate([-case_width/2+hole_offset,box_length/2-hole_offset,USBA_height+hanging_hole_dia/2])
+    rotate([90,0,-45])
+    linear_extrude(30, center=true)
+    circle(0.5*hanging_hole_dia);
+    
 }
 
 // Add push button support
 difference(){   
    // Outer 
-translate([-28.6, 18.18,push_depth])
+translate([-27.5, 17.9,push_depth])
     linear_extrude(height=case_height-push_depth,$fn=20)
     circle(0.5*push_pin_dia+shell);
     // Hollow
-    translate([-28.6, 18.18,0])
+    translate([-27.5, 17.9,0])
     linear_extrude(height=case_height,$fn=20)
     circle(0.5*push_pin_dia);
 }
