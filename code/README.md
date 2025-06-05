@@ -26,3 +26,11 @@ There is quite a lot of fluctuation between each of the FB values, so we impleme
 
 ## 6 Sleep Mode Test
 This code shows successful sleep mode implementation. The __WFI() command was behaving unexpectedly so replaced it with **PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE);** which reinitialises the code from the start of main, which solves the problems we were facing originally. Next step is to hopefully implement sleep mode with the longer code. 
+
+## 7 Reordered and commented
+This code is reorded in an order that makes logical sense and we also commented everything so we understand all elements of the code going forward. 
+
+## 8 First attempt at sleep mode on big board
+Problem with this code is that this standby mode reinitialises main every time, which does not work with the button press because all previous information about button LED levels is lost. There is only one available push button: it is very difficult to use the same button to control the brightness of the LEDs and to act as an interrupt for the standby mode. 
+
+
