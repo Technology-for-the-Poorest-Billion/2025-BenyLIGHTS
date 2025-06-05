@@ -536,7 +536,16 @@ int main(void)
                        GPIO_WriteBit(GPIOC, GPIO_Pin_6, Bit_SET);
                        Delay_Ms(2000);
                        GPIO_WriteBit(GPIOC, GPIO_Pin_6, Bit_RESET);
+
+                       //switch off LEDs and PWM_USB before going to sleep
+
+                       LEDmode = 0;
+                       PWM_USB_VALUE = 0;
+
+                       //enter standby mode
                        PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE); //this restarts the code from main (reinitialises the code)
+
+                       //make sure interrupt is clear
                        EXTI_ClearITPendingBit(EXTI_Line0);
                        //__WFI();  //<- this doesn't work it is rubbish
                        Delay_Ms(100);
