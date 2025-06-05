@@ -1,6 +1,6 @@
 //Key Variables
 
-case_height = 20;
+case_height = 15;
 case_width = 80;
 box_length = 51.75;
 shell = 1.5;
@@ -11,6 +11,7 @@ batt_slot_len = 25.15;
 plate_thickness = 1.55;
 LED_width = 2.8;
 LED_y=74-LED_width/2;
+plate_y = 140;
 
 //Tie holes and slots starting from left (looking along board from USB port)
 tie_link_0 = 8-shell;
@@ -26,7 +27,7 @@ USBC_diam = 3.12;
 USBC_slot_width = 6;
 USBC_depth = 6.9;
 push_pin_dia = 4;
-push_depth = 3.36-plate_thickness+2;
+push_depth = 3.36-plate_thickness+3;
 hanging_hole_dia = 5;
 
 
@@ -73,12 +74,12 @@ difference() {
      //USB-C side 2                
     translate([(32.2+USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
         rotate([90,0,0])
-            linear_extrude(height = USBC_depth, center = true, $fn = 100)
+            linear_extrude(height = USBC_depth, center = true, $fn = 20)
                 circle(USBC_diam*0.5); 
     //USB-C centre  
     translate([32.2,(0.5*box_length),USBC_diam*0.5])
         rotate([90,0,0])
-            linear_extrude(height = USBC_depth, $fn = 100)
+            linear_extrude(height = USBC_depth, $fn = 20)
                 square([USBC_slot_width,USBC_diam], center=true);
     
     // Push button slot
@@ -140,3 +141,26 @@ difference(){
     linear_extrude(case_height)
     square([case_width,box_length],center=true);
     }
+
+
+// Tangent line for stand - for guidance only so remove for print
+    
+/*    module line(start, end, thickness = 1) {
+    hull() {
+        translate(start) sphere(thickness);
+        translate(end) sphere(thickness);
+    }
+}
+
+line([0,box_length/2-plate_y,0], [0,box_length/2-25.10,31.7-plate_thickness]);
+    
+    module line(start, end, thickness = 1) {
+    hull() {
+        translate(start) sphere(thickness);
+        translate(end) sphere(thickness);
+    }
+}
+
+line([0,box_length/2-plate_y,0], [0,box_length/2-49.5,25.4-plate_thickness]);
+
+*/
