@@ -1,39 +1,52 @@
-//Key Variables
+                //Case Design
+            
+      //Key dimensions
+      
+//Note: Width: x-axis  Length/len: y-axis  Depth: z-axis     all measurements in millimetres
 
+    //Relevant PCB dimensions
+plate_thickness = 1.55;
+plate_y = 140;
+LED_length = 2.8;
+LED_y=74-LED_length/2;
+
+    //Primary case dimensions
 case_height = 15;
 case_width = 80;
 box_length = 51.75;
 shell = 1.5;
-chips_cutout_len=24.6-shell*2;
-pin_cut_depth = case_height-shell;
-pin_cut_width = case_width-25-27;
-batt_slot_len = 25.15;
-plate_thickness = 1.55;
-LED_width = 2.8;
-LED_y=74-LED_width/2;
-plate_y = 140;
 
-//Tie holes and slots starting from left (looking along board from USB port)
+    //Primary void spaces
+chips_cutout_len=24.6-shell*2;
+batt_slot_len = 25.15;
+
+    //Other holes and cuts
+//Ties linking under the battery, numbered left to right looking down on the case from the USB port end
 tie_link_0 = 8-shell;
 tie_hole_1 = 8;
 tie_link_1 = 9;
 tie_hole_2 = 53-25;
 tie_hole_3 = 16-shell;
-//USB details
+//Data transfer pin slot
+pin_cut_depth = case_height-shell;
+pin_cut_width = case_width-25-27;
+//Hole for button push pin
+push_pin_dia = 4;
+push_depth = 3.36-plate_thickness+3;
+// Holes for suspending light
+hanging_hole_dia = 5;
+hole_offset = hanging_hole_dia/2 + 3;
+
+    //USB ports
 USBA_depth = 13.8;
 USBA_height = 8.72-plate_thickness;
 USBA_width = 13.1;
 USBC_diam = 3.12;
 USBC_slot_width = 6;
 USBC_depth = 6.9;
-push_pin_dia = 4;
-push_depth = 3.36-plate_thickness+3;
-hanging_hole_dia = 5;
 
-
- //Box section of case
- // BOX
- // BOX
+            // Code for case render
+    //Cuboid section of case
 
 difference() {
 
@@ -82,14 +95,12 @@ difference() {
             linear_extrude(height = USBC_depth, $fn = 20)
                 square([USBC_slot_width,USBC_diam], center=true);
     
-    // Push button slot
+    // Hole for button push pin
     translate([-28.6, 18.18,0])
     linear_extrude(height=case_height,$fn=20)
     circle(0.5*push_pin_dia);
     
-    // Holes for hanging board from
-    // Offset from edge by:
-    hole_offset = 3+hanging_hole_dia/2;
+    // Holes for hanging board
     translate([case_width/2-hole_offset,box_length/2-hole_offset,USBA_height+hanging_hole_dia/2])
     rotate([90,0,45])
     linear_extrude(30, center=true)
@@ -101,32 +112,33 @@ difference() {
     
 }
 
-// Add push button support
+        // Cylinder enclosing button push pin
 difference(){   
-   // Outer 
-translate([-27.5, 17.9,push_depth])
+    // Outer cylinder
+    translate([-27.5, 17.9,push_depth])
     linear_extrude(height=case_height-push_depth,$fn=20)
     circle(0.5*push_pin_dia+shell);
-    // Hollow
+    // Internal cylindrical void
     translate([-27.5, 17.9,0])
     linear_extrude(height=case_height,$fn=20)
     circle(0.5*push_pin_dia);
 }
 
 
-// Diffuser section of case
-// DIFFUSER
-// DIFFUSER
+        // Diffuser section of case
 
 difference(){
+    // "Hull" joins together two bodies to form diffuser shape
     hull(){
+    //Main spherical body
     translate([0,box_length*0.5-LED_y,-0.5*case_width+case_height])
     sphere(0.5*case_width);
-        
-     translate([0,-box_length*0.5-0.5,0])
+    // Square edge of case    
+    translate([0,-box_length*0.5+0.5*shell,0])
     linear_extrude(case_height)
-    square([case_width,1],center=true);
+    square([case_width,shell],center=true);
     }
+    // Removes a smaller version of the above to create internal void
     hull(){
     translate([0,box_length*0.5-LED_y,-0.5*case_width+case_height])
     sphere(0.5*case_width-shell);
@@ -135,6 +147,7 @@ difference(){
     linear_extrude(case_height-shell)
     square([case_width-shell*2,1],center=true);
     }
+    // Trims shape so that only top corner of original remains, rather than full sphere
     translate([0,0,-case_width+case_height])
     linear_extrude(case_width-case_height)
     square([case_width,box_length+case_width+LED_y], center=true);
@@ -142,10 +155,9 @@ difference(){
     square([case_width,box_length],center=true);
     }
 
-
-// Tangent line for stand - for guidance only so remove for print
-    
-/*    module line(start, end, thickness = 1) {
+// Tangent line for stand - for guidance only: remove for print
+/*    
+    module line(start, end, thickness = 1) {
     hull() {
         translate(start) sphere(thickness);
         translate(end) sphere(thickness);
