@@ -25,4 +25,4 @@ In the Calibration code, we relied on returning calibratedBAT from the **printMu
 There is quite a lot of fluctuation between each of the FB values, so we implemented an averaging code that takes a number of samples and finds the average across them to try and minimise fluctuations. 
 
 ## 6 Sleep Mode Test
-This code shows successful sleep mode implementation: the button triggers an interrupt and then the microcontroller goes back to sleep (__WFI())
+This code shows successful sleep mode implementation. The __WFI() command was behaving unexpectedly so replaced it with **PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE);** which reinitialises the code from the start of main, which solves the problems we were facing originally. Next step is to hopefully implement sleep mode with the longer code. 
