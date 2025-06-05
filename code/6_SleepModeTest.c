@@ -1,16 +1,3 @@
-/********************************** (C) COPYRIGHT *******************************
- * File Name          : main.c
- * Author             : WCH
- * Version            : V1.0.0
- * Date               : 2023/12/25
- * Description        : Main program body.
- *********************************************************************************
- * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
- * Attention: This software (modified or not) and binary are used for 
- * microcontroller manufactured by Nanjing Qinheng Microelectronics.
- *******************************************************************************/
-
-
 #include "debug.h"
 
 void GPIOConfig()
@@ -21,10 +8,20 @@ void GPIOConfig()
 
 
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;  // Only if you need PD0 as input
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //input pull up means button originally set as high
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD; //input pull up means button originally set as low
     GPIO_Init(GPIOD, &GPIO_InitStructure);
 
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_7;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_Init(GPIOC, &GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
     GPIO_Init(GPIOC, &GPIO_InitStructure);
@@ -41,7 +38,7 @@ void EXTI0_INT_INIT(void)
 
     EXTI_InitStructure.EXTI_Line = EXTI_Line0;
     EXTI_InitStructure.EXTI_Mode = EXTI_Mode_Interrupt;
-    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Falling; //pin is initially set as high, so falling triggers interrupt
+    EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising; //button is initially set as low, so rising triggers interrupt
     EXTI_InitStructure.EXTI_LineCmd = ENABLE;
     EXTI_Init(&EXTI_InitStructure);
 
@@ -59,6 +56,10 @@ void EXTI0_INT_INIT(void)
  *
  * @return  none
  */
+
+
+
+volatile int buttonPressed = 0;  // Shared between ISR and main
 int main(void)
 {
     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
@@ -68,15 +69,29 @@ int main(void)
     GPIOConfig();
     EXTI0_INT_INIT();
     GPIO_WriteBit(GPIOC, GPIO_Pin_7, Bit_RESET);
-
+    GPIO_WriteBit(GPIOC, GPIO_Pin_3, Bit_RESET);
+    GPIO_WriteBit(GPIOC, GPIO_Pin_3, Bit_SET);
+    Delay_Ms(100);
+    GPIO_WriteBit(GPIOC, GPIO_Pin_3, Bit_RESET);
 
 
     while(1)
-    {
-        GPIO_WriteBit(GPIOC, GPIO_Pin_7, Bit_SET);
-        Delay_Ms(2000);
-        GPIO_WriteBit(GPIOC, GPIO_Pin_7, Bit_RESET);
-        __WFI();
+      {
+        Delay_Ms(100);
+        GPIO_WriteBit(GPIOC, GPIO_Pin_6, Bit_RESET);
+        if (GPIO_ReadInputDataBit(GPIOD,GPIO_Pin_0) == 0)
+        {
+
+                GPIO_WriteBit(GPIOC, GPIO_Pin_7, Bit_SET);
+                Delay_Ms(2000);
+                GPIO_WriteBit(GPIOC, GPIO_Pin_7, Bit_RESET);
+                PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE); //this restarts the code from main (reinitialises the code)
+
+
+        //__WFI(); // <- this doesn't work it is rubbish
+
+
+        }
 
     }
 }
@@ -87,7 +102,11 @@ void EXTI7_0_IRQHandler(void)
 {
     if (EXTI_GetITStatus(EXTI_Line0) != RESET)
     {
+
         EXTI_ClearITPendingBit(EXTI_Line0);
+        GPIO_WriteBit(GPIOC, GPIO_Pin_6, Bit_SET);
+        Delay_Ms(10);
+        GPIO_WriteBit(GPIOC, GPIO_Pin_6, Bit_RESET);
 
     }
 }
