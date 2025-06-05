@@ -23,3 +23,6 @@ In the Calibration code, we relied on returning calibratedBAT from the **printMu
 
 ## 5 Averaging
 There is quite a lot of fluctuation between each of the FB values, so we implemented an averaging code that takes a number of samples and finds the average across them to try and minimise fluctuations. 
+
+## 6 Sleep Mode Test
+This code shows successful sleep mode implementation: the button triggers an interrupt and then the microcontroller goes back to sleep (__WFI())
