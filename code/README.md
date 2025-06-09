@@ -37,4 +37,11 @@ This was the first time we tried to use the button to wake up the mcu from sleep
 In this version of the code, the button is no longer an interrupt so it is now functional in increasing the brightness of the LEDs and showing the battery voltage. This code measures the battery voltage, and if it is less than 3.2V it sends the microcontroller into standby mode. There is then a periodic wakeup cycle of 10 seconds, where the mcu wakes up, runs through the while loop to check if the battery voltage has increased, and if not it goes back to sleep. If the battery voltage has increased, it escapes the while loop and continues operating normally which is good. 
 The issue with this code is that when the button is pressed to increase the brightness of the LEDs, the measured battery voltage coming from FB_BAT decreases (to around 2.9V for the maximum LED setting). This means the microcontroller then goes to sleep whilst the LEDs are stuck on their brightest setting, which is bad. I have added code to switch off the LEDs and PWM_USB when entering sleep mode, but still needs some work. 
 
+## 10 Averaging
+Neatened up the functions for averaging each of the 4 channels USB, BAT, SOLAR and LED. Condensed the print functions into more simple **getFB** and a more general **printFB** function which is used to print the floats as integers. 
+
+## 11 Extra Power Conservation
+Added solar detector code which switches LEDs off when solar ADC value goes below a certain value (0.27 was measured as threshold voltage but is quite temperamental). 
+Also added code that send mcu to sleep if LEDmode is 0 for over 2 minutes. This is currently commented because it is a bit pointless without having a second interrupt button). 
+
 
