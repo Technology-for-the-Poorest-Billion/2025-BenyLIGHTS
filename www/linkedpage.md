@@ -3,7 +3,7 @@ title: What We Achieved
 ---
 
 #### Button Functionality
-- Button press [increases LED brightness](Lucy.md) in steps
+- Button press increases LED brightness in steps
   - Reduced maximum brightness from 100 to 60 to stop browning out
 - Button press also shows battery voltage on red, orange, green LEDs
   - Multichannel ADC (Lucy) <- maybe move this to Jim's section bc it fits better here
