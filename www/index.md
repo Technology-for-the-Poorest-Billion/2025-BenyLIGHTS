@@ -9,13 +9,9 @@ title: BenyLIGHTS
     - **Respiratory diseases** caused by kerosene lamps decrease life expectancy <sup>3</sup>
     - Kerosene lamps emit **'black carbon'** which contributes to global warming <sup>3</sup>
 
-![image](https://github.com/user-attachments/assets/3b06d896-e149-4e94-9823-e3d4eb6bb85f)
-
-  
-- **Electrification** and the access to lighting have a **positive** impact on the **Human Development Index** <sup>4</sup>
-  - Electrification improves life expectancy and quality of life within a country <sup>4</sup>
-
 There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. Implementation of the grid in Ethiopia will take a long time and lots of money, so Beny LIGHTS is an instant solution.  
+
+![image](https://github.com/user-attachments/assets/3b06d896-e149-4e94-9823-e3d4eb6bb85f)
 
 ## The Solution: Beny LIGHTs
 
@@ -52,5 +48,5 @@ Throughout the project, we ensured that our work aligned with the sustainable de
 
 ## Project Management
 
-The progress made in this projhect ws a direct result of an effective teamwork strategy and efficient planning. A more detailed account of our project management strategy, written by Samuel, can be found on [this page](project_management.md).  
+The progress made in this project ws a direct result of an effective teamwork strategy and efficient planning. A more detailed account of our project management strategy, written by Samuel, can be found on [this page](project_management.md).  
 
