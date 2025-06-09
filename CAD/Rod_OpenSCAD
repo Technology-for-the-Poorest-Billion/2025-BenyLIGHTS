@@ -1,3 +1,4 @@
+plate_thickness = 1.55;
 push_pin_dia = 4;
 push_depth = 3.36-plate_thickness+3;
 
