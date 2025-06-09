@@ -45,3 +45,11 @@ The light has the following features, and each feature has a link to it's techni
 #### Mechanical Case Design
 Basic mechanical case design to be outlined here and links to individual webpages
 
+## Sustainable Development Goals Alignment
+
+Throughout the project, we ensured that our work aligned with the sustainable development goals and Lara's slides from the beginning of the project. [This page](reflective_discussion.md) contains more information about how our project meets these key expectations. 
+
+## Project Management
+
+The progress made in this projhect ws a direct result of an effective teamwork strategy and efficient planning. A more detailed account of our project management strategy, written by Samuel, can be found on [this page](project_management.md).  
+
