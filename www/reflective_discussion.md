@@ -4,3 +4,5 @@ words, attached to the web page.
 
 (Jim)
 
+Click [here](index.md) to return to the main page. 
+
