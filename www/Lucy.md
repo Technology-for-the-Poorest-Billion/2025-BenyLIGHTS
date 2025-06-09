@@ -2,6 +2,32 @@
 
 ## Button Press
 
+When the user presses the button, 2 things happen:
+1. The white LEDs increase in brightness
+2. The red, green and orange LEDs show the battery voltage for 10 seconds
+
+### White LEDs increasing in brightness
+The original code we received from Noam used PWM to control the brightness of the LEDs, with 5 steps of 0, 25%, 50%, 75%, 100%  brightness levels. When just connected to the computer, this code worked fine. However when the battery was inserted, we noticed an issue where on the 4th or 5th button press, all LEDs (including the red, orange and green) would suddenly switch off, as though the microcontroller was resetting. This was a confusing issue, because we had no programming to switch the red, orange and green LEDs off in this sudden way. We concluded that a 'brownout' was happening (like a blackout but less extreme) because the battery voltage measured on this higher LED setting significantly decreased. The system was automatically resetting itself every time, which we think could be from sudden surging current or overloading of the battery.
+
+To solve this issue, we tried to reduce the large jump in brightness and reduce the maximum brightness. I changed the step PWM values to 0, 10%, 25%, 45%, 70% which still provides good variation in brightness levels and solves the browning out issue. 
+
+        const uint8_t brightness_curve[] = {0, 10, 25, 45, 70}; // 5 steps
+        PWM_LED_VALUE = brightness_curve[LEDmode];
+
+Each time the button is pressed, the variable **LEDmode** increases by 1 up to a maximum of value of 4 (set by the variable **LEDsteps**). The **PWM_LED_VALUE** which controls the brightness of the LEDs is then set by indexing into an array of increasing brightnesses. 
+
+### Battery Voltage Display
+
+As well as increasing the brightness of the white LEDs, pressing the button triggers the red, orange and green LEDs to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. Myself and Jim worked on the calibration of the battery voltag together, and he discusses it more on this page <- link here. 
+
+The code we received from Noam initialised a single channel ADC, which obtained the USB voltage used for regulating the PWM_USB so we had to implement a 4 channel ADC to gather new FB values. 
+
+There are 4 sampling channels available from the circuit diagram which we can access with the microcontroller by initialising a multichannel ADC. 
+  - **FB_USB** (PC4/A2) Channel 1
+  - **FB_SOLAR** (PA2/A0) Channel 2
+  - **FB_BAT** (PD4/A7) Channel 3
+  - **FB_ILED** (PD3/A4) Channel 4
+
 ## Power Conservation Improvements
 
 ### Sleep Mode and Standby Mode
@@ -16,16 +42,9 @@ An alternative solution was to use a deeper sleep mode called standby mode, call
 
 As a proof of concept, I implemented a periodic wakeup system where the mcu wakes itself up every 10 seconds with an timed interrupt, set by the **standbyConfig()** function, explained in the Curious Scientist blog on using Low Power Modes with the CH32V003 microcontroller family. This means that the mcu periodically wakes up, checks the battery voltage, and goes back to sleep if it has not risen above 3.2V. This reduces power used by the mcu and can be further improved by increasing the period of time that the mcu is switched off. However, this comes with the tradeoff that there is no user input available to wake the mcu, so once it is asleep the user has to wait until it wakes up if they want to use the light. This is quite impractical so I think the best solution moving forwards is to add another button to the board, so the mcu can remain asleep until woken by the user pressing the button. 
 
-### Sun Detection
+#### Inactivity sends mcu to sleep
 
-
-    
-
-
-
-
-
-
+I implemented some code that sends the mcu to sleep if the LED mode is 0 for over 2 minutes, signalling the light is not in use. The variable **modetracker** counts up every time the main loop runs whilst the LED mode is zero. If **modetracker** reaches 4000 (this takes around 2 minutes), the mcu goes into sleep mode to conserve battery when it is not being used. 
 
 
 
