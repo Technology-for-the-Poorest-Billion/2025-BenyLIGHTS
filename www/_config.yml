@@ -35,7 +35,7 @@ plugins:
 header_pages:
   - about.md
   - index.md
-  - linkedpage.md
+  - what_we_achieved.md
   - reflective_discussion.md
   - project_management.md
 
