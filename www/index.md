@@ -2,7 +2,8 @@
 title: BenyLIGHTS
 ---
 
-## The Problem: Rural Lighting in Ethiopia
+## The Problem
+### Rural Lighting in Ethiopia
 
 - 43.6% of rural Ethiopia has **no access to electricity** so rely on **kerosene lamps** for lighting which cause indoor pollution and health risks <sup>1</sup>
     - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day <sup>2</sup>
@@ -13,9 +14,8 @@ There have been previous attempts to electrify rural villages, however, when som
 
 ![image](https://github.com/user-attachments/assets/3b06d896-e149-4e94-9823-e3d4eb6bb85f)
 
-## The Solution: Beny LIGHTs
-
-### Starting Point
+## The Solution
+### Beny LIGHTs
 
 At the start of this project, we had a PCB with no case and which only had very basic functionality. The LEDs were too bright to look at with the naked eye and the coloured LEDs simply counted up in binary, providing no meaningful information. Over the four weeks of this project, we have designed and prototyped a case that both protects the electronics and diffuses light effectively. We have programmed the user interface of the board, so that the battery charge level can be displayed by the coloured LEDs, so the board now functions as intended by Noam. We also investigated some energy saving measures like introducing sleep mode and sun detection to minimise unnecessary power usage.
 
