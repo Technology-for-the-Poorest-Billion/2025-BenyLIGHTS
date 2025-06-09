@@ -1,5 +1,5 @@
 ---
-title: Landing page of the website
+title: BenyLIGHTS
 ---
 
 ## Introduction
