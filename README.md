@@ -1,2 +1,2 @@
 # Project Template
-Fork this for a basic structure for each project
+A solar powered lighting solution for use in rural Ethiopia
