@@ -18,7 +18,8 @@ Each time the button is pressed, the variable **LEDmode** increases by 1 up to a
 
 ### Battery Voltage Display
 
-As well as increasing the brightness of the white LEDs, pressing the button triggers the red, orange and green LEDs to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. Myself and Jim worked on the calibration of the battery voltag together, and he discusses it more on this page <- link here. 
+
+As well as increasing the brightness of the white LEDs, pressing the button triggers the red, orange and green LEDs to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. 
 
 The code we received from Noam initialised a single channel ADC, which obtained the USB voltage used for regulating the PWM_USB so we had to implement a 4 channel ADC to gather new FB values. 
 
@@ -27,6 +28,8 @@ There are 4 sampling channels available from the circuit diagram which we can ac
   - **FB_SOLAR** (PA2/A0) Channel 2
   - **FB_BAT** (PD4/A7) Channel 3
   - **FB_ILED** (PD3/A4) Channel 4
+
+^^ this whole bit should probs go in Jim's. Makes more sense
 
 ## Power Conservation Improvements
 
@@ -42,9 +45,13 @@ An alternative solution was to use a deeper sleep mode called standby mode, call
 
 As a proof of concept, I implemented a periodic wakeup system where the mcu wakes itself up every 10 seconds with an timed interrupt, set by the **standbyConfig()** function, explained in the Curious Scientist blog on using Low Power Modes with the CH32V003 microcontroller family. This means that the mcu periodically wakes up, checks the battery voltage, and goes back to sleep if it has not risen above 3.2V. This reduces power used by the mcu and can be further improved by increasing the period of time that the mcu is switched off. However, this comes with the tradeoff that there is no user input available to wake the mcu, so once it is asleep the user has to wait until it wakes up if they want to use the light. This is quite impractical so I think the best solution moving forwards is to add another button to the board, so the mcu can remain asleep until woken by the user pressing the button. 
 
-#### Inactivity sends mcu to sleep
+### Inactivity sends MCU to sleep
 
-I implemented some code that sends the mcu to sleep if the LED mode is 0 for over 2 minutes, signalling the light is not in use. The variable **modetracker** counts up every time the main loop runs whilst the LED mode is zero. If **modetracker** reaches 4000 (this takes around 2 minutes), the mcu goes into sleep mode to conserve battery when it is not being used. 
+I implemented some code that sends the MCU to sleep if the LED mode is 0 for over 2 minutes, signalling the light is not in use. The variable **modetracker** counts up every time the main loop runs whilst the LED mode is zero. If **modetracker** reaches 4000 (this takes around 2 minutes), the mcu goes into sleep mode to conserve battery when it is not being used. This is more of a proof of concept: it should only really be included if there is a second push button added so that the MCU can be woken up using a button interrupt. 
+
+### Solar Detection
+When the ADC value increases above a certain threshold (0.27) the LEDmode is set to zero, because the user is not expected to require the light when sunlight is detected. 
+This feature can be overridden by pressing the button using the **overwrite_solar** variable, which is set to 1 when the button is pressed to increase the LED brightness above zero. The variable **overwrite_solar** is set back to zero when the LED mode returns to zero.  
 
 
 
