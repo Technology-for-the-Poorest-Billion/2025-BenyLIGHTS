@@ -13,7 +13,8 @@ description: >
 
 # If you clone the Minima repo and build locally, use this setting.
 # if you want to go back to normal theme, theme: minima
-remote_theme: pages-themes/minimal@v0.2.0
+#remote_theme: pages-themes/minimal@v0.2.0
+theme: minima
 # remote_theme: pages-themes/slate@v0.2.0
  # add this line to the plugins list if you already have one
 
@@ -49,7 +50,7 @@ minima:
   # solarized-light	   Light variant of solarized color scheme.
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
-  skin: classic
+  skin: dark
   
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
