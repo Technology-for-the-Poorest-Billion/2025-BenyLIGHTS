@@ -24,22 +24,23 @@ At the start of this project, we had a PCB with no case and which only had basic
 
 The light has the following features, and each feature has a link to it's technical implementation. 
 
-- Button press increases LED brightness in steps
+#### Button Functionality
+- Button press [increases LED brightness](Lucy.md) in steps
   - Reduced from 100 to 60 to stop browning out (Lucy)
-- Button press also shows LED brightness
+- Button press also shows battery voltage on red, orange, green LEDs
   - Multichannel ADC (Lucy)
   - Calibration (Jim)
   - batcount (Jim)
   - averaging (Jim)
-- Sun detected the LED mode sets back to zero to save energy
-  - averaging (Jim)
+
+#### Power Conservation
 - Sleep mode when battery voltage drops below 3.2V (Lucy)
   - averaging: issues when battery drops to 0V if bad connection: sleep when it's not supposed to
   - Button interrupt and __WFI()
   - Need extra button for actual useful product (unrealistic to remake PCB in 4 weeks but will feedback to Noam)
   - Currently uses periodic wakeup and standby mode as proof of concept
 - Sleep mode after 2 minutes of LED on 0
-  - dsxjsjsgaud
+- Sun detected the LED mode sets back to zero to save energy
 
 
 
