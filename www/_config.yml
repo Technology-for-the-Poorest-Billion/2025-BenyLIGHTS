@@ -12,8 +12,8 @@ description: >
 
 # If you clone the Minima repo and build locally, use this setting.
 # if you want to go back to normal theme, theme: minima
-
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
+# remote_theme: pages-themes/slate@v0.2.0
  # add this line to the plugins list if you already have one
 
 # As of November 2023, GitHub Pages still uses Minima 2.5.1 (https://pages.github.com/versions/). 
