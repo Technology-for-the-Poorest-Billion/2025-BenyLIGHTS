@@ -7,7 +7,7 @@ We successfully developed the user interface of the board throughout this projec
 
 During the first week, we focused on trying to get the RGB LED to light up, which (with hindsight) was the most challenging task of the entire project. The LED was programmable so required specific libraries to switch on, which are not widely available for this microprocessor and was much too difficult of a task for complete beginners (aka me). Following our proposal presentations, we received feedback and decided to go back to Noam to redefine our goals for the following 3 weeks. 
 
-In our second meeting with Noam, we could ask much more relevant and specific questions because we were more familiar with the board and the challenges that came with programming it. We redefined the goals for the rest of the project and decided to focus on the user interface and implementing the various features that Noam wanted. Each stage of the code has been documented in our [code](code/README.md) folder, along with the progress that we made at each stage. 
+In our second meeting with Noam, we could ask much more relevant and specific questions because we were more familiar with the board and the challenges that came with programming it. We redefined the goals for the rest of the project and decided to focus on the user interface and implementing the various features that Noam wanted. Each stage of the code has been documented in our [code](code) folder, along with the progress that we made at each stage. 
 
 ## Button Press
 
