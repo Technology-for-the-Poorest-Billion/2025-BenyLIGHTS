@@ -8,8 +8,9 @@ title: BenyLIGHTS
     - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day <sup>2</sup>
     - **Respiratory diseases** caused by kerosene lamps decrease life expectancy <sup>3</sup>
     - Kerosene lamps emit **'black carbon'** which contributes to global warming <sup>3</sup>
- 
-<img src="assets/Gaslight.jpg" alt="Alt Text" width="200" height="300"> 
+
+![image](https://github.com/user-attachments/assets/3b06d896-e149-4e94-9823-e3d4eb6bb85f)
+
   
 - **Electrification** and the access to lighting have a **positive** impact on the **Human Development Index** <sup>4</sup>
   - Electrification improves life expectancy and quality of life within a country <sup>4</sup>
