@@ -1,0 +1,8 @@
+push_pin_dia = 4;
+push_depth = 3.36-plate_thickness+3;
+
+linear_extrude(2)
+square([15,2],center=true);
+translate([8,0,0])
+linear_extrude(2)
+square([2,5],center=true);
