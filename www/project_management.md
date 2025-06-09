@@ -20,7 +20,11 @@ Organisation and management of task process was not a highly formalised part of 
 #### Recommendations
 Were we to repeat this project, we would want to make sure we kept the same positive attitude and team unity that we were blessed with this term. The team felt unified, diligent and sympathetic through the majority of the project, which helped us to consistently work towards team goals productively.
 Additionally, the use of GitHub as a file storage location is something that we would choose to employ if given the option again, thanks to the ease of uploads and the availability of past versions.
-We would also want to keep the team subdivisions, as this significantly improved our productivity as a group, by reducing learning time for each member of the team while not leaving any team member to isolated in their task.
+We would also want to keep the team subdivisions, as this significantly improved our productivity as a group, by reducing learning time for each member of the team while not leaving any team member too isolated in their task.
 
 #### Modifications
 If given an opportunity to make changes to our approach from this project, we might consider having a more formalised means of task management, perhaps with a centralised and clear timeline that could be modified in a more controlled way throughout the project. While we had a clear list of tasks from our supervisor, these shifted and were adapted as the project progress in ways that were not always accurately recorded, leading to some grey areas over exact project milestones. If doing the project again, we might include a clear timeline in the GitHub that could record current project aims for absolute clarity throughout the whole project.
+
+*Written by Samuel Hinks*
+
+Click [here](index.md) to return to the main page. 
