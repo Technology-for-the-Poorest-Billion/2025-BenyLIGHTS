@@ -34,7 +34,9 @@ plugins:
 # in order as they should show up.
 header_pages:
   - about.md
-  - Lucy.md
+  - index.md
+  - linkedpage.md
+  - reflective_discussion.md
   - project_management.md
 
 # Set to `true` to show excerpts on the homepage.
