@@ -1,5 +1,5 @@
 ---
-title: BenyLIGHTS
+title: Home
 ---
 
 ## The Problem
