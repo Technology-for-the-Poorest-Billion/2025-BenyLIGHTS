@@ -1,3 +1,6 @@
+---
+title: Presentation Plan
+---
 # Index
 
 - Outline key problem
