@@ -18,6 +18,8 @@ The lights will be imported as raw materials and manufactured in Ethiopia, this 
 ## Ensuring responsibility in our innovation  
 Previous solar lighting solutions have been unsuccessful in providing a long lasting solution, burdening local people with loans and payment plans without infrastructure in place for repair and maintainenance (Ahmed). Beny LIGHTS is a smaller scale affordable solution that is less dependent on prior infrastructure for implementation. Since the materials used in the light such as Lithium ion batteries and composite PCBs are inherently difficult to recycle (Patil et al.), **longevity is key** in limiting the unavoidable consequences at end of life. This has informed the design with an easily accessible battery and modular design meaning failure of the case, battery or board does not result in disposal of the entire unit. Manufacture in Ethiopia means repairing and replacing parts is achievable at worst in Addis Ababa and potentially closer to the user for simple battery/case replacements.
 
+## Concluding
+Beny LIGHTS provides affordable, safe, and sustainable lighting for rural Ethiopia by harnessing solar energy and local manufacturing. Our contributions have preserved regulatorary boundaries and the low cost of production whilst boosting functionality. The open-source, modular design we have developed ensures accessibility, repairability, and fits the local ecosystem. This solution improves health, economic opportunities, and supports key Sustainable Development Goals, offering a scalable alternative to harmful kerosene lamps with lasting impact.
 
 
 *Written by Jim O'Reilly*
