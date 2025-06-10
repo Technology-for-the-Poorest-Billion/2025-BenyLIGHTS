@@ -8,7 +8,7 @@
 plate_thickness = 1.55;
 plate_y = 140;
 LED_length = 2.8;
-LED_y=74-LED_length/2;
+LED_y=74-LED_length/2; //Distance from top of plate to center of LED
 
     //Primary case dimensions
 case_height = 15;
@@ -50,6 +50,7 @@ USBC_depth = 6.9;
 
 difference() {
 
+    // Main frame
     linear_extrude(height=case_height)
         square([case_width,box_length], center = true);
     // Cut space for chips
@@ -77,21 +78,21 @@ difference() {
     
     // Spaces for USB-A and USB-C slots
     //USB-A  
-    translate([case_width/2-22.43,(box_length*0.5+4.61-0.5*USBA_depth)])
+    translate([case_width/2-22.43,(box_length*0.5+4.61-0.5*USBA_depth),0])
         linear_extrude(height=USBA_height)
-            square([USBA_width, USBA_depth], center = true);           
+            square([USBA_width, USBA_depth], center = true);   
     //USB-C side 1
-    translate([(case_width-8.57-USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+    translate([(case_width/2-8.57-USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
         rotate([90,0,0])
             linear_extrude(height = USBC_depth, center = true, $fn = 100)
                 circle(USBC_diam*0.5+0.5);
      //USB-C side 2                
-    translate([(case_width-8.57+USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
+    translate([(case_width/2-8.57+USBC_slot_width*0.5),(0.5*box_length-USBC_depth*0.5),0.5*USBC_diam])
         rotate([90,0,0])
             linear_extrude(height = USBC_depth, center = true, $fn = 20)
                 circle(USBC_diam*0.5+0.5); 
     //USB-C centre  
-    translate([case_width-8.57,(0.5*box_length),USBC_diam*0.5])
+    translate([case_width/2-8.57,(0.5*box_length),USBC_diam*0.5])
         rotate([90,0,0])
             linear_extrude(height = USBC_depth, $fn = 20)
                 square([USBC_slot_width,USBC_diam+1], center=true);
@@ -155,3 +156,16 @@ difference(){
     linear_extrude(case_height)
     square([case_width,box_length],center=true);
     }
+
+
+       //USB-A  cover
+difference() {
+    translate([case_width/2-22.43,(box_length*0.5+4.61-0.5*USBA_depth),0])
+        linear_extrude(height=USBA_height+shell)
+            square([USBA_width+2*shell, USBA_depth], center = true);  
+        translate([case_width/2-22.43,(box_length*0.5+4.61-0.5*USBA_depth),0])
+        linear_extrude(height=USBA_height)
+            square([USBA_width, USBA_depth+4*shell], center = true);translate([case_width/2-22.43,(box_length*0.5-0.5*USBA_depth),0])
+        linear_extrude(height=USBA_height+2*shell)
+            square([USBA_width+4*shell, USBA_depth], center = true);
+}        
