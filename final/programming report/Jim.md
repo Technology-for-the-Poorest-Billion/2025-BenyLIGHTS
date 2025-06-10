@@ -5,7 +5,7 @@
 I soldered the battery tabs on to make all the provided PCBs compatible with batteries and soldered a solar panel enabling recharging tests. As well as this, the link used to upload the code to the microprocessor was tempremental so needed improving, this involved sourcing a stackable header to replace the crimp connectors and solder with heat shrink to form a more robust and reliable connector to the board.
 
 ## Programming contributions 
-Me and Lucy worked together on lots of the programming, further detail can be found both on [Lucy].(Lucy)'s page and for fully commented code all iterations are available on the [code](code) page.
+Me and Lucy worked together on lots of the programming, further detail can be found both on [Lucy](Lucy)'s page and for fully commented code all iterations are available on the [code](code) page.
 ### Battery status 
 #### Multi-channel ADC
 Upon the user pressing the button on the board, as well as increasing the brightness of the white LEDs, the coloured LEDs are required to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. 
