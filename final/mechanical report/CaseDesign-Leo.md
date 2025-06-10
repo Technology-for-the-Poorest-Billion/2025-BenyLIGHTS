@@ -1,55 +1,79 @@
 ## Beny LIGHTS: Protective and Diffusive Case Design  
-**Author:** Leo Mills
+**Author:** Leo Mills  
 
 ### Overview
 
-This section documents the iterative design and modelling of the **Beny LIGHTS** protective case, aimed at shielding electrical components while ensuring effective light diffusion. The design was developed in **SolidWorks** and optimized through successive iterations based on real-world performance tests.
+This section covers the iterative design and testing of the protective case for the Beny LIGHTS system. The enclosure was developed in SolidWorks and is designed to protect internal electronics (PCB, battery, connectors) while also diffusing light during operation. The case is drop-resistant, compact, and designed for semi-permanent assembly using only printable and low-cost mechanical components.
 
-The final version achieved key functional goals:
-- **Survived multiple 1-meter drops onto uneven stone surfaces**
-- **Provided good light diffusion** through material and geometry
-- Maintained compact design for integration with electronics
+The final model (`CASEv5.SLDPRT`) meets core functional goals:
+- Survives repeated 1-meter drops onto uneven stone surfaces
+- Provides effective light diffusion using a shaped translucent dome
+- Houses USB-C and USB-A connectors, PCB, battery, and a push-button actuator
+- Requires no adhesives or complex fasteners for assembly
 
-### Files and Resources
+### Files and Structure
 
-- [CAD Files – Final Case Design](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/Case%20Design%20(CAD)/Final%20Design)  
-  `Final_Case.SLDPRT`, with parametric features for easy adjustment
-- [CAD Iterations](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/Case%20Design%20(CAD)/Iterations)  
-  Early experiments, concept variants, and design trials
-- [Drop Test Notes](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/Testing)  
-  Observations and impact performance summary
-- [Renders and Visuals](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/Images)  
-  For documentation and stakeholder communication
+- Final case design: `CASEv5.SLDPRT`
+- Working pushrod: `rod.SLDPRT`
+- PCB model: `PCBv2.SLDPRT`
+- Full assembly: `ASSEMBLYv3curved.SLDASM`
+- Located in: `/CAD/` directory  
+- Rendered view with the lights: `rendered_light.jpg`
 
-### Design Notes for Continuation
+### Design Summary
 
-The part file is **fully parametric**. Future iterations may build on the following features:
+- The model is fully parametric, with clean feature history and editable dimensions
+- Wall thickness:
+  - External walls: **1.5 mm** for durability
+  - Internal walls and dome: **1.0 mm** for lightweight design and optical diffusion
+- The dome is as close to a hemisphere as geometry and base-plane constraints allow
+- Snap-fit feature around USB-C port; USB-A cutout included
+- Case is mechanically secured by inserting the battery and applying a **zip tie**
+- Designed to rest on a plane with the solar panel exposed during charging
 
-- Snap-fit joints with internal retention features
-- Ribs for light diffusion (see Sketch4 in `Final_Case.SLDPRT`)
-- 2.5 mm thick walls optimized for ABS or PLA
-- Assembly clearance for light board and wiring
+### Button Actuator: Final Solution
 
-Future improvements could include:
-- **Waterproofing or weather sealing**
-- **Hinge/latch system** for easier reusability
-- **Smaller internal tolerances** for a tighter fit
+A 3D-printable pushrod (`rod.SLDPRT`) was designed to actuate a button inside the case:
 
-### Strengths & Limitations
+- The rod has a **flat shaft with a wider cylindrical end** that stays inside the enclosure
+- The **wider internal head prevents the rod from falling out**
+- The external end is **flat and comfortable to press**, removing the need for external nuts or bolts
+- This replaces earlier bolt-and-nut prototypes, offering a cleaner and more integrated solution
+- No soldering, gluing, or tools are required for installation
 
-| Strengths                          | Limitations / Areas to Improve              |
-|------------------------------------|---------------------------------------------|
-| Proven drop resistance             | Not dustproof                               |
-| Effective light diffusion          | No built-in fastener or latch               |
-| Clean parametric SolidWorks model  | Case could be more compact or modular       |
+This design is more ergonomic and reliable while remaining compatible with low-resolution FDM 3D printers.
 
-### Technical Continuation Checklist
+### Assembly Process
 
-- Check tolerances against electronics dimensions
-- Adjust rib spacing to modify diffusion pattern
-- Consider ventilation slots if using higher-output LEDs
+1. **Snap-fit** the case onto the USB-C connector
+2. Insert PCB, battery, and pushrod
+3. Secure the battery using a **zip tie**, which also locks the case together
+4. The pushrod is retained by its internal head and can be pressed from outside
 
----
+### Testing Observations
 
-For questions or suggestions on continuing this case design, please refer to the commit history or contact the author listed above.
+- Case was tested with live hardware: PCB, battery, connectors, and pushrod in place
+- Earlier iterations showed fractures near the USB-C cutout due to tight corners; clearances were increased
+- A slicer bug caused a layer to cover the battery opening — fixed by adjusting wall thickness and model export
+- Drop tests showed no structural failures once USB port reinforcements were applied
+- A short circuit occurred in one test, but was unrelated to case design
+- Pushrod requires **1–2 mm vertical travel** with **minimal force** to actuate the button reliably
+
+### Evaluation
+
+| Strengths                             | Limitations / Areas to Improve                |
+|--------------------------------------|-----------------------------------------------|
+| Strong physical durability            | Not sealed against moisture or dust           |
+| Clean and fully parametric model      | No hinge/latch for reusable assembly          |
+| Pushrod solution is ergonomic & printable | Print errors may occur if wall settings vary |
+| Compact and functional layout         | Snap-fits rely on precise port positioning     |
+
+### Recommendations for Future Work
+
+- Add **gasket or lip** features for weather sealing
+- Design a **tool-free locking or hinge mechanism** for maintainability
+- Replace the zip tie with a **reusable mechanical clip**
+- Use a **diffuse textured pattern** on the dome interior to improve light scattering
+- Recheck slicer compatibility and document ideal print settings
+- Ensure **PCB layout** accommodates mechanical features like the button pushrod
 
