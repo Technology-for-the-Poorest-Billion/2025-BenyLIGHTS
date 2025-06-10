@@ -17,7 +17,7 @@ There are 4 sampling channels available from the circuit diagram which we can ac
   - **FB_SOLAR** (PA2/A0) Channel 2
   - **FB_BAT** (PD4/A7) Channel 3
   - **FB_ILED** (PD3/A4) Channel 4
-  - 
+    
 #### Calibration
 Now able to recieve a 10 bit value from these feedback channels the battery value needs to be calibrated to account for the relative resistors in the potential divider and return an accurate voltage reading. This was done by sequentially draining the battery and using voltmeter as well as the serial moniter to plot ADC values and voltage measurements. From this a linear relationship was observed and enabled a simple coeficient to convert the ADC value to the battery voltage. 
 
