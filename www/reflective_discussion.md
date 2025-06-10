@@ -18,7 +18,7 @@ The lights will be imported as raw materials and manufactured in Ethiopia, this 
 ## Responsible 
 Previous solar lighting solutions have been unsuccessful in providing a long lasting solution, burdening local people with loans and payment plans without infrastructure in place for repair and maintainenance (Ahmed). Beny LIGHTS is a smaller scale affordable solution that is less dependent on prior infrastructure for implementation. Since the materials used in the light such as Lithium ion batteries and composite PCBs are inherently difficult to recycle (Patil et al.), longevity is key in limiting the unavoidable consequences at end of life. This has informed the design with an easily accessible battery and modular design meaning failure of the case, battery or board does not result in disposal of the entire unit. Manufacture in Ethiopia means repairing and replacing parts is achievable at worst in Addis Ababa and potentially closer to the user for simple battery/case replacements. 
 
-*written by Jim O'Reilly*
+*Written by Jim O'Reilly*
 
 ### References 
  Ahmed, Jibril Mohamed. ‘Why Solar Lanterns and SHS Failed in Ethiopia’. Modern Ghana, https://www.modernghana.com/news/1381887/why-solar-lanterns-and-shs-failed-in-ethiopia.html. Accessed 10 June 2025.
