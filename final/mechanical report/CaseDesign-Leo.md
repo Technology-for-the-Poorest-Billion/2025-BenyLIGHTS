@@ -9,7 +9,7 @@ The design was driven by the need for a solution that is simple to assemble, che
 
 ### File Overview
 
-- Case design: `CASEv5.SLDPRT`  
+- Final case design: `CASEv5.SLDPRT`  
 - Pushrod actuator: `rod.SLDPRT`  
 - PCB model: `PCBv2.SLDPRT`  
 - Full assembly: `ASSEMBLYv3curved.SLDASM`  
