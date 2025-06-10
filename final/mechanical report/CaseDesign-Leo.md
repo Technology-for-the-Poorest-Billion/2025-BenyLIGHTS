@@ -7,14 +7,14 @@ This document describes the design and testing of the enclosure for the Beny LIG
 
 The design was driven by the need for a solution that is simple to assemble, cheap to produce, easy to print on potentially low tolerance 3D printers, and safe for use in close-contact environments, including households with children.
 
-### File Overview
+### File Overview  
 
-- Final case design: [CASEv5.SLDPRT](CAD/CASEv5.SLDPRT)  
-- Pushrod actuator: `rod.SLDPRT`  
-- PCB model: `PCBv2.SLDPRT`  
-- Full assembly: `ASSEMBLYv3curved.SLDASM`  
-- Visual reference: `rendered_light.jpg`  
-- All files are located in the `/CAD/` folder of the repository  
+- Final case design: [CASEv5.SLDPRT](../../CAD/CASEv5.SLDPRT)  
+- Pushrod actuator: [rod.SLDPRT](../../CAD/rod.SLDPRT)  
+- PCB model: [PCBv2.SLDPRT](../../CAD/PCBv2.SLDPRT)  
+- Full assembly: [ASSEMBLYv3curved.SLDASM](../../CAD/ASSEMBLYv3curved.SLDASM)  
+- Visual reference: [rendered_light.jpg](../../CAD/rendered_light.jpg)  
+
 
 ### Design Details
 
