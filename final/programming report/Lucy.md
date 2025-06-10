@@ -25,21 +25,6 @@ To solve this issue, we tried to reduce the large jump in brightness and reduce 
 
 Each time the button is pressed, the variable **LEDmode** increases by 1 up to a maximum of value of 4 (set by the variable **LEDsteps**). The **PWM_LED_VALUE** which controls the brightness of the LEDs is then set by indexing into an array of increasing brightnesses. 
 
-### Battery Voltage Display
-
-
-As well as increasing the brightness of the white LEDs, pressing the button triggers the red, orange and green LEDs to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. 
-
-The code we received from Noam initialised a single channel ADC, which obtained the USB voltage used for regulating the PWM_USB so we had to implement a 4 channel ADC to gather new FB values. 
-
-There are 4 sampling channels available from the circuit diagram which we can access with the microcontroller by initialising a multichannel ADC. 
-  - **FB_USB** (PC4/A2) Channel 1
-  - **FB_SOLAR** (PA2/A0) Channel 2
-  - **FB_BAT** (PD4/A7) Channel 3
-  - **FB_ILED** (PD3/A4) Channel 4
-
-^^ this whole bit should probs go in Jim's. Makes more sense
-
 ## Power Conservation Improvements
 
 ### Sleep Mode and Standby Mode
