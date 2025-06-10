@@ -5,7 +5,7 @@
 
 This document describes the design and testing of the enclosure for the Beny LIGHTS system — a solar-powered light and charger unit developed for low-cost, non-profit use in rural Ethiopia. The enclosure was created to house a battery, PCB, USB connectors, and button actuator, while also diffusing light and protecting the components during handling and transport.
 
-The design was driven by the need for a solution that is simple to assemble, cheap to produce, easy to print on low-cost FDM 3D printers, and safe for use in close-contact environments, including households with children.
+The design was driven by the need for a solution that is simple to assemble, cheap to produce, easy to print on potentially low tolerance 3D printers, and safe for use in close-contact environments, including households with children.
 
 ### File Overview
 
