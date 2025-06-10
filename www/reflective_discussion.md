@@ -23,7 +23,7 @@ Previous solar lighting solutions have been unsuccessful in providing a long las
  
 D.Light. https://www.dlight.com/. Accessed 10 June 2025.
 
-‘Income Tax Ethiopia | PDF | Value Added Tax | Tariff’. Scribd, https://www.scribd.com/document/288080495/income-tax-ethiopia. Accessed 10 June 2025.
+‘Income Tax Ethiopia  PDF  Value Added Tax  Tariff’. Scribd, https://www.scribd.com/document/288080495/income-tax-ethiopia. Accessed 10 June 2025.
 
 Mulatu, Ashenafi Bekele, et al. ‘The Status of Solar Energy Utilization and Development in Ethiopia’. Journal of Fundamentals of Renewable Energy and Applications, vol. 13, no. 2, Mar. 2023, pp. 1–16. www.longdom.org, https://doi.org/10.35248/2090-4541.23.13.307.
 
@@ -33,9 +33,9 @@ Sustainable Materials and Technologies, vol. 32, July 2022, p. e00422. ScienceDi
 
 Social Innovation Atlas – GIG. https://globalinnovationgathering.org/atlas/. Accessed 10 June 2025.
 
-Solar Lighting in Rural Ethiopia – Ethiopia | UNFCCC. https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-solar-lighting-in-rural-ethiopia. Accessed 10 June 2025.
+Solar Lighting in Rural Ethiopia – Ethiopia  UNFCCC. https://unfccc.int/climate-action/momentum-for-change/activity-database/momentum-for-change-solar-lighting-in-rural-ethiopia. Accessed 10 June 2025.
 
-THE 17 GOALS | Sustainable Development. https://sdgs.un.org/goals. Accessed 10 June 2025.
+THE 17 GOALS  Sustainable Development. https://sdgs.un.org/goals. Accessed 10 June 2025.
 
 
 
