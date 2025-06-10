@@ -83,6 +83,8 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 
 #### Mechanical
 - Produce and assemble final product
+- Stress test the final design eg. 1m drop test
+- Create SCAD model so an opensource CAD version can be edited if needed
 
 #### Electrical
 - Explore further improvements on code above and beyond the brief
@@ -97,8 +99,9 @@ Throughout the timeline, we plan to have regular meetings with Noam to ensure we
 | **Electrical**   | Overcharging the battery                                                         | Use a charge controller                                                            |
 |                  | High voltage from solar panels                                                   | Design for low-voltage systems                                                     |
 | **Thermal**      | Overheating due to LED heat generated                                            | Use heat-tolerant materials, ventilation, and heat sinks where needed              |
-| **Mechanical**   | Panel or enclosure damage from impact or rough handling                          | Use strong materials to withstand damage                                           |
+| **Mechanical**   | Panel or enclosure damage from impact or rough handling                          | Use strong materials and sufficient thicknesses to withstand damage                |
 |                  | Battery puncture or crush leading to fire or failure                             | Handle the boards with care and store in plastic container                         |
+|                  | Stress testing causing pieces of plastic to fly into eyes                        | Wear safety glasses and minimise exposed skin                                      |
 | **User-related** | Eye damage from bright LEDs                                                      | Use lowest brightness possible for testing, build cover asap                       |
 | **Battery**      | Improper disposal or exposure to open flames                                     | Include safety labels and user education on battery handling and disposal          |
 
