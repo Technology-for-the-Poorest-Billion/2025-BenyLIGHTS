@@ -518,12 +518,7 @@ int main(void)
         total_led = 0;
         total_solar = 0;
 
-        // if voltage across solar panel increases above a threshold, set LEDmode = 0
-     /*   if (avg_solar > 0.27)
-        {
-            LEDmode = 0;
-            printf("sunlight detected, LEDs switched off");
-        }*/
+
 
 
 
@@ -590,6 +585,13 @@ int main(void)
             }
         }
         else KeyPressed=KEY_UNPRESS(); //waiting for Key to be unpressed
+
+     // if voltage across solar panel increases above a threshold, set LEDmode = 0
+     /*   if (avg_solar > 0.27)
+        {
+            LEDmode = 0;
+            printf("sunlight detected, LEDs switched off");
+        }*/
 
         const uint8_t brightness_curve[] = {0, 10, 25, 45, 70}; // 5 steps
         PWM_LED_VALUE = brightness_curve[LEDmode];
