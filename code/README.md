@@ -41,7 +41,8 @@ The issue with this code is that when the button is pressed to increase the brig
 Neatened up the functions for averaging each of the 4 channels USB, BAT, SOLAR and LED. Condensed the print functions into more simple **getFB** and a more general **printFB** function which is used to print the floats as integers. 
 
 ## 11 Extra Power Conservation
-Added solar detector code which switches LEDs off when solar ADC value goes below a certain value (0.27 was measured as threshold voltage but is quite temperamental). 
-Also added code that send mcu to sleep if LEDmode is 0 for over 2 minutes. This is currently commented because it is a bit pointless without having a second interrupt button. 
+- Added solar detector code which switches LEDs off when solar ADC value goes below a certain value (0.27 was measured as threshold voltage but is quite temperamental). 
+- Also added code that send mcu to sleep if LEDmode is 0 for over 2 minutes. This is currently commented because it is a bit pointless without having a second interrupt button.
+- Solved browning out issue by reducing brightnesses to [0, 10, 25, 45, 70]
 
 
