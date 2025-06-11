@@ -2,7 +2,8 @@
 title: Home
 ---
 
-![image](https://github.com/user-attachments/assets/7bab0b4e-0e0b-4948-9254-6ef7aa93314e)
+![image](https://github.com/user-attachments/assets/1f7faaf1-177b-40be-8a3b-eba362381439)
+
 
 ![image](https://github.com/user-attachments/assets/ba63624b-dcbc-433f-b4ad-f99fabbd7001)
 
