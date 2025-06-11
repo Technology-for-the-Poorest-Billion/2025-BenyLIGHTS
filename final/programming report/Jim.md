@@ -37,6 +37,12 @@ From the multichannel ADC data it was required as an energy saving measure to tu
 ## Some case manufacture exploring 
 The convex thin shape of the case could potentially lend itself to be vacuum formed out of plastic sheet. This has the potential to be much more affordable at scale compared to 3D printing. In order to explore this avenue i used one of the damaged PCBs and an early iteration of 3D printed case design to create a proof of concept mould for vaccuum forming. Holes were drilled across the combined part in order to ensure vacuum force could be applied uniformly. This was tested on the Dyson centre vacuum forming to give an idea of how feasible this manufacturing route could be and wether the results could match the performance of the 3D printed cases. 
 
+Due to the time constraints only one iteration of the vacuum formed case could be performed. The 3D printed form used to vacuum around held up well across the thicker portions however the high temperature caused the thin diffuser element on the early PLA prototype to flatten. This is a problem, however it is easily fixed by either printing a thicker reinforced dome, or better, 3D routing a wooden block in the required shape. These would both ensure repeatability and accuracy of the produced part.
+
+The mechanical properties of this case were not rigourously tested however there is definately potential with comparable qualitative strength and rigidity to the 3D print. Some benefits could be that the case provides a fully enclosed battery compartment which may aid in dust protection.
+
+Further work is required to evaluate the diffusive capabilities with PLA colour options and potentially other plastics/thickness sheets needing to be tested. Also refine the process with better moulding that produces repeatable outputs. Care will be needed to integrate the button access as well as ensuring the status LEDs are visible through the case. The strategy to secure the battery may also need work as forming around the tabs creates a cavity that could lead to inconsistent connections. And finally, developing an effective mounting strategy wether that be with glue, mechanical fasteners or friction press fit that ensures a reliable connection to the PCB will be important. 
+
 
 
 
