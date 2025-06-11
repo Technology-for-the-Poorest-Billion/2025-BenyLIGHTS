@@ -2,6 +2,10 @@
 title: Home
 ---
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1f7faaf1-177b-40be-8a3b-eba362381439">
+</div>
+
 ![image](https://github.com/user-attachments/assets/1f7faaf1-177b-40be-8a3b-eba362381439)
 
 
