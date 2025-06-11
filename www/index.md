@@ -5,10 +5,10 @@ title: Home
 ## The Problem
 ### Rural Lighting in Ethiopia
 
-- 43.6% of rural Ethiopia has **no access to electricity** so rely on **kerosene lamps** for lighting which cause indoor pollution and health risks <sup>1</sup>
-    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day <sup>2</sup>
-    - **Respiratory diseases** caused by kerosene lamps decrease life expectancy <sup>3</sup>
-    - Kerosene lamps emit **'black carbon'** which contributes to global warming <sup>3</sup>
+- 43.6% of rural Ethiopia has **no access to electricity** so rely on **kerosene lamps** for lighting which cause indoor pollution and health risks
+    - Inhaling the fumes from kerosene lamps is equivalent to smoking several packs of cigarettes a day
+    - **Respiratory diseases** caused by kerosene lamps decrease life expectancy
+    - Kerosene lamps emit **'black carbon'** which contributes to global warming
 
 There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. Implementation of the grid in Ethiopia will take a long time and lots of money, so Beny LIGHTS is an instant solution.  
 
