@@ -26,6 +26,13 @@ We think the best long term solution is adding an extra button, so the user can 
 
 #### RGB LED
 
+Replacing the 3 battery status LEDs with one single LED would reduce the cost
+We configured the pins so the RGB LED lit up, which is a useful step in the right direction. 
+
+![image](https://github.com/user-attachments/assets/962bd02d-dfdb-4951-8aaa-53aef2dadd6a)
+
+![image](https://github.com/user-attachments/assets/3e46c980-7e0a-47e4-ad51-366d803d6a43)
+
 
 
  
