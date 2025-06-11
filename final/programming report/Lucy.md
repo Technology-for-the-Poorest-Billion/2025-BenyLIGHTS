@@ -1,6 +1,6 @@
 # Final Programming Report
 
-This report is structured in the form of a handover document so that Noam or other users can continue with the project and make use of the work that we have done. Within the electrical sub team, our goal for this project was to program the user interface of the product and investigate ways of reducing the power consumption of the device. 
+This report is structured in the form of a handover document so that Noam or other users can continue with the project and make use of the work that we have done. Within the electrical sub team, our goal for this project was to program the user interface of the product and investigate ways of reducing the power consumption of the device.
 
 
 
