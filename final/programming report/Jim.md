@@ -43,7 +43,5 @@ The mechanical properties of this case were not rigourously tested however there
 
 Further work is required to evaluate the diffusive capabilities with PLA colour options and potentially other plastics/thickness sheets needing to be tested. Also refine the process with better moulding that produces repeatable outputs. Care will be needed to integrate the button access as well as ensuring the status LEDs are visible through the case. The strategy to secure the battery may also need work as forming around the tabs creates a cavity that could lead to inconsistent connections. And finally, developing an effective mounting strategy wether that be with glue, mechanical fasteners or friction press fit that ensures a reliable connection to the PCB will be important. 
 
-
-
-![image](https://github.com/user-attachments/assets/6edc0e43-20a9-4def-be17-9e4c2de4bff5)
+<img src="https://github.com/user-attachments/assets/6edc0e43-20a9-4def-be17-9e4c2de4bff5" width="500"/>
 
