@@ -2,9 +2,6 @@
 title: Sustainable Development Goals
 ---
 
-Reflective discussion about the work’s alignment with the Sustainable Development
-Goals and where applicable with the UNICEF principles for Digital Development. ~500
-words, attached to the web page.
 
 ## Response to a genuine need 
 In Ethiopia, daylight hours remain consistent throughout the year. Without sufficient lighting in the evening, people in rural locations are forced to work through the hottest parts of the day, this disproportionately affects women (Solar Lighting in Rural Ethiopia – Ethiopia | UNFCCC). To avoid this, many rely on kerosene lamps that emit harmful black carbon, damaging both health and the environment. There is a typical need for about four hours of light each evening found from **locally gathered data** in line with UNICEFs Principles for Digital Development. Beny LIGHTS offers an affordable light that harnesses the high solar potential of Ethiopia (Mulatu et al.) to charge the light sufficiently to meet the **demands of locals**. This improves living conditions and helps to advance important Sustainable Development Goals such as 3 related to health, 4 education, and 8 economic growth (THE 17 GOALS | Sustainable Development).
