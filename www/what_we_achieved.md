@@ -3,11 +3,11 @@ title: What We Achieved
 ---
 This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. 
 
-# Programming
+# What can the device do?
 
 All code was documented in our [GitHub](../code) so that it can be used in future iterations of the project. 
 
-## Button Functionality
+## When you press the button...
 - Button press increases LED brightness in steps
 - 4 different brightness levels available, useful for a range of external light levels
 - Button press also shows battery voltage on red, orange and green LEDs
@@ -15,7 +15,7 @@ All code was documented in our [GitHub](../code) so that it can be used in futur
  ![image](https://github.com/user-attachments/assets/ca544c57-47a2-442d-8706-7d09a57061c9)
 
 
-## Power Conservation
+## Power Conservation Features
 
 ### Sleep Mode
 
@@ -43,7 +43,7 @@ We think the best long term solution is adding an extra button, so the user can 
 
 - User can override this function by pressing the button, so they can force the lights to be on if required
 
-## Cost Reduction
+## Cost Reduction 
 ### Replacing coloured LEDs
 
 - Replacing the 3 battery status LEDs with one single LED would reduce the cost
