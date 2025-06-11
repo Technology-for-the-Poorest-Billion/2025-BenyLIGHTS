@@ -1,13 +1,10 @@
 # Final Programming Report
 
-This report is structured in the form of a handover document so that Noam or other users can continue with the project and make use of the work that we have done. Within the electrical sub team, our goal for this project was to program the user interface of the product and investigate ways of reducing the power consumption of the device.
-
+This report is structured in the form of a handover document so that Noam or other users can continue with the project and make use of the work that we have done. Within the electrical sub team, our goal for this project was to program the user interface of the product and investigate ways of reducing the power consumption of the device. Myself and Jim worked together on the coding so have divided the explanations between the two reports. 
 
 
 ## Overall Outcome
-We successfully developed the user interface of the board throughout this project, by adding features iteratively within the code. In the initial week of the project, work was relatively slow because there was lots of learning to be done. The CH32V003F4P6 is a relatively difficult board to program compared to something like an Arduino, so the first week was spent trying to interact with the board and familiarise with the MounRiver Studio software that we were using to flash the board. 
-
-This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code. It was also quite a high workload as I think the project was intended for a group of electrical engineers but we achieved as much as we possibly could in the given time frame with our skillset. 
+We successfully developed the user interface of the board throughout this project, by adding features iteratively within the code. In the initial week of the project, work was relatively slow because there was lots of learning to be done. The CH32V003F4P6 is a relatively difficult board to program compared to something like an Arduino, so the first week was spent trying to interact with the board and familiarise with the MounRiver Studio software that we were using to flash the board.  This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code.  
 
 During the first week, we focused on trying to get the RGB LED to light up, which (with hindsight) was the most challenging task of the entire project. The LED was programmable so required specific libraries to switch on, which are not widely available for this microprocessor and was much too difficult of a task for complete beginners (aka me). Following our proposal presentations, we received feedback and decided to go back to Noam to redefine our goals for the following 3 weeks. 
 
