@@ -6,9 +6,6 @@ title: Home
   <img src="https://github.com/user-attachments/assets/1f7faaf1-177b-40be-8a3b-eba362381439" img width = "33%">
 </div>
 
-![image](https://github.com/user-attachments/assets/1f7faaf1-177b-40be-8a3b-eba362381439)
-
-
 ![image](https://github.com/user-attachments/assets/ba63624b-dcbc-433f-b4ad-f99fabbd7001)
 
 ## The Problem
