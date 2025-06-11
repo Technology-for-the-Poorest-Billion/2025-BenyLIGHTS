@@ -14,12 +14,12 @@ In our second meeting with Noam, we could ask much more relevant and specific qu
 
 When the user presses the button, 2 things happen:
 1. The white LEDs increase in brightness
-2. The red, green and orange LEDs show the battery voltage for 10 seconds
+2. The red, green and orange LEDs show the battery voltage for 10 seconds (covered in [Jim's report](Jim.md))
 
 ### White LEDs increasing in brightness
-The original code we received from Noam used PWM to control the brightness of the LEDs, with 5 steps of 0, 25%, 50%, 75%, 100%  brightness levels. When just connected to the computer, this code worked fine. However when the battery was inserted, we noticed an issue where on the 4th or 5th button press, all LEDs (including the red, orange and green) would suddenly switch off, as though the microcontroller was resetting. This was a confusing issue, because we had no programming to switch the red, orange and green LEDs off in this sudden way. We concluded that a 'brownout' was happening (like a blackout but less extreme) because the battery voltage measured on this higher LED setting significantly decreased. The system was automatically resetting itself every time, which we think could be from sudden surging current or overloading of the battery.
+The original code we received from Noam used PWM to control the brightness of the LEDs, with 5 steps of 0, 25%, 50%, 75%, 100%  brightness levels. When just connected to the computer, this code worked fine. However when the battery was inserted, we noticed an issue where on the 4th or 5th button press, all LEDs (including the red, orange and green) would suddenly switch off, as though the microcontroller was resetting. This was a confusing issue, because we had programmed the red, orange and green LEDs to stay on for 10 seconds after each button press. We concluded that a 'brownout' was happening (like a blackout but less extreme) because the battery voltage measured on this higher LED setting significantly decreased. The system was automatically resetting itself every time, which we think could be from sudden surging current or overloading of the battery.
 
-To solve this issue, we tried to reduce the large jump in brightness and reduce the maximum brightness. I changed the step PWM values to 0, 10%, 25%, 45%, 70% which still provides good variation in brightness levels and solves the browning out issue. 
+To solve this issue, we tried to reduce the large jump in brightness. I changed the step PWM values to 0, 10%, 25%, 45%, 70% which still provides good variation in brightness levels and solves the browning out issue. 
 
         const uint8_t brightness_curve[] = {0, 10, 25, 45, 70}; // 5 steps
         PWM_LED_VALUE = brightness_curve[LEDmode];
