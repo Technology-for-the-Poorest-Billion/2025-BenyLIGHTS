@@ -45,4 +45,5 @@ Further work is required to evaluate the diffusive capabilities with PLA colour 
 
 
 
+![image](https://github.com/user-attachments/assets/6edc0e43-20a9-4def-be17-9e4c2de4bff5)
 
