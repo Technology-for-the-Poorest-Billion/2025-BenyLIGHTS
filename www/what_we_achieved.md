@@ -1,11 +1,9 @@
 ---
 title: What We Achieved
 ---
-This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. 
+This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. All code was documented in our [GitHub](../code) so that it can be used in future iterations of the project and CAD models can be found in the [CAD folder](../CAD).
 
 # What can the device do?
-
-All code was documented in our [GitHub](../code) so that it can be used in future iterations of the project. 
 
 ## When you press the button...
 - Button press increases LED brightness in steps
