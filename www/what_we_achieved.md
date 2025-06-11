@@ -20,9 +20,13 @@ This work was more exploratory: code has been written but will ideally be implem
 
 How to wake the MCU up from sleep? This is an issue that we investigated carefully. There are several options available which are demonstrated in this table 
 
-![image](https://github.com/user-attachments/assets/9dbf2862-3740-445f-881d-b93bf5a0ae10)
+![image](https://github.com/user-attachments/assets/cd6c6156-ef3a-4c04-b65a-84cbea7356bc)
 
-We think the best long term solution is adding an extra button, so the user can always wake the battery manually. 
+We think the best long term solution is adding an extra button, so the user can always wake the battery manually. This was unachievable in the short time scale of the project but the periodic sleep mode worked as a proof of concept, so it should be easy to impliment an extra button as an interrupt in the future.
+
+#### RGB LED
+
+
 
  
 #### Cost Reduction
