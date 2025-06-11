@@ -12,7 +12,8 @@ title: Home
 
 There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. Implementation of the grid in Ethiopia will take a long time and lots of money, so Beny LIGHTS is an instant solution.  
 
-![image](https://github.com/user-attachments/assets/3b06d896-e149-4e94-9823-e3d4eb6bb85f)
+![image](https://github.com/user-attachments/assets/ba63624b-dcbc-433f-b4ad-f99fabbd7001)
+
 
 ## The Solution
 ### Beny LIGHTs
