@@ -2,6 +2,10 @@
 title: Home
 ---
 
+![image](https://github.com/user-attachments/assets/7bab0b4e-0e0b-4948-9254-6ef7aa93314e)
+
+![image](https://github.com/user-attachments/assets/ba63624b-dcbc-433f-b4ad-f99fabbd7001)
+
 ## The Problem
 ### Rural Lighting in Ethiopia
 
@@ -12,15 +16,21 @@ title: Home
 
 There have been previous attempts to electrify rural villages, however, when something breaks there is most likely no-one there to fix it. Implementation of the grid in Ethiopia will take a long time and lots of money, so Beny LIGHTS is an instant solution.  
 
-![image](https://github.com/user-attachments/assets/ba63624b-dcbc-433f-b4ad-f99fabbd7001)
-
 
 ## The Solution
-### Beny LIGHTs
+### The Prototype
 
-At the start of this project, we had a PCB with no case and which only had very basic functionality. The LEDs were too bright to look at with the naked eye and the coloured LEDs simply counted up in binary, providing no meaningful information. Over the four weeks of this project, we have designed and prototyped a case that both protects the electronics and diffuses light effectively. We have programmed the user interface of the board, so that the battery charge level can be displayed by the coloured LEDs, so the board now functions as intended by Noam. We also investigated some energy saving measures like introducing sleep mode and sun detection to minimise unnecessary power usage.
+At the start of this project, we had a PCB with no case and which only had very basic functionality. The LEDs were too bright to look at with the naked eye and the coloured LEDs simply counted up in binary, providing no meaningful information.
+
+### Our Solution
+
+Over the four weeks of this project, we have designed and prototyped a case that both protects the electronics and diffuses light effectively. We have programmed the user interface of the board, so that the battery charge level can be displayed by the coloured LEDs, so the board now functions as intended by Noam. We also investigated some energy saving measures like introducing sleep mode and sun detection to minimise unnecessary power usage.
 
 Read a more detailed summary of our product [here](what_we_achieved.md)
+
+### The Future
+
+We hope the project will continue and that our work will be useful in the continued development of the product. 
 
 ## Sustainable Development Goals Alignment
 
