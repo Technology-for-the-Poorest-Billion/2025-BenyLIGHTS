@@ -4,6 +4,10 @@
 ## Hardware work
 I soldered the battery tabs on to make all the provided PCBs compatible with batteries and soldered a solar panel enabling recharging tests. As well as this, the link used to upload the code to the microprocessor was tempremental so needed improving, this involved sourcing a stackable header to replace the crimp connectors and solder with heat shrink to form a more robust and reliable connector to the board.
 
+<img src="https://github.com/user-attachments/assets/10359e71-8a03-48a1-8b19-658339ee1749" alt="Alt Text" width = "200" height = "auto" > 
+<img src="https://github.com/user-attachments/assets/40b017b3-633a-459c-94f5-c3fb7f206591" alt="Alt Text" width = "200" height = "auto" > 
+<img src="https://github.com/user-attachments/assets/f2514679-2f2c-4216-b054-9af071d4101a" alt="Alt Text" width = "200" height = "auto" > 
+
 ## Programming contributions 
 Me and Lucy worked together on lots of the programming, further detail can be found both on [Lucy](Lucy)'s page and for fully commented code all iterations are available on the [code](code) page.
 ### Battery status 
