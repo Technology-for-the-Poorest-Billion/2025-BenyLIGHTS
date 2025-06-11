@@ -27,7 +27,17 @@ title: Presentation Plan
   - dsxjsjsgaud
 
  ### Mechanical
-- Leo/Sam to write this part
+- Produceable Case
+  - Produced design that can easily be 3D printed
+  - Produced files accesible to open source software with clear guidelines for modification (`openscad_case`)
+- Protective Case
+  - Case modified to protect some sensitive components
+  - Case shown to be robust
+  - Case protects input pins from damage
+- Diffusing Case
+  - Case shown to reduce intensity of direct light
+  - Case shown to improve diffusion of light around a room
+  - Case does not significantly undermine effectiveness of battery indicator LEDs
 
 Reflective discussion about the work’s alignment with the Sustainable Development
 Goals and where applicable with the UNICEF principles for Digital Development. ~500
