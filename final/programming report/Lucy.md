@@ -1,11 +1,13 @@
 # Final Programming Report
 
-An iterative approach was taken to the programming: by gradually increasing the features in the MCU
+This report is structured in the form of a handover document so that Noam or other users can continue with the project and make use of the work that we have done. Within the electrical sub team, our goal for this project was to program the user interface of the product and investigate ways of reducing the power consumption of the device. 
+
+
 
 ## Overall Outcome
 We successfully developed the user interface of the board throughout this project, by adding features iteratively within the code. In the initial week of the project, work was relatively slow because there was lots of learning to be done. The CH32V003F4P6 is a relatively difficult board to program compared to something like an Arduino, so the first week was spent trying to interact with the board and familiarise with the MounRiver Studio software that we were using to flash the board. 
 
-This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code. 
+This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code. It was also quite a high workload as I think the project was intended for a group of electrical engineers but we achieved as much as we possibly could in the given time frame with our skillset. 
 
 During the first week, we focused on trying to get the RGB LED to light up, which (with hindsight) was the most challenging task of the entire project. The LED was programmable so required specific libraries to switch on, which are not widely available for this microprocessor and was much too difficult of a task for complete beginners (aka me). Following our proposal presentations, we received feedback and decided to go back to Noam to redefine our goals for the following 3 weeks. 
 
@@ -47,7 +49,25 @@ I implemented some code that sends the MCU to sleep if the LED mode is 0 for ove
 
 ### Solar Detection
 When the ADC value increases above a certain threshold (0.27) the LEDmode is set to zero, because the user is not expected to require the light when sunlight is detected. 
-This feature can be overridden by pressing the button using the **overwrite_solar** variable, which is set to 1 when the button is pressed to increase the LED brightness above zero. The variable **overwrite_solar** is set back to zero when the LED mode returns to zero.  
+This feature can be overridden by pressing the button using the **overwrite_solar** variable, which is set to 1 when the button is pressed to increase the LED brightness above zero. The variable **overwrite_solar** is set back to zero when the LED mode returns to zero. 
+
+## Next Steps
+
+The current product that we have is useable, but there are several improvements to be made relating to sleep mode. 
+
+- Add another button to the PCB to enable user triggered interrupts
+  - Set up second button as interrupt (using [Button Wakeup Code](../../code/8_Button_Wakeup.c)
+  - Sleep mode can then be triggered indefinitely without relying on periodic wakeup
+
+- Finalise solar cutoff voltage testing in Ethiopian sun
+- Test USB port for phone charging
+
+Additional cost reduction extras can include replacing the three red, orange and green LEDs with the single RGB programmable LED.
+- The [code for lighting up the RGB LED](../../code/RGBLED/main.c) can be further modified
+        - We modified the code to include the correct pins but ran out of time to change it's colour
+        - This code is a good starting point for using the WS2812 library on the CH32V003F4P6
+- The header files included in the [RGB LED folder](../../code/RGBLED) must also be included in the User folder in MounRiver Studio for the main file to run       
+ 
 
 
 
