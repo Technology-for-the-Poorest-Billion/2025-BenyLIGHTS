@@ -29,7 +29,7 @@ title: Presentation Plan
  ### Mechanical
 - Produceable Case
   - Produced design that can easily be 3D printed
-  - Produced files accesible to open source software with clear guidelines for modification [openscad_case](../../CAD/openscad_case)
+  - Produced files accesible to open source software with clear guidelines for modification [openscad_case](CAD/openscad_case)
 - Protective Case
   - Case modified to protect some sensitive components
   - Case shown to be robust
