@@ -66,7 +66,7 @@ We think the best long term solution is adding an extra button, so the user can 
   - Case does not significantly undermine effectiveness of battery indicator LEDs
  
  # Technical Details
- If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the [programming](../final/programming report) and [mechanical](../final/mechanical report) subteams and are located in the [final](../final) folder of our Github repository.
+ If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](../final) folder of our Github repository.
  
 *Programming written by Lucy Munson and Mechanical written by Leo Mills*
 
