@@ -1,7 +1,7 @@
 ---
 title: Project Management
 ---
-# Project Management
+# A reflective statement on our team
 
 ## Overview
 This project was made up of several smaller tasks, requested by our supervisor, Noam.
