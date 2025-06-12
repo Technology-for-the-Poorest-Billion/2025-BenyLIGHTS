@@ -11,7 +11,7 @@ In our second meeting with Noam, we could ask much more relevant and specific qu
 
 When the user presses the button, 2 things happen:
 1. The white LEDs increase in brightness
-2. The red, green and orange LEDs show the battery voltage for 10 seconds (covered in [Jim's report](Jim.md))
+2. The red, green and orange LEDs show the battery voltage for 10 seconds (covered in [Jim's report](Jim_Report.md))
 
 ### White LEDs increasing in brightness
 The original code we received from Noam used PWM to control the brightness of the LEDs, involving 5 steps of [0, 25, 50, 75, 100] percentage brightness levels. When just connected to the computer, this code worked fine. However when the battery was inserted, we noticed an issue where on the 4th or 5th button press, all LEDs (including the red, orange and green) would suddenly switch off, as though the microcontroller was resetting. This was a confusing issue, because we had programmed the red, orange and green LEDs to stay on for 10 seconds after each button press. We concluded that a 'brownout' was happening (like a blackout but less extreme) because the battery voltage measured on this higher LED setting significantly decreased. The system was automatically resetting itself every time, which we think could be from sudden surging current or overloading of the battery.
@@ -33,7 +33,7 @@ Sleep mode should be activated in the following situations:
 
 The overall goal of sleep mode is to conserve power and prevent the battery discharging lower than the safe level. The project uses 3.7V rechargeable batteries, which should not be discharged below their discharge cut-off voltage of 3V. To prevent batteries dropping below this charge level, the microcontroller (mcu) should go into sleep mode when the battery voltage drops below 3.2V. 
 
-The function **getFB_BAT()** is used to read the battery voltage, and convert the raw ADC value into a voltage using a multiplier. This is then averaged using a **for** loop within the main loop (explained in [Jim's Report](Jim.md)) to return the float **avg_bat**. If **avg_bat** falls below 3.2V, the mcu goes to sleep, using the line **PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE);**. This code is lines 527-557 of our [final code](../../code/11_fixed_LED_steps.c). 
+The function **getFB_BAT()** is used to read the battery voltage, and convert the raw ADC value into a voltage using a multiplier. This is then averaged using a **for** loop within the main loop (explained in [Jim's Report](Jim_Report.md)) to return the float **avg_bat**. If **avg_bat** falls below 3.2V, the mcu goes to sleep, using the line **PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE);**. This code is lines 527-557 of our [final code](../../code/11_fixed_LED_steps.c). 
 
 In the same section of code I implemented some code that sends the MCU to sleep if the LED mode is 0 for over 2 minutes, signalling the light is not in use. The variable **modetracker** counts up every time the main loop runs whilst the LED mode is zero. If **modetracker** reaches 4000 (this takes around 2 minutes), the mcu goes into sleep mode to conserve battery when it is not being used. This is more of a proof of concept: it should only really be included if there is a second push button added so that the MCU can be woken up using a button interrupt. 
 
