@@ -23,11 +23,12 @@ To solve this issue, I tried to reduce the large jump in brightness. I changed t
 </div>
 
 
+Each time the button is pressed, the variable **LEDmode** increases by 1 up to a maximum of value of 4 (set by the variable **LEDsteps**). The **PWM_LED_VALUE** which controls the brightness of the LEDs is then set by indexing into an array of increasing brightnesses, as shown in the following code.
+
 
         const uint8_t brightness_curve[] = {0, 10, 25, 45, 70}; // 5 steps
         PWM_LED_VALUE = brightness_curve[LEDmode];
 
-Each time the button is pressed, the variable **LEDmode** increases by 1 up to a maximum of value of 4 (set by the variable **LEDsteps**). The **PWM_LED_VALUE** which controls the brightness of the LEDs is then set by indexing into an array of increasing brightnesses. 
 
 ## Power Conservation Improvements
 
