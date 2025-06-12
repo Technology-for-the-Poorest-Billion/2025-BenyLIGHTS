@@ -42,5 +42,9 @@ Throughout the project, we ensured that our work aligned with the sustainable de
 
 The progress made in this project ws a direct result of an effective teamwork strategy and efficient planning. A more detailed account of our project management strategy, written by Samuel, can be found on [this page](project_management.md).  
 
+## Final Presentation
+
+The link to our final presentation can be found [here](https://drive.google.com/file/d/1zRn864rBHjBKP7bB4NwLPEk1E6U_7c2t/view?usp=sharing).
+
 *Written by Lucy Munson*
 
