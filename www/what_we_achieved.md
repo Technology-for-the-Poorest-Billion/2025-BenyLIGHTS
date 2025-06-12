@@ -25,7 +25,7 @@ Either:
   - White LEDs on zero brightness for over 2 minutes
   - Battery voltage falls below 3.2 V
 
-Sleep mode reduces power consumption, which extends battery life and reduces likelihood of discharging the battery below the safe limit. 
+Sleep mode reduces power consumption, which extends battery life and reduces likelihood of discharging the battery below the safe limit. This is important in the context of the lights being used in Ethiopia: there may be limited access to spare batteries and probably no access to battery chargers, so users will purely rely on the sun to charge the rechargeable batteries. It is therefore important to maximise the battery lifetime and minimise the risk of the batteries becoming discharged to a level where they become permanently damaged. 
 
 How to wake the MCU up from sleep? This is an issue that we investigated carefully. There are several options available which are demonstrated in this table
 
