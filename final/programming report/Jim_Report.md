@@ -1,7 +1,15 @@
 # Final contributions report   
 
-Across the duration of the project, i worked on a range of the deliverables. Initially this meant research around the ecosystem which the product will be implemented into, focussing on evaluating the constraints Noam had established. Further development and clarification on this came both after the proposal presentation and the second meeting with Noam. As well as this, hardware work was required on the PCBs. These contributions occured as we were establishing the electrical and mechanical sub-teams. From then on, the main focus was programming with Lucy. In the last week of the project i conducted some proof of concept case work with the dyson centre vacuum former. There was a delay in getting the vacuum former working and testing was dependant on the technician availability meaning i ran out of time. This kept this somwhat standalone and hasnt been incorporated into the presentations due to the incompleteness of this exploration. 
+Across the duration of the project, i worked on a range of the deliverables. Initially this meant research around the ecosystem which the product will be implemented into, focussing on evaluating the constraints Noam had established and aiming to quantify how responsible the innovation is in the context of the problem. Further development and clarification on this came both after the proposal presentation and the second meeting with Noam. As well as this, hardware work was required on the PCBs. These contributions occured as we were establishing the electrical and mechanical sub-teams. From then on, the main focus was programming with Lucy. In the last week of the project i conducted some proof of concept case work with the dyson centre vacuum former. There was a delay in getting the vacuum former working and testing was dependant on the technician availability meaning i ran out of time. This kept this somwhat standalone and hasnt been incorporated into the presentations due to the incompleteness of this exploration. 
 
+## Technical aspects covered in this document
+- Hardware improvements
+- Multichannel ADC initialisation
+- Battery feedback calibration
+- LED battery status method
+- Averaging for sleep mode
+- Sun detection
+- Vacuum forming exploration
 
 ## Hardware work
 I soldered the battery tabs on to make all the provided PCBs compatible with batteries and soldered a solar panel enabling recharging tests. As well as this, the link used to upload the code to the microprocessor was tempremental so needed improving, this involved sourcing a stackable header to replace the crimp connectors and solder with heat shrink to form a more robust and reliable connector to the board.
@@ -26,7 +34,9 @@ There are 4 sampling channels available from the circuit diagram which we can ac
   - **FB_ILED** (PD3/A4) Channel 4
     
 #### Calibration
-Now able to recieve a 10 bit value from these feedback channels the battery value needs to be calibrated to account for the relative resistors in the potential divider and return an accurate voltage reading. This was done by sequentially draining the battery and using voltmeter as well as the serial moniter to plot ADC values and voltage measurements. From this a linear relationship was observed and enabled a simple coeficient to convert the ADC value to the battery voltage. 
+Now able to recieve a 10 bit value from these feedback channels the battery value needs to be calibrated to account for the relative resistors in the potential divider and return an accurate voltage reading. This was done by sequentially draining the battery and using voltmeter as well as the serial moniter to plot ADC values and voltage measurements. From this a linear relationship was observed and enabled a simple coeficient to convert the ADC value to the battery voltage.
+
+<img src="https://github.com/user-attachments/assets/f49cfa9e-fc85-4d3a-a35d-d5480c50ba74" alt="Alt Text" width = "500" height = "auto" > 
 
 #### Using the LEDs 
 Armed with the calibrated battery voltage we could write the code for the LEDs to display the battery status for 10 seconds upon button press. There was many ways to implement this however we decided to choose a counter than incremented each time through the main **while** loop. Upon a button press this counter was reset to zero and outside of the button press code an **if** statement incorporated the LED status by turning them on if the **batcount** was less than a specified value **statusledtime**. This meant that after a button was pressed the code looped through this if statement so long as the **batcount** remained less than **statusledtime**. Inside the **if** statement, comparitors were used to selectively light up the different LEDs depending on voltage thresholds specified in the code. The designated low middle and fully charges thresholds, as well as **statusledtime** will need adjusting to produce the desired duration and appropriate colour associated with charge level of the battery.
@@ -41,7 +51,7 @@ There is however issues with this fix, a longer average is more robust to sudden
 ### Sun detection
 From the multichannel ADC data it was required as an energy saving measure to turn the white LEDs off if solar supply is detected. There was insufficeint time for full calibration of the solar pannel to produce an accurate voltage reading within the code from the ADC signal. Despite this, we wrote code that took an uncalibrated value and compared to a threshold value currently set to be 0.27, and appears below the button press code such that with solar voltage detected the white LEDs PMW are set to zero, overiding the button press. Although the button press is overiden in terms of controlling the white LEDs, the batcount is still returned to zero and as such the status LEDs still show battery status for 10 seconds during charging which is important to preserve. 
 
-## Some case manufacture exploring 
+## Case manufacture exploration 
 The convex thin shape of the case could potentially lend itself to be vacuum formed out of plastic sheet. This has the potential to be much more affordable at scale compared to 3D printing. In order to explore this avenue i used one of the damaged PCBs and an early iteration of 3D printed case design to create a proof of concept mould for vaccuum forming. Holes were drilled across the combined part in order to ensure vacuum force could be applied uniformly. This was tested on the Dyson centre vacuum forming to give an idea of how feasible this manufacturing route could be and wether the results could match the performance of the 3D printed cases. 
 
 Due to the time constraints only one iteration of the vacuum formed case could be performed. The 3D printed form used to vacuum around held up well across the thicker portions however the high temperature caused the thin diffuser element on the early PLA prototype to flatten. This is a problem, however it is easily fixed by either printing a thicker reinforced dome, or better, 3D routing a wooden block in the required shape. These would both ensure repeatability and accuracy of the produced part.
@@ -52,5 +62,8 @@ Further work is required to evaluate the diffusive capabilities with PLA colour 
 
 <img src="https://github.com/user-attachments/assets/6edc0e43-20a9-4def-be17-9e4c2de4bff5" width="500"/>
 <img src="https://github.com/user-attachments/assets/7586e114-db21-4b71-9598-86453e2277ac" width="500"/>
+
+## Conclusions 
+Throughout the project, I contributed to research around the responsibility and context of the solution as well as the hardware and software progression. Collaborating closely with Lucy, I helped develop key features including multichannel ADC battery voltage measurement, calibrated battery status LED display, sleep mode with voltage averaging to prevent false triggers, and solar detection to conserve power. In the final stage, I explored vacuum forming as a scalable manufacturing method for the case, producing a proof-of-concept mold and part, though time constraints limited further testing and integration. During the 4 weeks, lots was learnt both regarding the specifics of this issue in Ethiopia as well as generic skills such as programming in C and familiarity with PCBs and there accompanying circuit diagrams. Working in a team as well as communicating and leazing with an external supervisor/entity being Noam and Beny LIGHTS developed lots of interpersonal skills. The clear documentation and distinct code version uploads available in this repository and on the website should provide strong foundations for further development. I hope the contributions we have made bring us closer to kerosene lamps being replaced by Beny LIGHTS in rural Ethiopian homes.  
 
 
