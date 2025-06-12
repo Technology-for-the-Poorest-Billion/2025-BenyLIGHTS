@@ -69,8 +69,8 @@ We think the best long term solution is adding an extra button, so the user can 
   - Case shown to improve diffusion of light around a room
   - Case does not significantly undermine effectiveness of battery indicator LEDs
  
- # Technical Details
- If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/final) folder of our Github repository.
+# Technical Details
+If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/final) folder of our Github repository.
  
 *Written by Lucy Munson, with Mechanical section written by Leo Mills*
 
