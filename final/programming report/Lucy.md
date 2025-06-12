@@ -47,7 +47,7 @@ Initially, we set the existing push button on PD0 as an interrupt to wake the mc
 
 An alternative solution I found was to use a deeper sleep mode called standby mode, called using the function **PWR_EnterSTANDBYMode(PWR_STANDBYEntry_WFE);**. This function worked for unlimited button presses so was an improvement on the dreaded **__WFI()** function. Setting this button as an interrupt means that every time it is pressed, the interrupt function overwrites it's original functionality, so when we tested this code, the LEDs no longer increased in brightness when the button was pressed. This would not be an issue if we had multiple buttons, but the PCB we were given only has one programmable button (the RESET button cannot be programmed easily). A solution for future iterations of the project would be to add another button to the PCB, but obtaining these new boards was out of the timescale of our project. I documented the code that worked with the button interrupt in the [button wakeup](../../code/8_Button_Wakeup.c) file, so if another button is added the pin number can easily be adjusted and this code can be implemented with very little additional work.
 
-As a proof of concept, I implemented a periodic wakeup system where the mcu wakes itself up from standby mode every 10 seconds with an timed interrupt, and the working code is shown in the [periodic wakeup](../../code/9_Periodic_Wakeup.c) file. The amount of time the mcu is asleep for it set by the **standbyConfig()** function, explained in the Curious Scientist blog on using Low Power Modes with the CH32V003 microcontroller family (see references). This means that the mcu periodically wakes up, checks the battery voltage, and goes back to sleep if it has not risen above 3.2V. This reduces power used by the mcu and can be further improved by increasing the period of time that the mcu is switched off. However, this comes with the tradeoff that there is no user input available to wake the mcu, so once it is asleep the user has to wait until it wakes up if they want to use the light. This is quite impractical so I think the best solution moving forwards is to add another button to the board, so the mcu can remain asleep until woken by the user pressing the button. 
+As a proof of concept, I implemented a periodic wakeup system where the mcu wakes itself up from standby mode every 10 seconds with an timed interrupt, and the working code is shown in the [periodic wakeup](../../code/9_Periodic_Wakeup.c) file. The amount of time the mcu is asleep for it set by the **standbyConfig()** function, explained in the [Curious Scientist blog](https://curiousscientist.tech/blog/ch32v003j4m6-low-power-modes) on using Low Power Modes with the CH32V003 microcontroller family (see references). This means that the mcu periodically wakes up, checks the battery voltage, and goes back to sleep if it has not risen above 3.2V. This reduces power used by the mcu and can be further improved by increasing the period of time that the mcu is switched off. However, this comes with the tradeoff that there is no user input available to wake the mcu, so once it is asleep the user has to wait until it wakes up if they want to use the light. This is quite impractical so I think the best solution moving forwards is to add another button to the board, so the mcu can remain asleep until woken by the user pressing the button. 
 
 ### Cost Reduction
 
@@ -88,14 +88,8 @@ Some additional areas for improvement that are not essential, but would be good 
 Additional cost reduction extras: 
 - Replacing the three red, orange and green LEDs with the single RGB programmable LED.
 - The [code for lighting up the RGB LED](../../code/RGBLED/main.c) can be further modified
-        - We modified the code to include the correct pins but ran out of time to change it's colour
-        - This code is a good starting point for using the WS2812 library on the CH32V003F4P6
+    - We modified the code to include the correct pins but ran out of time to change it's colour
+    - This code is a good starting point for using the WS2812 library on the CH32V003F4P6 microprocessor
       
-
-
-## References
-
-Battery discharge cutoff voltage https://www.amazon.co.uk/PKCELL-900mah-ICR18350-Rechargeable-Battery/dp/B0897RCSYV?ref_=ast_sto_dp
-Low power mode blog https://curiousscientist.tech/blog/ch32v003j4m6-low-power-modes
 
 
