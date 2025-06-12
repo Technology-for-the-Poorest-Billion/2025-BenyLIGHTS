@@ -8,7 +8,7 @@ This section outlines what we have achieved in the 4 weeks we have been working 
 ## When you press the button...
 - Button press increases LED brightness in steps
 - 4 different brightness levels available, useful for a range of external light levels
-- Button press also shows battery voltage on red, orange and green LEDs
+- Button press also shows visual indication of battery voltage on red, orange and green LEDs, which light up for ten seconds with the battery voltage according to the table below
 
  ![image](https://github.com/user-attachments/assets/ca544c57-47a2-442d-8706-7d09a57061c9)
 
