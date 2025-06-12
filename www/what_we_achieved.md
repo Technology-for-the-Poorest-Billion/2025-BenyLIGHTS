@@ -27,9 +27,12 @@ Either:
 
 Sleep mode reduces power consumption, which extends battery life and reduces likelihood of discharging the battery below the safe limit. 
 
-How to wake the MCU up from sleep? This is an issue that we investigated carefully. There are several options available which are demonstrated in this table 
+How to wake the MCU up from sleep? This is an issue that we investigated carefully. There are several options available which are demonstrated in this table
 
-![image](https://github.com/user-attachments/assets/cd6c6156-ef3a-4c04-b65a-84cbea7356bc)
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/cd6c6156-ef3a-4c04-b65a-84cbea7356bc" img width = "33%">
+</div>
 
 We think the best long term solution is adding an extra button, so the user can always wake the battery manually. This was unachievable in the short time scale of the project but the periodic sleep mode worked as a proof of concept, so it should be easy to impliment an extra button as an interrupt in the future.
 
@@ -47,8 +50,11 @@ We think the best long term solution is adding an extra button, so the user can 
 - Replacing the 3 battery status LEDs with one single LED would reduce the cost
 - We configured the pins so the RGB LED lit up, which is a useful step in the right direction.
 
-<img src="https://github.com/user-attachments/assets/962bd02d-dfdb-4951-8aaa-53aef2dadd6a" width="300"/>
-<img src="https://github.com/user-attachments/assets/3e46c980-7e0a-47e4-ad51-366d803d6a43" width="300"/>
+<img src="https://github.com/user-attachments/assets/962bd02d-dfdb-4951-8aaa-53aef2dadd6a" width="200"/>
+
+<img src="https://github.com/user-attachments/assets/43a7fa8d-7aad-446f-bc25-54fe4c8c5586" width="200"/>
+
+<img src="https://github.com/user-attachments/assets/3e46c980-7e0a-47e4-ad51-366d803d6a43" width="200"/>
 
 
 
