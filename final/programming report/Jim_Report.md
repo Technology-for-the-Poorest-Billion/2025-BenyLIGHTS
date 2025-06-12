@@ -1,5 +1,7 @@
 # Final contributions report   
 
+Across the duration of the project, i worked on a range of the deliverables. Initially this meant research around the ecosystem which the product will be implemented into, focussing on evaluating the constraints Noam had established. Further development and clarification on this came both after the proposal presentation and the second meeting with Noam. As well as this, hardware work was required on the PCBs. These contributions occured as we were establishing the electrical and mechanical sub-teams. From then on, the main focus was programming with Lucy. In the last week of the project i conducted some proof of concept case work with the dyson centre vacuum former. There was a delay in getting the vacuum former working and testing was dependant on the technician availability meaning i ran out of time. This kept this somwhat standalone and hasnt been incorporated into the presentations due to the incompleteness of this exploration. 
+
 
 ## Hardware work
 I soldered the battery tabs on to make all the provided PCBs compatible with batteries and soldered a solar panel enabling recharging tests. As well as this, the link used to upload the code to the microprocessor was tempremental so needed improving, this involved sourcing a stackable header to replace the crimp connectors and solder with heat shrink to form a more robust and reliable connector to the board.
@@ -49,4 +51,6 @@ The mechanical properties of this case were not rigourously tested however there
 Further work is required to evaluate the diffusive capabilities with PLA colour options and potentially other plastics/thickness sheets needing to be tested. Also refine the process with better moulding that produces repeatable outputs. Care will be needed to integrate the button access as well as ensuring the status LEDs are visible through the case. The strategy to secure the battery may also need work as forming around the tabs creates a cavity that could lead to inconsistent connections. And finally, developing an effective mounting strategy wether that be with glue, mechanical fasteners or friction press fit that ensures a reliable connection to the PCB will be important. 
 
 <img src="https://github.com/user-attachments/assets/6edc0e43-20a9-4def-be17-9e4c2de4bff5" width="500"/>
+<img src="https://github.com/user-attachments/assets/7586e114-db21-4b71-9598-86453e2277ac" width="500"/>
+
 
