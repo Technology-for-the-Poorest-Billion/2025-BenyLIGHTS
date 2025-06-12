@@ -47,7 +47,7 @@ We think the best long term solution is adding an extra button, so the user can 
 ## Cost Reduction 
 ### Replacing coloured LEDs
 
-- Replacing the 3 battery status LEDs with one single LED would reduce the cost
+- Replacing the 3 battery status LEDs with one single LED would reduce the cost of the light, which is a primary objective. 
 
 <img src="https://github.com/user-attachments/assets/962bd02d-dfdb-4951-8aaa-53aef2dadd6a" width="200"/>
 
