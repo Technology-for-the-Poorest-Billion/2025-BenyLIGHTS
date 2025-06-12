@@ -9,6 +9,7 @@ This report is structured in the form of a handover document so that Noam or oth
 ## Power Conservation
 - Sleep mode implementation (Lucy)
 - Choice of interrupt (Lucy)
+- Averaging battery voltage for sleep mode (Jim)
 - Solar detection (Jim)
 
 ## Cost Reduction
