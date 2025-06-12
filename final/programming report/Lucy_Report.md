@@ -86,7 +86,11 @@ I struggled to find a value online for the maximum value of the inductor so deci
 
 ### Board Blown
 
-Another issue we had with one of the boards is that it was soldered incorrectly when we received it. These images show where the Q2 chip is supposed to be soldered vs where it is actually soldered, and it is clearly offset. We originally didn't notice this issue, but when a battery was connected the board began smoking so we immediately unplugged it and inspected it to find the issue. For future iterations of the project I would advise thoroughly checking that all components of the board are correctly soldered to minimise risk of this happening again. 
+Another issue we had with one of the boards is that it was soldered incorrectly when we received it. These images show where the Q2 chip is supposed to be soldered vs where it is actually soldered, and it is clearly offset as shown in the yellow highlighted photograph below. We originally didn't notice this issue, but when a battery was connected the board began smoking so we immediately unplugged it and inspected it to find the issue. For future iterations of the project I would advise thoroughly checking that all components of the board are correctly soldered to minimise risk of this happening again. The broken board was still used in the project for mechanical drop tests and vacuum forming, so was not completely useless. 
+
+<img src="assets/1000021691.jpg" alt="Alt Text" width = "500" height = "auto" > 
+
+<img src="assets/1000021693.jpg" alt="Alt Text" width = "500" height = "auto" > 
 
 ## Next Steps
 
