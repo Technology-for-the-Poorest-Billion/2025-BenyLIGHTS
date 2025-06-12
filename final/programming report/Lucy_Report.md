@@ -119,6 +119,8 @@ Additional cost reduction extras:
 Over the course of this project, I’ve learned a lot about embedded systems: starting from limited knowledge of interrupts and pin programming to confidently working with the CH32V003F4P6 microcontroller and it's MounRiver Studio software. By the end of the four weeks, I felt much more capable of in writing code and diagnosing problems as they arose. 
 
 Although time constraints meant not all the ideas could be fully implemented, I’m proud of the progress we made and the practical solutions we have developed, especially related to the multichannel ADC and power management. I hope the work we've done, along with the documented code and lessons learned, will serve as a valuable foundation for future improvements to the board.
+
+*Written by Lucy Munson*
       
 
 
