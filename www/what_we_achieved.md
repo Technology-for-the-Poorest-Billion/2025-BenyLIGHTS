@@ -1,7 +1,7 @@
 ---
 title: What We Achieved
 ---
-This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. All code was documented in our [GitHub](/code) so that it can be used in future iterations of the project and CAD models can be found in the [CAD folder](/CAD).
+This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. All code was documented in our [GitHub](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/code) so that it can be used in future iterations of the project and CAD models can be found in the [CAD folder](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/CAD).
 
 # What can the device do?
 
@@ -55,7 +55,7 @@ We think the best long term solution is adding an extra button, so the user can 
 # Mechanical
 - Produceable Case
   - Produced design that can easily be 3D printed
-  - Produced files accesible to open source software with clear guidelines for modification [openscad_case](/CAD/openscad_case)
+  - Produced files accesible to open source software with clear guidelines for modification [openscad_case](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/blob/main/CAD/openscad_case.c)
 - Protective Case
   - Case modified to protect some sensitive components
   - Case shown to be robust
@@ -66,7 +66,7 @@ We think the best long term solution is adding an extra button, so the user can 
   - Case does not significantly undermine effectiveness of battery indicator LEDs
  
  # Technical Details
- If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](/final) folder of our Github repository.
+ If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/final) folder of our Github repository.
  
 *Programming written by Lucy Munson and Mechanical written by Leo Mills*
 
