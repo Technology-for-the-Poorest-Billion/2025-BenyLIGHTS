@@ -39,7 +39,9 @@ In the same section of code I implemented some code that sends the MCU to sleep 
 
 The challenge in implementing this section arose when trying to wake the mcu up from sleep mode. The various options are outlined in the table below, and then explained in more technical detail. 
 
-![image](https://github.com/user-attachments/assets/de4c3d58-6269-4c99-95f0-0a14bf758484)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/de4c3d58-6269-4c99-95f0-0a14bf758484" img width = "80%">
+</div>
 
 Initially, we set the existing push button on PD0 as an interrupt to wake the mcu up, which required use of the **__WFI()** function. The interrupt worked perfectly without the **__WFI()** line, but when **__WFI()** was introduced the mcu would only wake up the first two times, and then would remain asleep no matter how many times the button was pressed. This appeared to be because the 2nd button press was not going through the interrupt sequence, so the flag was not being reset, which is an internal issue of the **__WFI()** function itself. We did not know how to solve this issue, so had to do some more research and implement a different function. 
 
