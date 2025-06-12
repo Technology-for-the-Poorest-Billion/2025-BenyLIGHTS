@@ -16,10 +16,10 @@ When the user presses the button, 2 things happen:
 ### White LEDs increasing in brightness
 The original code we received from Noam used PWM to control the brightness of the LEDs, involving 5 steps of [0, 25, 50, 75, 100] percentage brightness levels. When just connected to the computer, this code worked fine. However when the battery was inserted, we noticed an issue where on the 4th or 5th button press, all LEDs (including the red, orange and green) would suddenly switch off, as though the microcontroller was resetting. This was a confusing issue, because we had programmed the red, orange and green LEDs to stay on for 10 seconds after each button press. We concluded that a 'brownout' was happening (like a blackout but less extreme) because the battery voltage measured on this higher LED setting significantly decreased. The system was automatically resetting itself every time, which we think could be from sudden surging current or overloading of the battery.
 
-To solve this issue, I tried to reduce the large jump in brightness. I changed the step PWM percentage values to [0, 10, 25, 45, 70] which still provides good variation in brightness levels and solves the browning out issue. This has an added bonus of reducing the power because a lower brightness is being used, which should extend the battery life of the light.
+To solve this issue, I tried to reduce the large jump in brightness as shown in the table below. I changed the step PWM percentage values to [0, 10, 25, 45, 70] which still provides good variation in brightness levels and solves the browning out issue. This has an added bonus of reducing the power because a lower brightness is being used, which should extend the battery life of the light.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/7442f702-e320-4074-a2e9-087160448dbd" img width = "60%">
+  <img src="https://github.com/user-attachments/assets/7442f702-e320-4074-a2e9-087160448dbd" img width = "40%">
 </div>
 
 
