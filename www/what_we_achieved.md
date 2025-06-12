@@ -68,7 +68,7 @@ We think the best long term solution is adding an extra button, so the user can 
  # Technical Details
  If you would like more information on how these features were implemented or how the case was designed, please read our individual technical reports. These are split into the programming and mechanical subteams and are located in the [final](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/final) folder of our Github repository.
  
-*Programming written by Lucy Munson and Mechanical written by Leo Mills*
+*Written by Lucy Munson, with Mechanical section written by Leo Mills*
 
 
 
