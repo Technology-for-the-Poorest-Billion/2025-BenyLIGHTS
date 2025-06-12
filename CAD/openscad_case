@@ -17,8 +17,8 @@ box_length = 51.75;
 shell = 1.5;
 
     //Primary void spaces
-chips_cutout_len=24.6-shell*2;
-batt_slot_len = 25.15;
+chips_cutout_len=24.6-shell*2; // Y-length of cutout for the chip array of the PCB
+batt_slot_len = 25.15; // Y-length of the slot cut out of the battery
 
     //Other holes and cuts
 //Ties linking under the battery, numbered left to right looking down on the case from the USB port end
@@ -27,12 +27,12 @@ tie_hole_1 = 8;
 tie_link_1 = 9;
 tie_hole_2 = 53-25;
 tie_hole_3 = 16-shell;
-//Data transfer pin slot
+//Data transfer pin slot - can be removed if input pins removed
 pin_cut_depth = case_height-shell;
 pin_cut_width = case_width-25-27;
 //Hole for button push pin
-push_pin_dia = 4;
-push_depth = 3.36-plate_thickness+3;
+push_pin_dia = 4; // Diameter of push pin hole
+push_depth = 3.36-plate_thickness+3; // Distance between plate and bottom of cylinder
 // Holes for suspending light
 hanging_hole_dia = 5;
 hole_offset = hanging_hole_dia/2 + 3;
@@ -57,7 +57,7 @@ difference() {
     translate([0,box_length/2-shell-chips_cutout_len/2,0])
     linear_extrude(height=case_height-shell)
     square([case_width-shell*2,chips_cutout_len],center=true);
-    // Cut space for data pins - can be removed
+    // Cut space for data pins - can be removed if data pins removed
     translate([1,box_length/2-shell-chips_cutout_len-shell/2,0])
     linear_extrude(height=pin_cut_depth)
     square([pin_cut_width,shell],center=true);
@@ -167,5 +167,4 @@ difference() {
         linear_extrude(height=USBA_height)
             square([USBA_width, USBA_depth+4*shell], center = true);translate([case_width/2-22.43,(box_length*0.5-0.5*USBA_depth),0])
         linear_extrude(height=USBA_height+2*shell)
-            square([USBA_width+4*shell, USBA_depth], center = true);
-}        
+            square([USBA_width+4*shell, USBA_depth], center = true);}        
