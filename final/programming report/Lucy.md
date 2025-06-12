@@ -1,7 +1,7 @@
 # Final Programming Report
 
 ## Brief Summary of the Process
-We successfully developed the user interface of the board throughout this project, by adding features iteratively within the code. In the initial week of the project, work was relatively slow because there was lots of learning to be done. The CH32V003F4P6 is a relatively difficult board to program compared to something like an Arduino, so the first week was spent trying to interact with the board and familiarise with the MounRiver Studio software that we were using to flash the board.  This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code. In addition, the connector was quite unreliable, so we would regularly get the 'failed to configure' mcu error when flashing the board, so it is definitely worth investing some time into making a high quality connector. 
+We successfully developed the user interface of the board throughout this project, by adding features iteratively within the code. In the initial week of the project, work was relatively slow because there was lots of learning to be done. The CH32V003F4P6 is a relatively difficult board to program compared to something like an Arduino, so the first week was spent trying to interact with the board and familiarise with the MounRiver Studio software that we were using to flash the board.  This project had quite a long learning period at the beginning: I spent a lot of time trying to understand the circuit diagrams and existing code, which was essential before we could make any progress on writing new code. In addition, the connector was quite unreliable, so we would regularly get the 'failed to configure mcu' error when flashing the board, so it was definitely worth investing some time into making a high quality connector. 
 
 During the first week, we focused on trying to get the RGB LED to light up, which (with hindsight) was the most challenging task of the entire project. The LED was programmable so required specific libraries to switch on, which are not widely available for this microprocessor and was much too difficult of a task for complete beginners (aka me). Following our proposal presentations, we received feedback and decided to go back to Noam to redefine our goals for the following 3 weeks. 
 
@@ -53,7 +53,7 @@ As a proof of concept, I implemented a periodic wakeup system where the mcu wake
 
 WS2812 LED is a programmable LED, aiming to replace the 3 separate red, orange and green LEDs. It is controlled by input data stream of 24 bits, 8 bits for red, 8 bits for green, 8 bits for blue so precise timing is required to send the colour signals. 
 
-My level of coding experience meant coding the individual on/off timing signals wouild take a LOT longer than four weeks, so I tried to find a library that would allow me to program this LED. The only library I could find that worked with this microcontroller was from Github and can be found in the [RGB LED folder](../../code/RGBLED) in our code folder. This library is usually used for a string of LEDs, so some edits needed to be made to set the number of LEDs and ensure the LED was initialised as the correct pin. The main file and relevant header files are all included into the folder and the LED lit up on the smaller bpard, so it should not be too much work to integrate it onto the bigger board. 
+My level of coding experience meant coding the individual on/off timing signals wouild take a LOT longer than four weeks, so I tried to find a library that would allow me to program this LED. The only library I could find that worked with this microcontroller was from Github and can be found in the [RGB LED folder](../../code/RGBLED) in our code folder. This library is usually used for a string of LEDs, so some edits needed to be made to set the number of LEDs and ensure the LED was initialised as the correct pin. The header files included in the [RGB LED folder](../../code/RGBLED) must also be included in the User folder in MounRiver Studio for the main file to run. The LED lit up on the smaller bpard, so it should not be too much work to integrate it onto the bigger board.
 
 If anyone uses this code in the future, I would recommend testing it on the smaller boards first. I tried to integrate this code onto a bigger board, but when I uploaded the code to the bigger board with a battery, it ended up melting the inductor because there is no protection against the maximum inductor current. I learnt this lesson the hard way, but hopefully including this failure in the report means anyone working on the RGB LED in the future won't make the same mistake!
 
@@ -62,7 +62,7 @@ If anyone uses this code in the future, I would recommend testing it on the smal
 
 ### Inductor Overheating
 
-One of the first challenges I faced during the project was trying to prevent the board from overheatig. When the battery was initially connected to the bigger boards, the electronics became too hot to touch almost instantaneously and we concluded that this was not good for the long term use of the board and could be a potential fire hazard. I suspected that the inductor was being overloaded with current, so I changed the overvoltage parameters in Noam's original board to account for this. 
+One of the first challenges I faced during the project was trying to prevent the board from overheating. When the battery was initially connected to the bigger boards, the electronics became too hot to touch almost instantaneously and we concluded that this was not good for the long term use of the board because it could be a potential fire hazard. I suspected that the inductor was being overloaded with current, so I changed the overvoltage parameters in Noam's original board to account for this. 
 
 I struggled to find a value online for the maximum value of the inductor so decided to experimentally determine a safe ADC maximum voltage parameter. In Noam's code, the overvoltage and target voltage parameters are defined as raw ADC values, which correspond to voltages. By reducing the target ADC value from 300 to 250, and reducing the max parameter from 350 to 300, the circuit no longer overheated and it was then safe to leave the battery in the board for a prolonged period of time. Following Noam's advice, I measured the output voltage of the USB and was getting an average value of around 4.2V, which is lower than the 5V maximum, so this is a functioning solution. 
 
@@ -72,28 +72,25 @@ Another issue we had with one of the boards is that it was soldered incorrectly 
 
 ## Next Steps
 
-The current product that we have is useable, but there are several improvements to be made relating to sleep mode. 
+The current product that we have is useable, but there are several improvements to be made which are listed below. 
+
+In relation to sleep mode:
 
 - Add another button to the PCB to enable user triggered interrupts
   - Set up second button as interrupt (using [Button Wakeup Code](../../code/8_Button_Wakeup.c))
   - Sleep mode can then be triggered indefinitely without relying on periodic wakeup
 
+Some additional areas for improvement that are not essential, but would be good to implement:
+
 - Finalise solar cutoff voltage testing in Ethiopian sun
 - Test USB port for phone charging
 
-Additional cost reduction extras can include replacing the three red, orange and green LEDs with the single RGB programmable LED.
+Additional cost reduction extras: 
+- Replacing the three red, orange and green LEDs with the single RGB programmable LED.
 - The [code for lighting up the RGB LED](../../code/RGBLED/main.c) can be further modified
         - We modified the code to include the correct pins but ran out of time to change it's colour
         - This code is a good starting point for using the WS2812 library on the CH32V003F4P6
-- The header files included in the [RGB LED folder](../../code/RGBLED) must also be included in the User folder in MounRiver Studio for the main file to run       
- 
-
-
-
-
-
-
-
+      
 
 
 ## References
