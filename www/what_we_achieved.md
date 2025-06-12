@@ -4,14 +4,15 @@ title: What We Achieved
 This section outlines what we have achieved in the 4 weeks we have been working on this project. There were two key subteams working on the project, the programming team and the mechanical team, and the final outcomes from each team are explained on this page. All code was documented in our [GitHub](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/code) so that it can be used in future iterations of the project and CAD models can be found in the [CAD folder](https://github.com/Technology-for-the-Poorest-Billion/2025-BenyLIGHTS/tree/main/CAD).
 
 # What can the device do?
-
-![image](https://github.com/user-attachments/assets/c9339193-3089-4d3f-ad57-cdbba7fab934)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c9339193-3089-4d3f-ad57-cdbba7fab934" img width = "50%">
+</div>
 
 ## When you press the button...
 - Button press increases LED brightness in steps
 - 4 different brightness levels available, useful for a range of external light levels
 - Button press also shows visual indication of battery voltage on red, orange and green LEDs, which light up for ten seconds with the battery voltage according to the table below
+- 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ca544c57-47a2-442d-8706-7d09a57061c9" img width = "40%">
 </div>
@@ -20,8 +21,9 @@ This section outlines what we have achieved in the 4 weeks we have been working 
 ## Power Conservation Features
 
 ### Sleep Mode
-
-![image](https://github.com/user-attachments/assets/1b8bc5e7-ce51-484f-8685-86cc52cb3a5d)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1b8bc5e7-ce51-484f-8685-86cc52cb3a5d" img width = "40%">
+</div>
 
 The board enters sleep mode under the following conditions. 
 
