@@ -91,7 +91,7 @@ Another issue we had with one of the boards is that it was soldered incorrectly 
 <img src="https://github.com/user-attachments/assets/8df02fc3-2c93-46fb-9494-4570aecddb74" alt="Alt Text" width = "500" height = "auto" > 
 
 
-<img src="assets/1000021693.jpg" alt="Alt Text" width = "500" height = "auto" > 
+<img src="https://github.com/user-attachments/assets/ae38568d-284f-4869-ace8-cb3b2991bddf" alt="Alt Text" width = "500" height = "auto" > 
 
 ## Next Steps
 
