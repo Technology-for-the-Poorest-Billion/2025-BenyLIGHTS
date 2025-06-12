@@ -52,7 +52,7 @@ We think the best long term solution is adding an extra button, so the user can 
 
 <img src="https://github.com/user-attachments/assets/962bd02d-dfdb-4951-8aaa-53aef2dadd6a" width="200"/>
 
-<img src="https://github.com/user-attachments/assets/43a7fa8d-7aad-446f-bc25-54fe4c8c5586" width="100"/>
+<img src="https://github.com/user-attachments/assets/43a7fa8d-7aad-446f-bc25-54fe4c8c5586" width="150"/>
 
 <img src="https://github.com/user-attachments/assets/3e46c980-7e0a-47e4-ad51-366d803d6a43" width="200"/>
 
