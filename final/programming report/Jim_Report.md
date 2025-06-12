@@ -11,7 +11,7 @@ I soldered the battery tabs on to make all the provided PCBs compatible with bat
 ## Programming contributions 
 Me and Lucy worked together on lots of the programming, further detail can be found both on [Lucy](Lucy_Report)'s page and for fully commented code all iterations are available on the [code](code) page.
 ### Battery status 
-Noam specified that upon pressing the button the charge status of the battery would be displayed for 10 seconds using the coloured LEDs. The charge status can be inferred from the voltage across the battery which needs to be recieved from the feedback infrastructure.
+Noam specified that upon pressing the button the charge status of the battery would be displayed for 10 seconds using the coloured LEDs. The charge status can be inferred from the voltage across the battery which needs to be recieved through the boards feedback infrastructure.
 #### Multi-channel ADC
 Upon the user pressing the button on the board, as well as increasing the brightness of the white LEDs, the coloured LEDs are required to display the battery voltage. In order to implement this, we obtain the battery voltage using the **getFB_BAT()** function, which pulls values from a buffer used to store values that are read using the multichannel ADC. 
 
