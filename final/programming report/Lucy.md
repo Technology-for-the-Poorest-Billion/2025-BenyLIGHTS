@@ -73,7 +73,7 @@ Another issue we had with one of the boards is that it was soldered incorrectly 
 The current product that we have is useable, but there are several improvements to be made relating to sleep mode. 
 
 - Add another button to the PCB to enable user triggered interrupts
-  - Set up second button as interrupt (using [Button Wakeup Code](../../code/8_Button_Wakeup.c)
+  - Set up second button as interrupt (using [Button Wakeup Code](../../code/8_Button_Wakeup.c))
   - Sleep mode can then be triggered indefinitely without relying on periodic wakeup
 
 - Finalise solar cutoff voltage testing in Ethiopian sun
