@@ -5,6 +5,9 @@ This section outlines what we have achieved in the 4 weeks we have been working 
 
 # What can the device do?
 
+![image](https://github.com/user-attachments/assets/c9339193-3089-4d3f-ad57-cdbba7fab934)
+
+
 ## When you press the button...
 - Button press increases LED brightness in steps
 - 4 different brightness levels available, useful for a range of external light levels
