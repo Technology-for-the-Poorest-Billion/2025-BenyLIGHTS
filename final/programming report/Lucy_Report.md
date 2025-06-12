@@ -59,7 +59,7 @@ As a proof of concept, I implemented a periodic wakeup system where the mcu wake
 
 An option we explored for cost reduction is implementation of the RGB LED to replace the three red, orange and green LEDs and the 3 resistors that are in series with them. The LED on the board is a WS2812 LED, which is usually found in a strip of multiple LEDs. WS2812 LED is a programmable LED which is controlled by an input data stream of 24 bits: 8 bits for red, 8 bits for green and 8 bits for blue.  Precise timing is required to send the accurate on/off data streams for each of the colour signals. 
 
-My level of coding experience meant coding the individual on/off timing signals wouild take a LOT longer than four weeks, so I tried to find a library that would allow me to program this LED. The only library I could find that worked with this microcontroller was from Github and can be found in the [RGB LED folder](../../code/RGBLED) in our code folder. This library is usually used for a string of LEDs, so some edits needed to be made to set the number of LEDs and ensure the LED was initialised as the correct pin. The header files included in the [RGB LED folder](../../code/RGBLED) must also be included in the User folder in MounRiver Studio for the main file to run. The LED lit up on the smaller bpard, so it should not be too much work to integrate it onto the bigger board.
+My level of coding experience meant coding the individual on/off timing signals wouild take a LOT longer than four weeks, so I tried to find a library that would allow me to program this LED. The only library I could find that worked with this microcontroller was from Github and can be found in the [RGB LED folder](../../code/RGBLED) in our code folder. This library is usually used for a string of LEDs, so some edits needed to be made to set the number of LEDs and ensure the LED was initialised as the correct pin. The header files in the RGB LED folder must also be copied across to the User folder in MounRiver Studio, otherwise the main file cannot run. The LED lit up on the smaller board, so it should not be too much work to integrate it onto the bigger board.
 
 If anyone uses this code in the future, I would recommend testing it on the smaller boards first. I tried to integrate this code onto a bigger board, but when I uploaded the code to the bigger board with a battery, it ended up melting the inductor because there is no protection against the maximum inductor current. I learnt this lesson the hard way, but hopefully including this failure in the report means anyone working on the RGB LED in the future won't make the same mistake!
 
@@ -96,6 +96,14 @@ Additional cost reduction extras:
 - The [code for lighting up the RGB LED](../../code/RGBLED/main.c) can be further modified
     - We modified the code to include the correct pins but ran out of time to change it's colour
     - This code is a good starting point for using the WS2812 library on the CH32V003F4P6 microprocessor
+ 
+## Conclusion
+
+I have learnt a lot from the project. Improved from not knowing how interrupts wokr or how to program the pins and microcprocessor to having a very good understanding of the board. by the end of the 4 weeks i felt confident in what needs to be done, wish i had more time to impliment these ideas. proud of the progress made through the project and hope our contributions will be useful 
+
+Over the course of this project, I’ve learned a lot about embedded systems: starting from limited knowledge of interrupts and pin programming to confidently working with the CH32V003F4P6 microcontroller and it's Moun River Studio software. By the end of the four weeks, I felt much more capable of in writing code and diagnosing problems as they arose. 
+
+Although time constraints meant not all the ideas could be fully implemented, I’m proud of the progress we made and the practical solutions we have developed developed, especially related to the multichannel ADC and power management. I hope the work we've done, along with the documented code and lessons learned, will serve as a valuable foundation for future improvements to the board.
       
 
 
