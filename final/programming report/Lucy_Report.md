@@ -64,7 +64,7 @@ My level of coding experience meant coding the individual on/off timing signals 
 If anyone uses this code in the future, I would recommend testing it on the smaller boards first. I tried to integrate this code onto a bigger board, but when I uploaded the code to the bigger board with a battery, it ended up melting the inductor because there is no protection against the maximum inductor current. I learnt this lesson the hard way, but hopefully including this failure in the report means anyone working on the RGB LED in the future won't make the same mistake!
 
 
-## Miscalleneous Fixes
+## Miscelleneous Fixes
 
 ### Inductor Overheating
 
@@ -99,11 +99,11 @@ Additional cost reduction extras:
  
 ## Conclusion
 
-I have learnt a lot from the project. Improved from not knowing how interrupts wokr or how to program the pins and microcprocessor to having a very good understanding of the board. by the end of the 4 weeks i felt confident in what needs to be done, wish i had more time to impliment these ideas. proud of the progress made through the project and hope our contributions will be useful 
+I have learnt a lot from the project. Improved from not knowing how interrupts work or how to program the pins and microcprocessor to having a very good understanding of the board. by the end of the 4 weeks i felt confident in what needs to be done, wish i had more time to implement these ideas. proud of the progress made through the project and hope our contributions will be useful 
 
-Over the course of this project, I’ve learned a lot about embedded systems: starting from limited knowledge of interrupts and pin programming to confidently working with the CH32V003F4P6 microcontroller and it's Moun River Studio software. By the end of the four weeks, I felt much more capable of in writing code and diagnosing problems as they arose. 
+Over the course of this project, I’ve learned a lot about embedded systems: starting from limited knowledge of interrupts and pin programming to confidently working with the CH32V003F4P6 microcontroller and it's MounRiver Studio software. By the end of the four weeks, I felt much more capable of in writing code and diagnosing problems as they arose. 
 
-Although time constraints meant not all the ideas could be fully implemented, I’m proud of the progress we made and the practical solutions we have developed developed, especially related to the multichannel ADC and power management. I hope the work we've done, along with the documented code and lessons learned, will serve as a valuable foundation for future improvements to the board.
+Although time constraints meant not all the ideas could be fully implemented, I’m proud of the progress we made and the practical solutions we have developed, especially related to the multichannel ADC and power management. I hope the work we've done, along with the documented code and lessons learned, will serve as a valuable foundation for future improvements to the board.
       
 
 
