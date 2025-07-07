@@ -1,7 +1,7 @@
 ## Contents of CAD Folder:
 
 ### SCAD Files
-- Openable with OpenSCAD - includes final case design [openscad_case](/CAD/openscad_case)
+- Openable with OpenSCAD - includes final case design [openscad_case](/CAD/openscad_case.c)
   
 ### Solidworks files
 - Case iterations from v1 to v6 - [casev5.SLDPRT](/CAD/casev5.SLDPRT) is the final selected case design
